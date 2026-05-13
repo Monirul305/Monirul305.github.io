@@ -29,3 +29,10 @@ _data/socials.yml
 assets/json/resume.json
 _config.yml
 .github/workflows/render-cv.yml
+
+# -----------------------------------------------------------------------------
+# Upstream al-folio docs — we inherit these from the fork and don't author them.
+# They don't currently pass prettier (an al-folio CI/main mismatch). They're
+# also in _config.yml's exclude: list so they don't build into the site.
+# -----------------------------------------------------------------------------
+CUSTOMIZE.md
