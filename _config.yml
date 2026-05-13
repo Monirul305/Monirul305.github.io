@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Robotics · Motion control · Autonomous systems · Embedded hardware.
   B.Sc. EEE, BUET (CGPA 3.85, ranked 25/189). Seeking PhD positions for Fall 2027.
 footer_text: >
-  © {{ "now" | date: "%Y" }} Md Monirul Islam. Powered by
+  © Md Monirul Islam. Powered by
   <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: robotics, motion control, autonomous systems, embedded hardware, mechatronics, ROS 2, MoveIt, AGV, EOD ROV, STM32, BUET, Bangladesh, PhD applicant, Fall 2027

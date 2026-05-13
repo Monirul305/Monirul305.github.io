@@ -1,14 +1,10 @@
 name: Render a CV
+# Trigger reduced to manual-only. This site uses JSONResume (assets/json/resume.json)
+# for the /cv/ page and ships a hand-prepared PDF at assets/pdf/CV_Monirul_Islam.pdf.
+# To enable auto-PDF builds via RenderCV in the future, add assets/rendercv/{settings,
+# design,locale}.yaml + convert _data/cv.yml to RenderCV schema, then restore the
+# `push:` trigger below.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:
