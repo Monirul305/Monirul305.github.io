@@ -28,3 +28,4 @@ _bibliography/papers.bib
 _data/socials.yml
 assets/json/resume.json
 _config.yml
+.github/workflows/render-cv.yml

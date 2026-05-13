@@ -179,47 +179,38 @@
   "skills": [
     {
       "name": "Robotics & Middleware",
-      "level": "",
       "keywords": ["ROS 2 (Python)", "MoveIt 2", "ros2_control / JointTrajectoryController", "URDF / Xacro / SRDF", "dronekit", "pymavlink", "mavproxy"]
     },
     {
       "name": "Kinematics & Control",
-      "level": "",
       "keywords": ["Closed-form analytical IK (6-DOF)", "Cascaded PID", "GA-optimized control", "Extended Kalman Filter (EKF)", "AprilTag fiducial localization", "Differential-drive PID"]
     },
     {
       "name": "Embedded Systems",
-      "level": "",
       "keywords": ["STM32 (HAL & LL)", "Raspberry Pi 5", "ESP32", "AVR", "Arduino", "ARM Cortex-M", "RS-485 Modbus RTU", "SBus UART", "MAVLink", "COFDM (1.4 GHz)", "I²C", "SPI"]
     },
     {
       "name": "PCB Design & EDA",
-      "level": "",
       "keywords": ["Altium Designer", "KiCad", "Autodesk Eagle", "Proteus", "Cadence Virtuoso", "PSPICE", "Icarus Verilog", "GTKWave", "MATLAB / Simulink"]
     },
     {
       "name": "Flight Control",
-      "level": "",
       "keywords": ["ArduPilot / Mission Planner", "Pixhawk", "iNav", "Betaflight", "SBus RC interface (FrSky / Futaba)"]
     },
     {
       "name": "Computer Vision & ML",
-      "level": "",
       "keywords": ["YOLOv11n", "YOLOv2", "OpenCV", "Python CV pipelines"]
     },
     {
       "name": "Programming",
-      "level": "",
       "keywords": ["Python", "C", "Embedded C", "Verilog"]
     },
     {
       "name": "CAD & Manufacturing",
-      "level": "",
       "keywords": ["SolidWorks", "Marlin 2.0", "CoreXY kinematics", "BigTreeTech / TMC2209", "BLTouch", "Ultimaker Cura"]
     },
     {
       "name": "Documentation",
-      "level": "",
       "keywords": ["LaTeX", "Microsoft Office Suite"]
     }
   ],
