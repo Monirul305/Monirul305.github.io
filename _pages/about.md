@@ -78,6 +78,11 @@ discuss potential fit.
 - **HSC Board Scholarship** — Bangladesh Education Board, 2017
 - **Runners-up, Bangabandhu Creative Talent Hunt** — Pabna Division, 2014
 
+### Student Organisations
+
+- **[Team Interplanetar](https://buetinterplanetar.com/) — BUET Mars Rover Team** (2022–2023). Designed power distribution and motor driver circuits for the rover platform.
+- **BUET Robotics Society (BRS)** (2022–2023). Organiser/volunteer for inter-university robotics competitions.
+
 ### Selected Field Deployments
 
 - **3-robot AGV fleet** — live production at The Urmi Group RMG facility, 2025–present

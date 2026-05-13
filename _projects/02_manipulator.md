@@ -143,7 +143,7 @@ Default SCALE_R = 0.15 m: **≥ 40% reduction** in home-pose swing, X-tracking e
 
 ### State Machine & Operator Interface
 
-**Operation modes:** `DISARMED` · `ARMED` · `FIRING`
+**Operation modes:** `DISARMED` · `ARMED` · `ACTUATING`
 
 **Control sub-modes:** `ARM` · `DRIVE` · `HOME`
 

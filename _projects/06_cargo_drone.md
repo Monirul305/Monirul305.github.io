@@ -9,10 +9,12 @@ importance: 6
 category: professional
 ---
 
-Led design and optimisation of a heavy-lift multirotor cargo drone. Key engineering
-challenges: advanced battery management for 30-minute endurance at 50 kg payload,
-structural frame analysis, propulsion system sizing to achieve a **1.5:1
-thrust-to-weight ratio**, and flight control tuning for stable operation at altitude.
+Led design and optimisation of a heavy-lift multirotor cargo drone for logistics
+and emergency-response applications. Key engineering challenges: advanced battery
+management for 30-minute endurance at full payload, structural frame analysis for
+asymmetric load distribution, propulsion sizing to achieve a **1.5:1
+thrust-to-weight ratio**, and flight-control tuning for stable hover and waypoint
+flight under variable wind at altitude.
 
 ### Specifications
 
@@ -23,6 +25,20 @@ thrust-to-weight ratio**, and flight control tuning for stable operation at alti
 | Max altitude | 300 ft |
 | Communications range | 15 km |
 | Thrust-to-weight ratio | 1.5 : 1 |
+
+### Engineering Focus
+
+- **Custom battery management system (BMS)** sized for the 30-minute endurance
+  requirement at peak draw — cell balancing, fault isolation, telemetry to GCS.
+- **Propulsion stack sizing** — motor/ESC/prop pairing across the operating point,
+  with thrust margin for emergency-response payloads and gusty conditions.
+- **Frame structural design** (SolidWorks) for asymmetric payload mounts and
+  vibration isolation between the propulsion plate and avionics bay.
+- **Power-distribution PCBs** designed in Altium for high-current routing and
+  in-flight current/voltage monitoring.
+
+This is the heavy-lift platform in [Cybernetics' drone product line](https://cyberneticsbd.com/cargo-drone/);
+the [SD15-N surveillance drone](../05_sd15n) is the lighter-weight tracking variant.
 
 ### Tech Stack
 

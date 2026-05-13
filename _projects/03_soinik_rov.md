@@ -36,14 +36,14 @@ related_publications: true
 | Endurance | 3–5 hours | 3–5 hours |
 | Cameras | IR, thermal, 4× PTZ | IR, thermal, 4× PTZ + claw IR |
 | Range (LOS) | 1000 ft | 1000 ft |
-| Disrupter | — | ✓ 24V firing circuit |
+| Disrupter | — | ✓ 24 V actuation circuit |
 
 ---
 
 ### Army Validation — JS1.0
 
-**Disrupter Firing Test — Mirpur Firing Range**
-The Bangladesh Army tested a live disrupter shot from JS1.0 — the first locally-built ROV with disrupter firing capability. Water projectile at **350 m/s**, demonstrating IED neutralization capacity and advancing Bangladesh's EOD capabilities.
+**Disrupter Test — Mirpur Range**
+The Bangladesh Army validated the JS1.0 disrupter mechanism — the first locally-built ROV with this capability — using a **350 m/s water projectile**. The disrupter is a standard tool of Explosive Ordnance Disposal teams worldwide, used to safely render unexploded ordnance inert in humanitarian and UN peacekeeping operations.
 
 **IP55 Water Protection Test — Bangladesh Army IE&I**
 High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 3 minutes. JS1.0 passed, confirming resilience in harsh field conditions.
@@ -73,7 +73,7 @@ Vertical 150 cm · Horizontal 100 cm · Beneath 25 cm · Gripper opening 18 cm
 **Electrical subsystems:**
 GPS locator · Wireless HCU · Laser range finder (10 cm – 40 m) · 2+ proximity sensors ·
 Thermal camera · Self-diagnostics · Active/passive overload protection · RF extender to 152 m ·
-Firing circuit: 4× 24 V shock tube sets · Deployment time ≤ 5 min
+Initiator circuit: 4× 24 V shock-tube sets · Deployment time ≤ 5 min
 
 ---
 
