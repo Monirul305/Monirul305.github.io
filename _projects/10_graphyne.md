@@ -1,0 +1,28 @@
+---
+layout: page
+title: α-Graphyne Nanoribbon FET Modeling
+description: >
+  Modeled ballistic quantum transport in α-graphyne nanoribbons.
+  Quantified I–V behavior and subthreshold slope. Published in
+  Micromachines (MDPI), 2023.
+img: assets/img/projects/graphyne.jpg
+importance: 10
+category: research
+related_publications: true
+---
+
+Investigated α-graphyne nanoribbons as a candidate channel material for
+low-power beyond-silicon transistors. The work models ballistic quantum
+transport to characterize device behavior at nanoscale dimensions.
+
+**Key contributions:**
+- Modeled ballistic transport in α-graphyne nanoribbons
+- Quantified I–V characteristics across bias conditions
+- Extracted subthreshold slope — a key figure of merit for switching efficiency
+- Results inform device design guidelines for low-power nanoelectronic applications {% cite khan2023graphyne %}
+
+**Supervisor:** Dr. Mahbub Alam, Associate Professor, EEE, BUET
+
+### Tech Stack
+
+`Device simulation` · `Nanoelectronics` · `2D materials` · `MATLAB`

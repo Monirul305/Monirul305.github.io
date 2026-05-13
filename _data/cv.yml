@@ -1,189 +1,160 @@
-cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Md Monirul Islam
+    - name: Email
+      value: monirulislam.acad@gmail.com
+    - name: Location
+      value: Dhaka, Bangladesh
+    - name: PhD Target
+      value: Fall 2027
 
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+- title: Education
+  type: time_table
+  contents:
+    - title: B.Sc. in Electrical and Electronic Engineering
+      institution: Bangladesh University of Engineering and Technology (BUET)
+      year: 2023
+      description:
+        - "CGPA: 3.85 / 4.00 (Final year: 3.98 / 4.00)"
+        - "Ranked 25 of 189 — Awarded with HONOURS"
+        - "Dean's List all four academic years"
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: R&D Engineer & Team Lead
+      institution: Cybernetics Hi-Tech Solutions (Pvt) Ltd, Dhaka
+      year: 2023 – Now
+      description:
+        - >
+          Led end-to-end development and production deployment of a 3-robot AGV fleet
+          at The Urmi Group (live RMG facility) — ROS 2, AprilTag EKF, FleetCore coordinator.
+        - >
+          Developed ROS 2 / MoveIt 2 manipulator control stack with custom closed-form
+          6-DOF IK solver and 40-test unit suite for an 11-joint EOD platform.
+        - >
+          Contributed to Smart Soinik 1.0 and Jontro Soinik 1.0 EOD ROV family —
+          motion control, BLDC synchronization, RS485 communication, custom PCBs.
+          SS1.0 deployed in UN Peacekeeping Mission, Mali; JS1.0 set for Congo.
+        - >
+          Designed SD15-N autonomous target-tracking surveillance drone
+          (YOLOv11n, Raspberry Pi 5, Pixhawk 2.4.8, 1000 ft / 15 km).
+        - >
+          Designed heavy-lift cargo drone (50 kg payload, 30 min, 15 km comms).
+        - >
+          Designed and manufactured CyberMaker Titan550 Pro industrial 3D printer
+          (CoreXY, 510 × 510 × 550 mm, ±0.02 mm repeatability, Marlin 2.0).
+        - Delivered maiden flight of VTOL quad-plane prototype.
+    - title: Intern
+      institution: Ulkasemi Pvt. Limited, Dhaka
+      year: Dec 2022 – Mar 2023
+      description:
+        - IC design in TSMC 180 nm and GPDK 90 nm (Cadence Virtuoso)
+        - Wishbone bus interface development and BiFET Op-Amp Verilog validation
+    - title: Industrial Trainee
+      institution: Walton Hi-Tech Industries Limited, Dhaka
+      year: Nov 2022
+      description:
+        - PCB manufacturing workflows and EV assembly observation
 
-  sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Publications
+  type: time_table
+  contents:
+    - title: >
+        Differential-Drive Synchronization Using Genetic Algorithm Optimized
+        Cascaded PID Controllers on STM32 Based MCU
+      year: 2025
+      description:
+        - "Status: Under review"
+        - "Role: First author (corresponding)"
+    - title: >
+        A Dual-Network Feedback Communication System for Multi-Node Unmanned
+        Robotic Control
+      year: 2025
+      description:
+        - "Status: Under review"
+        - "Role: Co-author (2nd)"
+    - title: >
+        Optimizing Master-Slave Broadcast Communication in Multi-Node Networks
+        Using RS485 Standard
+      year: 2024
+      description:
+        - "Venue: IEEE ICCIT 2024"
+        - "DOI: 10.1109/ICCIT64611.2024.11022430"
+    - title: >
+        Performance Analysis of an α-Graphyne Nano-Field Effect Transistor
+      year: 2023
+      description:
+        - "Venue: Micromachines (MDPI)"
+        - "DOI: 10.3390/mi14071385"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Honours and Awards
+  type: time_table
+  contents:
+    - year: 2019–2022
+      items:
+        - University Merit Scholarship, BUET (3×) — Semester GPA ≥ 3.90
+        - Dean's List Award, BUET (4×) — All academic years
+        - University Stipend, BUET (3×)
+    - year: 2017
+      items:
+        - HSC Board Scholarship, Bangladesh Education Board
+    - year: 2014
+      items:
+        - Runners-up, Bangabandhu Creative Talent Hunt, Pabna Division
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Robotics & Middleware
+      items:
+        - ROS 2 (Python)
+        - MoveIt 2
+        - ros2_control / JointTrajectoryController
+        - dronekit · pymavlink · mavproxy
+    - title: Kinematics & Control
+      items:
+        - Closed-form analytical IK (6-DOF)
+        - Cascaded PID · GA-optimized control
+        - Extended Kalman Filter (EKF)
+        - AprilTag fiducial localization
+    - title: Embedded Systems
+      items:
+        - STM32 (HAL & LL) · Raspberry Pi 5 · ESP32 · AVR · Arduino
+        - RS-485 Modbus RTU · SBus UART · MAVLink · COFDM
+        - Altium Designer · KiCad · Autodesk Eagle
+    - title: Flight Control
+      items:
+        - ArduPilot / Mission Planner
+        - Pixhawk · iNav · Betaflight
+        - SBus RC interface (FrSky/Futaba)
+    - title: ML / Vision
+      items:
+        - YOLOv11n · YOLOv2 · OpenCV
+        - Python (CV pipelines)
+    - title: EDA / Simulation
+      items:
+        - MATLAB / Simulink · Cadence Virtuoso
+        - PSPICE · Icarus Verilog · GTKWave
+    - title: Programming
+      items:
+        - Python · C · Embedded C · Verilog
+    - title: Documentation
+      items:
+        - LaTeX · Microsoft Office Suite
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Standardized Tests
+  type: map
+  contents:
+    - name: IELTS
+      value: "Overall 7.5/9 (L: 8.5, R: 7.5, W: 6.5, S: 6.5)"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+- title: Extracurricular
+  type: time_table
+  contents:
+    - year: 2022–2023
+      items:
+        - Affiliate Member — BUET Robotics Society (BRS)
+        - Affiliate Member — Team Interplanetar (BUET Mars Rover Team)

@@ -2,33 +2,64 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+
+subtitle: >
+  R&D Engineer & Team Lead · <a href="https://cyberneticsbd.com" target="_blank">Cybernetics Hi-Tech Solutions</a> ·
+  <a href="https://www.buet.ac.bd" target="_blank">BUET EEE '23</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>📧 <a href="mailto:monirulislam.acad@gmail.com">monirulislam.acad@gmail.com</a></p>
+    <p>📍 Dhaka, Bangladesh</p>
+    <p>🎓 Seeking PhD — Fall 2027</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: true
+selected_papers: true
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm **Md Monirul Islam** — a robotics R&D engineer working at the intersection of
+motion control, autonomous systems, and embedded hardware. As R&D Engineer and Team
+Lead at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), I design and
+field-deploy robotic platforms that operate in demanding real-world environments.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My recent work includes: a **production-deployed 3-robot AGV fleet** navigating a
+live garment factory floor alongside hundreds of workers (ROS 2, AprilTag EKF,
+distributed reservation-based path planning); a **ROS 2 / MoveIt 2 manipulator
+control stack** with a custom closed-form 6-DOF analytical IK solver, singularity
+handling, and 40-test validation suite; and contributing to the **Smart Soinik and
+Jontro Soinik EOD ROV family** — indigenously-developed robots tested by the
+Bangladesh Army and now deployed in
+[UN Peacekeeping Missions](https://cyberneticsbd.com/smart-soinik-1-0/) in
+Mali and the Republic of Congo.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I earned my **B.Sc. in Electrical and Electronic Engineering** from
+[BUET](https://www.buet.ac.bd) (CGPA 3.85/4.00, final year 3.98/4.00, ranked
+25 of 189, awarded with Honours). I hold two published papers — in
+[Micromachines (MDPI)](https://doi.org/10.3390/mi14071385) and
+[IEEE ICCIT 2024](https://doi.org/10.1109/ICCIT64611.2024.11022430) — with two
+more manuscripts under review, including a first-author paper on GA-optimized
+cascaded PID control for BLDC motor synchronization.
+
+**I am seeking a PhD position starting Fall 2027** in robotics, motion control, or
+autonomous systems. I am particularly interested in groups working on real-time
+control for manipulation, multi-robot coordination, sensor-driven autonomy, and
+field robotics. If your lab works on any of these, I would welcome the chance to
+discuss potential fit.
+
+---
+
+### Research Interests
+
+- **Motion control & manipulation** — closed-form kinematics, singularity-aware
+  control, cascaded PID and evolutionary-tuned controllers, real-time trajectory
+  dispatch on embedded targets
+- **Multi-robot systems & fleet management** — distributed path planning,
+  mutual-exclusion scheduling, human-safe operation architectures
+- **Sensor fusion & state estimation** — EKF fusing wheel odometry with fiducial
+  absolute-pose fixes, bias estimation, outlier rejection
+- **Embedded systems for real-time control** — ROS 2, STM32/ARM Cortex-M,
+  RS-485 Modbus RTU, SBus RC interfaces, fault-tolerant firmware
