@@ -53,7 +53,6 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 ### My Contributions
 
 - **Motion control algorithm** for all arm degrees of freedom — precision, stability, and end-effector dexterity
-- **Motion control algorithm** for all arm degrees of freedom — precision, stability, and end-effector dexterity
 - **BLDC motor speed synchronization** across multiple drive units {% cite islam2025gapid %} — subject of first-author paper under review
 - **Inter-node RS485 communication** coordinating motion commands and sensor feedback across all DOFs {% cite tanvir2024rs485 %}
 - **Dual-network feedback communication** — fault-tolerant pathways for multi-node unmanned robotic control {% cite tanvir2025dual %}

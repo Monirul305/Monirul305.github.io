@@ -16,7 +16,10 @@ profile:
     <p>📍 Dhaka, Bangladesh</p>
     <p>🎓 Seeking PhD — Fall 2027</p>
 
-news: true
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 6
 selected_papers: true
 social: true
 ---
@@ -63,3 +66,20 @@ discuss potential fit.
   absolute-pose fixes, bias estimation, outlier rejection
 - **Embedded systems for real-time control** — ROS 2, STM32/ARM Cortex-M,
   RS-485 Modbus RTU, SBus RC interfaces, fault-tolerant firmware
+
+---
+
+### Selected Honours & Awards
+
+- **B.Sc. awarded with Honours** — BUET EEE, 2023 (CGPA 3.85 / 4.00, ranked 25 of 189)
+- **Dean's List** — BUET, all four academic years (2019–2022)
+- **University Merit Scholarship** — BUET (3×), for semester GPA ≥ 3.90
+- **University Stipend** — BUET (3×)
+- **HSC Board Scholarship** — Bangladesh Education Board, 2017
+- **Runners-up, Bangabandhu Creative Talent Hunt** — Pabna Division, 2014
+
+### Selected Field Deployments
+
+- **3-robot AGV fleet** — live production at The Urmi Group RMG facility, 2025–present
+- **Smart Soinik 1.0 EOD ROV** — UN Peacekeeping Mission, Mali, 2024 (Bangladesh Army → Peruvian Armed Forces handover)
+- **Jontro Soinik 1.0 EOD ROV** — tested by Bangladesh Army, set for UN Peacekeeping deployment in the Republic of Congo, 2025

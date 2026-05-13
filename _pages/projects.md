@@ -15,4 +15,4 @@ horizontal: false
 <!-- al-folio renders project cards automatically from _projects/ files. -->
 <!-- Projects are sorted by the `importance` field (lower = shown first). -->
 
-{% raw %}{% include projects.liquid %}{% endraw %}
+{% include projects.liquid %}
