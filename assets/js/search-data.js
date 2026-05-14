@@ -83,6 +83,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/agv-fleet-production-deployment/";
           
         },
+      },{id: "post-milestone-cybermaker-titan-550-pro-3d-printer-delivered-to-bangladesh-navy",
+        
+          title: "Milestone: CyberMaker Titan 550 Pro 3D Printer Delivered to Bangladesh Navy",
+        
+        description: "A Cybernetics company announcement — delivery of the CyberMaker Titan 550 Pro industrial 3D printer (a platform I led the design on, through two iterations) to Dockyard and Engineering Works Ltd., Bangladesh Navy.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/titan-550-navy-delivery/";
+          
+        },
       },{id: "post-inside-the-agv-nav-stack-lidar-tile-mapping-with-multi-scan-stability-filtering",
         
           title: "Inside the AGV Nav Stack: LiDAR Tile-Mapping with Multi-Scan Stability Filtering",
