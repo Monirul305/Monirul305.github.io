@@ -442,78 +442,78 @@ ninja.data = [{
           section: "News",},{id: "news-agv-fleet-system-featured-on-youtube-zero-collisions-how-3-autonomous-robots-share-a-busy-garment-factory-floor-full-walkthrough-of-the-ros-2-navigation-stack-fleetcore-coordinator-apriltag-ekf-and-3-layer-safety-architecture-deployed-at-the-urmi-group-watch-3-45",
           title: 'AGV fleet system featured on YouTube: Zero Collisions: How 3 Autonomous Robots Share...',
           description: "",
-          section: "News",},{id: "projects-3-robot-agv-fleet-the-urmi-group",
-          title: '3-Robot AGV Fleet — The Urmi Group',
+          section: "News",},{id: "projects-production-deployed-3-robot-agv-fleet-ros-2-apriltag-ekf-distributed-path-planning",
+          title: 'Production-Deployed 3-Robot AGV Fleet (ROS 2, AprilTag EKF, Distributed Path Planning)',
           description: "Production-deployed autonomous guided vehicle fleet navigating a live garment factory alongside hundreds of workers. ROS 2, AprilTag EKF, distributed path planning, FleetCore coordinator.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01_agv_fleet/";
-            },},{id: "projects-hybrid-mobile-manipulator-ros-2-closed-form-ik",
-          title: 'Hybrid Mobile Manipulator — ROS 2, Closed-Form IK',
+            },},{id: "projects-mobile-manipulator-with-custom-closed-form-6-dof-ik-ros-2-moveit-2",
+          title: 'Mobile Manipulator with Custom Closed-Form 6-DOF IK (ROS 2 / MoveIt 2)',
           description: "Full real-time control stack for a 6-DOF arm + tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator, 40-test unit suite.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/02_manipulator/";
-            },},{id: "projects-soinik-rov-family-bangladesh-eod-robots",
-          title: 'Soinik ROV Family — Bangladesh EOD Robots',
+            },},{id: "projects-indigenous-eod-rov-family-un-peacekeeping-deployment-mali-congo",
+          title: 'Indigenous EOD ROV Family — UN Peacekeeping Deployment (Mali, Congo)',
           description: "Smart Soinik 1.0 (SS1.0) and Jontro Soinik 1.0 (JS1.0) — Bangladesh&#39;s 2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed. Motion control, BLDC sync, RS485 communication, custom PCBs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_soinik_rov/";
-            },},{id: "projects-ga-optimized-cascaded-pid-for-bldc-synchronization",
-          title: 'GA-Optimized Cascaded PID for BLDC Synchronization',
+            },},{id: "projects-ga-optimized-cascaded-pid-for-bldc-motor-synchronization-stm32-first-author-paper",
+          title: 'GA-Optimized Cascaded PID for BLDC Motor Synchronization (STM32, First-Author Paper)',
           description: "Genetic Algorithm-tuned cascaded PID on STM32 for precise real-time synchronization of BLDC motors in differential-drive platforms. First-author paper under review.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/04_ga_pid/";
-            },},{id: "projects-sd15-n-autonomous-target-tracking-drone",
-          title: 'SD15-N Autonomous Target-Tracking Drone',
+            },},{id: "projects-vision-guided-target-tracking-surveillance-drone-yolov11n-on-raspberry-pi-5-pixhawk",
+          title: 'Vision-Guided Target-Tracking Surveillance Drone (YOLOv11n on Raspberry Pi 5 + Pixhawk)',
           description: "ML-based real-time target tracking on a surveillance hexacopter. YOLOv11n on Raspberry Pi 5, Pixhawk 2.4.8, MAVLink. 1000 ft, 15 km range, three payload variants.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05_sd15n/";
-            },},{id: "projects-heavy-lift-cargo-drone-50-kg-payload",
-          title: 'Heavy-Lift Cargo Drone (50 kg payload)',
+            },},{id: "projects-heavy-lift-cargo-drone-50-kg-payload-30-min-endurance-15-km-comms",
+          title: 'Heavy-Lift Cargo Drone (50 kg payload, 30 min endurance, 15 km comms)',
           description: "Multirotor cargo drone for logistics and emergency response. 50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/06_cargo_drone/";
-            },},{id: "projects-vtol-quad-plane-maiden-flight-successful",
-          title: 'VTOL Quad-Plane — Maiden Flight Successful',
+            },},{id: "projects-hybrid-vtol-quad-plane-multirotor-hover-fixed-wing-cruise",
+          title: 'Hybrid VTOL Quad-Plane — Multirotor Hover + Fixed-Wing Cruise',
           description: "First-generation VTOL quad-plane prototype for heavy-lift and long-duration surveillance. Maiden flight validated core design.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/07_vtol/";
-            },},{id: "projects-cybermaker-titan550-pro-industrial-3d-printer",
-          title: 'CyberMaker Titan550 Pro — Industrial 3D Printer',
+            },},{id: "projects-industrial-corexy-3d-printer-510-510-550-mm-0-02-mm-repeatability",
+          title: 'Industrial CoreXY 3D Printer — 510 × 510 × 550 mm, ±0.02 mm...',
           description: "Large-format industrial 3D printer built from scratch. CoreXY kinematics, 510×510×550 mm build volume, ±0.02 mm repeatability, Marlin 2.0.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/08_titan550/";
-            },},{id: "projects-advanced-rov-6-dof-arm-amp-cofdm-multi-camera",
-          title: 'Advanced ROV — 6-DOF Arm &amp;amp; COFDM Multi-Camera',
+            },},{id: "projects-tele-operated-rov-6-dof-manipulator-cofdm-multi-camera-teleoperation",
+          title: 'Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation',
           description: "Next-generation ROV with 6-DOF arm (20 kg @ 5 km/h), six IP cameras, 1.4 GHz COFDM 1 km video link, HCU/OCU dual control.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/09_advanced_rov_cofdm/";
-            },},{id: "projects-α-graphyne-nanoribbon-fet-modeling",
-          title: 'α-Graphyne Nanoribbon FET Modeling',
+            },},{id: "projects-α-graphyne-nanoribbon-fet-ballistic-transport-modeling-micromachines-2023",
+          title: 'α-Graphyne Nanoribbon FET — Ballistic Transport Modeling (Micromachines 2023)',
           description: "Modeled ballistic quantum transport in α-graphyne nanoribbons. Quantified I–V behavior and subthreshold slope. Published in Micromachines (MDPI), 2023.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_graphyne/";
-            },},{id: "projects-traffic-speed-estimation-via-yolov2",
-          title: 'Traffic Speed Estimation via YOLOv2',
+            },},{id: "projects-vehicle-detection-amp-speed-estimation-from-traffic-footage-yolov2-matlab",
+          title: 'Vehicle Detection &amp;amp; Speed Estimation from Traffic Footage (YOLOv2 + MATLAB)',
           description: "Generated a large vehicle detection dataset and trained YOLOv2 in MATLAB to detect vehicles and estimate speeds from traffic footage.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_yolov2_traffic/";
-            },},{id: "projects-6-dof-robotic-arm-design-fabrication-amp-control",
-          title: '6-DOF Robotic Arm — Design, Fabrication &amp;amp; Control',
+            },},{id: "projects-6-dof-robotic-arm-with-pid-amp-inverse-kinematics-solidworks-3d-print-arduino",
+          title: '6-DOF Robotic Arm with PID &amp;amp; Inverse Kinematics (SolidWorks + 3D Print +...',
           description: "Designed in SolidWorks, fabricated via 3D printing, controlled with PID and inverse kinematics for precise end-effector positioning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_6dof_arm/";
-            },},{id: "projects-risc-v-processor-with-wishbone-interface-tsmc-180-nm",
-          title: 'RISC-V Processor with Wishbone Interface (TSMC 180 nm)',
+            },},{id: "projects-risc-v-processor-verilog-fpga-tsmc-180-nm-implementation-flow",
+          title: 'RISC-V Processor — Verilog → FPGA → TSMC 180 nm Implementation Flow',
           description: "Designed a RISC-V processor core in Verilog using Cadence tools. Verified on FPGA and evaluated in a TSMC 180 nm implementation flow.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_riscv/";
-            },},{id: "projects-autonomous-gps-drone-delivery-system",
-          title: 'Autonomous GPS Drone Delivery System',
+            },},{id: "projects-autonomous-gps-waypoint-drone-with-servo-actuated-payload-delivery",
+          title: 'Autonomous GPS Waypoint Drone with Servo-Actuated Payload Delivery',
           description: "Designed airframe in SolidWorks, implemented PID attitude control, GPS waypoint navigation, and a payload deployment mechanism.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_gps_drone/";
-            },},{id: "projects-self-sustaining-environmental-monitor-solar-gsm",
-          title: 'Self-Sustaining Environmental Monitor (Solar + GSM)',
+            },},{id: "projects-solar-powered-remote-environmental-monitor-arduino-gsm-telemetry",
+          title: 'Solar-Powered Remote Environmental Monitor (Arduino + GSM Telemetry)',
           description: "Self-powered remote monitoring node: Arduino + solar + GSM, transmitting temperature, humidity, CO₂ over cellular. Custom PCB.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_env_monitor/";
