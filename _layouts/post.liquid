@@ -45,9 +45,15 @@ layout: default
 
       {% if categories != '' %}
         &nbsp; &middot; &nbsp;
+        {% assign external_source_slug = page.external_source | default: '' | slugify %}
         {% for category in page.categories %}
+          {% assign category_slug = category | slugify %}
           {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>
+            {% if page.external_source_url and category_slug == external_source_slug %}
+              <a href="{{ page.external_source_url }}" target="_blank" rel="noopener external"> <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>
+            {% else %}
+              <a href="{{ category_slug | prepend: '/blog/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>
+            {% endif %}
           {% else %}
             <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
           {% endif %}

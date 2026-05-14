@@ -8,6 +8,7 @@ categories: linkedin
 featured: true
 thumbnail: assets/img/posts/agv-fleet-localization.jpg
 external_source: LinkedIn
+external_source_url: https://www.linkedin.com/posts/monirul-islam-460001148_robotics-agv-ros2-activity-7458928837653946368-dnuD
 ---
 
 🚀 Excited to share a project I've been leading for the past several months — now live and operational.
