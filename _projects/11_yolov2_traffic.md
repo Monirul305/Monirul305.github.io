@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Traffic Speed Estimation via YOLOv2
+title: Vehicle Detection & Speed Estimation from Traffic Footage (YOLOv2 + MATLAB)
 description: >
   Generated a large vehicle detection dataset and trained YOLOv2 in MATLAB
   to detect vehicles and estimate speeds from traffic footage.
 img: assets/img/projects/yolov2.jpg
-importance: 11
+importance: 2
 category: undergraduate
 ---
 

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: VTOL Quad-Plane — Maiden Flight Successful
+title: Hybrid VTOL Quad-Plane — Multirotor Hover + Fixed-Wing Cruise
 description: >
   First-generation VTOL quad-plane prototype for heavy-lift and
   long-duration surveillance. Maiden flight validated core design.
 img: assets/img/projects/vtol.jpg
-importance: 7
+importance: 8
 category: professional
 ---
 

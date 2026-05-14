@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Self-Sustaining Environmental Monitor (Solar + GSM)
+title: Solar-Powered Remote Environmental Monitor (Arduino + GSM Telemetry)
 description: >
   Self-powered remote monitoring node: Arduino + solar + GSM,
   transmitting temperature, humidity, CO₂ over cellular. Custom PCB.
 img: assets/img/projects/env_monitor.jpg
-importance: 15
+importance: 5
 category: undergraduate
 ---
 

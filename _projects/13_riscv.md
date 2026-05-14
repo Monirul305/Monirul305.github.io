@@ -1,11 +1,11 @@
 ---
 layout: page
-title: RISC-V Processor with Wishbone Interface (TSMC 180 nm)
+title: RISC-V Processor — Verilog → FPGA → TSMC 180 nm Implementation Flow
 description: >
   Designed a RISC-V processor core in Verilog using Cadence tools.
   Verified on FPGA and evaluated in a TSMC 180 nm implementation flow.
 img: assets/img/projects/riscv.jpg
-importance: 13
+importance: 3
 category: undergraduate
 ---
 

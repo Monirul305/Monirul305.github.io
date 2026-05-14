@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 6-DOF Robotic Arm — Design, Fabrication & Control
+title: 6-DOF Robotic Arm with PID & Inverse Kinematics (SolidWorks + 3D Print + Arduino)
 description: >
   Designed in SolidWorks, fabricated via 3D printing, controlled with
   PID and inverse kinematics for precise end-effector positioning.
 img: assets/img/projects/6dof_arm.jpg
-importance: 12
+importance: 1
 category: undergraduate
 ---
 

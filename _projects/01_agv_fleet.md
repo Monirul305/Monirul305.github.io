@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 3-Robot AGV Fleet — The Urmi Group
+title: Production-Deployed 3-Robot AGV Fleet (ROS 2, AprilTag EKF, Distributed Path Planning)
 description: >
   Production-deployed autonomous guided vehicle fleet navigating a live
   garment factory alongside hundreds of workers. ROS 2, AprilTag EKF,
   distributed path planning, FleetCore coordinator.
 img: assets/img/projects/agv_fleet.jpg
-importance: 1
+importance: 2
 category: professional
 related_publications: true
 ---

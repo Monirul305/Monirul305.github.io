@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Advanced ROV — 6-DOF Arm & COFDM Multi-Camera
+title: Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation
 description: >
   Next-generation ROV with 6-DOF arm (20 kg @ 5 km/h), six IP cameras,
   1.4 GHz COFDM 1 km video link, HCU/OCU dual control.
 img: assets/img/projects/advanced_rov.jpg
-importance: 9
+importance: 5
 category: professional
 ---
 

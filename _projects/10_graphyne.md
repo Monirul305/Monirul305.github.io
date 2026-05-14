@@ -1,12 +1,12 @@
 ---
 layout: page
-title: α-Graphyne Nanoribbon FET Modeling
+title: α-Graphyne Nanoribbon FET — Ballistic Transport Modeling (Micromachines 2023)
 description: >
   Modeled ballistic quantum transport in α-graphyne nanoribbons.
   Quantified I–V behavior and subthreshold slope. Published in
   Micromachines (MDPI), 2023.
 img: assets/img/projects/graphyne.jpg
-importance: 10
+importance: 2
 category: research
 related_publications: true
 ---

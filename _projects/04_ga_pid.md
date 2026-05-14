@@ -1,13 +1,13 @@
 ---
 layout: page
-title: GA-Optimized Cascaded PID for BLDC Synchronization
+title: GA-Optimized Cascaded PID for BLDC Motor Synchronization (STM32, First-Author Paper)
 description: >
   Genetic Algorithm-tuned cascaded PID on STM32 for precise real-time
   synchronization of BLDC motors in differential-drive platforms.
   First-author paper under review.
 img: assets/img/projects/ga_pid.jpg
-importance: 4
-category: professional
+importance: 1
+category: research
 related_publications: true
 ---
 

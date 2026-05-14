@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Hybrid Mobile Manipulator — ROS 2, Closed-Form IK
+title: Mobile Manipulator with Custom Closed-Form 6-DOF IK (ROS 2 / MoveIt 2)
 description: >
   Full real-time control stack for a 6-DOF arm + tracked base. Custom
   closed-form analytical IK replacing MoveIt's KDL solver. Singularity-aware
   smooth scaling, FK-anchored accumulator, 40-test unit suite.
 img: assets/img/projects/manipulator.jpg
-importance: 2
+importance: 1
 category: professional
 ---
 

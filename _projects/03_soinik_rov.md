@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Soinik ROV Family — Bangladesh EOD Robots
+title: Indigenous EOD ROV Family — UN Peacekeeping Deployment (Mali, Congo)
 description: >
   Smart Soinik 1.0 (SS1.0) and Jontro Soinik 1.0 (JS1.0) — Bangladesh's
   2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed.

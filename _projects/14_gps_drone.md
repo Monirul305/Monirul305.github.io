@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Autonomous GPS Drone Delivery System
+title: Autonomous GPS Waypoint Drone with Servo-Actuated Payload Delivery
 description: >
   Designed airframe in SolidWorks, implemented PID attitude control,
   GPS waypoint navigation, and a payload deployment mechanism.
 img: assets/img/projects/gps_drone.jpg
-importance: 14
+importance: 4
 category: undergraduate
 ---
 

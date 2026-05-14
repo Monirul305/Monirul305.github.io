@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Heavy-Lift Cargo Drone (50 kg payload)
+title: Heavy-Lift Cargo Drone (50 kg payload, 30 min endurance, 15 km comms)
 description: >
   Multirotor cargo drone for logistics and emergency response.
   50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio.
