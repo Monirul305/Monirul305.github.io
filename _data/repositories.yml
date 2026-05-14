@@ -1,14 +1,26 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Monirul305
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  # Vision / ML
+  - Monirul305/Yolo-based-traffic-speed-estimation-system
+
+  # Robotics / autonomy
+  - Monirul305/Automatic-drone-delivery-system-using-GPS
+  - Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom
+
+  # Digital design / VLSI
+  - Monirul305/Design-and-Verification-of-a-RISC--V-Multicycle-Processor-and-a-Memory-Controller-with-Wishbone-Inte
+  - Monirul305/Designing-A-regulated-Boost-converter-using-tsmc180nm-technology-in-Cadence
+  - Monirul305/Implementation-of-OMR-machine-using-digital-logic-circuit
+
+  # Mechatronics / hardware
+  - Monirul305/Designing-and-Implementation-of-A-3D-printing-Machine
+  - Monirul305/Real-Time-Environmental-Monitoring-System
+  - Monirul305/Detection-of-Particle-Concentration-Using-Light-Scattering-Mechanism
+
+  # Power / control
+  - Monirul305/Closed-loop-speed-control-of-induction-motor-using-MATLAB-SIMULINK-
+  - Monirul305/Design-and-Implication-of-Laboratory-Variable-DC-Power-Supply
