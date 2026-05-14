@@ -94,6 +94,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/agv-lidar-tile-mapping/";
           
         },
+      },{id: "post-tele-operated-rov-demo-6-dof-heavy-lift-arm-six-camera-cofdm-link-hcu-ocu-dual-control",
+        
+          title: "Tele-Operated ROV Demo: 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control",
+        
+        description: "A LinkedIn-post mirror — short demo of our newest tele-operated ROV. 6-DOF manipulator (20 kg @ 5 km/h), six IP cameras over a 1.4 GHz COFDM 1 km link, dual HCU/OCU control with a wired optical fallback.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/advanced-rov-demo/";
+          
+        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
