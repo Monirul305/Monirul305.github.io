@@ -120,7 +120,7 @@ Productised by Cybernetics as **CyberFleet** — marketed as the first-ever AGV 
   <div class="col-sm-8">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/L_Uprap0PQ4"
+        src="https://www.youtube.com/embed/ooK1592gYgM?start=4"
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-2">

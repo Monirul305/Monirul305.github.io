@@ -49,13 +49,13 @@ Taking a project from a whiteboard sketch to a system that runs reliably on a li
   <div class="col-sm-10">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/L_Uprap0PQ4"
+        src="https://www.youtube.com/embed/ooK1592gYgM?start=4"
         allowfullscreen></iframe>
     </div>
   </div>
 </div>
 
-Direct link: [https://lnkd.in/gBePU8Zg](https://lnkd.in/gBePU8Zg)
+Direct link: [https://www.youtube.com/watch?v=ooK1592gYgM&t=4s](https://www.youtube.com/watch?v=ooK1592gYgM&t=4s)
 
 ### Credits
 
@@ -66,6 +66,6 @@ Direct link: [https://lnkd.in/gBePU8Zg](https://lnkd.in/gBePU8Zg)
 
 ---
 
-*Originally posted on LinkedIn → [view the original post](https://www.linkedin.com/feed/update/urn:li:activity:7458928837653946368/)*
+*Originally posted on LinkedIn → [view the original post](https://www.linkedin.com/posts/monirul-islam-460001148_robotics-agv-ros2-activity-7458928837653946368-dnuD)*
 
 `#Robotics` · `#AGV` · `#ROS2` · `#AutonomousSystems` · `#MultiRobotSystems` · `#Mechatronics` · `#IndustrialAutomation` · `#Engineering` · `#RnD` · `#Industry4.0` · `#FactoryAutomation` · `#Bangladesh` · `#TechLeadership`
