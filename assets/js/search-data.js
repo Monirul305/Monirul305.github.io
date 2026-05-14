@@ -83,6 +83,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/agv-fleet-production-deployment/";
           
         },
+      },{id: "post-in-house-pcb-fabrication-at-cybernetics-an-intern-39-s-refined-uv-solder-mask-process",
+        
+          title: "In-House PCB Fabrication at Cybernetics: An Intern&#39;s Refined UV Solder-Mask Process",
+        
+        description: "A teammate&#39;s LinkedIn post — Md. Tanvir Hassan, our R&amp;D Intern, shares the refined UV solder-mask process he developed for our in-house PCB fabrication line at Cybernetics. Cleaner masking, finer trace widths, faster design-to-PCB iteration. (His contribution, not mine — I&#39;m one of the senior R&amp;D engineers on the team.)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/pcb-fabrication-uv-solder-mask/";
+          
+        },
       },{id: "post-milestone-cybermaker-titan-550-pro-3d-printer-delivered-to-bangladesh-navy",
         
           title: "Milestone: CyberMaker Titan 550 Pro 3D Printer Delivered to Bangladesh Navy",
