@@ -83,6 +83,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/agv-fleet-production-deployment/";
           
         },
+      },{id: "post-inside-the-agv-nav-stack-lidar-tile-mapping-with-multi-scan-stability-filtering",
+        
+          title: "Inside the AGV Nav Stack: LiDAR Tile-Mapping with Multi-Scan Stability Filtering",
+        
+        description: "Sharing a teammate&#39;s LinkedIn update — Mainul Islam&#39;s LiDAR occupancy-grid module that feeds our 3-robot AGV navigation stack. Tile-indexed point clouds, stable/unstable obstacle detection across 5 scans, and a color-coded debug overlay. (His work, not mine — I was on the same team.)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/agv-lidar-tile-mapping/";
+          
+        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
