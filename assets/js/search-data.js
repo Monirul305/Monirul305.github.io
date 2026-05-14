@@ -105,6 +105,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/advanced-rov-demo/";
           
         },
+      },{id: "post-under-the-hood-of-the-rov-addressable-rs485-master-slave-for-bldc-servo-drive",
+        
+          title: "Under the Hood of the ROV: Addressable RS485 Master-Slave for BLDC-Servo Drive",
+        
+        description: "A teammate&#39;s LinkedIn deep-dive — Shakil Tanvir&#39;s addressable RS485 master-slave communication system driving the 6-DOF ROV with integrated BLDC servos. Motor specs, control-loop tuning, and a stair-climbing torque fix via RS232 reconfiguration. (His work, not mine — I was on the same team.)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/rov-drive-system-rs485/";
+          
+        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
