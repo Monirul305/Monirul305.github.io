@@ -8,7 +8,7 @@ description: >
   topology to feed the GSM modem's high transient current.
   EEE 416 group project at BUET.
 img: assets/img/projects/env_monitor.jpg
-importance: 5
+importance: 6
 category: undergraduate
 ---
 

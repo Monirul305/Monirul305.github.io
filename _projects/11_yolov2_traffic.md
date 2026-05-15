@@ -6,7 +6,7 @@ description: >
   frame-by-frame tracking layer to estimate real-world vehicle speeds from
   monocular traffic video. BUET EEE coursework.
 img: assets/img/projects/yolov2.jpg
-importance: 2
+importance: 3
 category: undergraduate
 ---
 

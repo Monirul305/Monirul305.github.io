@@ -1,28 +1,31 @@
 ---
 layout: page
-title: 5-DOF Robotic Arm — 3D-Printed Frame, Servo Actuation, Inverse Kinematics
+title: 5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes
 description: >
-  Five-degree-of-freedom serial robotic arm — SolidWorks frame,
-  PLA-printed links, micro-servo actuation, Arduino-based control with
-  closed-form inverse kinematics for end-effector positioning. First
-  hands-on robotics build at BUET.
+  Five-degree-of-freedom serial robotic arm — SolidWorks frame, body
+  fabricated on a hobby 3D printer I built in parallel, stepper-motor
+  actuation through custom 3D-printed planetary gearboxes, Arduino-based
+  control, and analytical inverse kinematics with closed-form algebraic
+  solutions.
 img: assets/img/projects/6dof_arm.jpg
 importance: 1
 category: undergraduate
 ---
 
-A 5-degree-of-freedom serial robotic arm built end-to-end as my first hands-on robotics project at BUET — mechanical design through control software. The arm has a fixed base, three intermediate revolute joints providing reach across a typical desktop workspace, a wrist roll joint, and a gripper end-effector.
+A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has a fixed base, three intermediate revolute joints providing reach across a typical desktop workspace, a wrist roll joint, and a gripper end-effector.
 
-**Mechanical design.** All structural links were designed in **SolidWorks**, sized against the torque demands at each joint, then **3D-printed in PLA**. Joint axes and bearing locations were dimensioned so that the printed parts could be assembled without significant post-processing. Cable routing was planned at the design stage to avoid binding through the workspace.
+**Mechanical design.** All structural links were designed in **SolidWorks**, sized against the torque demands at each joint, then 3D-printed on the [hobby 3D printer I built as a parallel project]({{ '/projects/16_hobby_3d_printer/' | relative_url }}) — not an outsourced or commercial machine. Joint axes and bearing locations were dimensioned so that the printed parts could be assembled without significant post-processing. Cable routing was planned at the design stage to avoid binding through the workspace.
 
-**Actuation and control.** Five **micro-servos** drive the joints, sized per-joint for the cantilevered torque load. Control runs on an **Arduino**, which receives a target end-effector pose, computes the **inverse kinematics** to derive each joint angle, and dispatches synchronised PWM signals to the five servos. A simple interpolation layer smooths motion between successive targets.
+**Drivetrain — custom 3D-printed planetary gearboxes.** Each joint is driven by a **stepper motor through a custom-designed planetary gearbox** that I designed in SolidWorks and 3D-printed on the same hobby printer. The planetary stage trades motor speed for torque at each joint — necessary because the raw stepper torque alone is insufficient to hold the cantilevered link mass and payload at the more distal joints. Designing the gearboxes in-house also made the gear ratios tunable per-joint to the actual load profile, rather than being forced into off-the-shelf ratios.
 
-**Kinematics.** Forward kinematics use a Denavit–Hartenberg parameterisation of the arm. The inverse-kinematics solver targets a specified end-effector position in Cartesian space; given the geometry of a 5-DOF arm with planar wrist, the solution is closed-form with elbow-up / elbow-down branch selection.
+**Control.** An **Arduino** receives a target end-effector pose, computes the inverse kinematics to derive each joint angle, and dispatches synchronised step / direction pulses to the stepper drivers. A simple interpolation layer smooths motion between successive targets.
 
-A demonstration of the assembled arm performing pick-and-place is available in the repository's [demo video](https://www.youtube.com/watch?v=wLU_OnsAH6g). This work later motivated a more refined version with stepper-motor actuation and tighter IK control — and indirectly drove the in-house [Titan 550 industrial 3D printer]({{ '/projects/08_titan550/' | relative_url }}) programme, originally started because the chassis parts for this arm were too expensive to outsource.
+**Kinematics.** Forward kinematics use a Denavit–Hartenberg parameterisation of the arm. Inverse kinematics is implemented as **analytical IK using closed-form algebraic solutions** — derived by decomposing the arm's geometry into position-reachability and wrist-orientation sub-problems, then solving each in closed form rather than relying on numerical iteration. Elbow-up / elbow-down branch selection is exposed as a parameter to the caller.
+
+A demonstration of the assembled arm performing pick-and-place is available in the repository's [demo video](https://www.youtube.com/watch?v=wLU_OnsAH6g).
 
 ### Tech Stack
 
-`SolidWorks` · `3D printing (PLA)` · `Micro-servos` · `Arduino` · `Inverse kinematics` · `Denavit–Hartenberg`
+`SolidWorks` · `3D printing (hobby printer)` · `Custom planetary gearbox` · `Stepper motors` · `Arduino` · `Analytical IK (closed-form)` · `Denavit–Hartenberg`
 
 [**Code & demo on GitHub →**](https://github.com/Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom)

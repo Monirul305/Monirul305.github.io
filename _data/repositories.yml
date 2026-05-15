@@ -35,7 +35,11 @@ github_repos:
 
   # Power / control
   - repo: Monirul305/Closed-loop-speed-control-of-induction-motor-using-MATLAB-SIMULINK-
-    description: MATLAB / Simulink model of closed-loop speed control for a 3-phase induction motor (vector-control approach).
+    description: MATLAB / Simulink model of closed-loop speed control for a 3-phase induction motor — V/f scalar control with SVPWM inverter modulation.
 
   - repo: Monirul305/Design-and-Implication-of-Laboratory-Variable-DC-Power-Supply
     description: Bench-grade variable DC power supply — linear-regulator design with current limiting and short-circuit protection.
+
+  # Power systems / building services
+  - repo: Monirul305/Electrical-Services-Design-A-Project-on-Electrical-Design-on-Seven-Storied-Building
+    description: End-to-end electrical-services design for a seven-storey residential building — load estimation, panel scheduling, cable sizing, lighting / power layouts, riser diagram, earthing scheme.
