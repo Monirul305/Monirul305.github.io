@@ -161,6 +161,27 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Project cards — uniform thumbnail aspect ratio
+//
+// Source images for project thumbnails come in many aspect ratios
+// (3D-printer photo vs. screenshot vs. circuit photo). Force every
+// card's thumbnail to the same 16:9 frame, with object-fit: cover so
+// the image crops to fill rather than squishing. Keeps the projects
+// grid visually even.
+.card .card-img-top {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.card figure,
+.card picture {
+  margin: 0;
+  display: block;
+  line-height: 0;
+}
+
 // Repositories
 
 @media (min-width: 768px) {
