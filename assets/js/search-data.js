@@ -44,13 +44,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
         },{id: "post-three-robots-one-factory-floor-production-deployed-agv-fleet-at-cybernetics",
         
           title: "Three Robots, One Factory Floor: Production-Deployed AGV Fleet at Cybernetics",
