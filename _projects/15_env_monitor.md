@@ -12,7 +12,7 @@ importance: 6
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A self-sustaining environmental monitoring node designed for unattended outdoor deployment — built as a four-person group project for **EEE 416** at BUET, with teammates Fariza Siddiqua, A. F. M. Mahfuzul Kabir, and Shuvro Chowdhury.
 

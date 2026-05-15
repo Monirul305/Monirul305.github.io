@@ -12,7 +12,7 @@ importance: 10
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A bench-grade **variable DC power supply** designed for laboratory use — built end-to-end from transformer secondary through the regulator to the front-panel enclosure. BUET EEE coursework.
 

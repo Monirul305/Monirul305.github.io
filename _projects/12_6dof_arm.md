@@ -12,7 +12,7 @@ importance: 1
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has a fixed base, three intermediate revolute joints providing reach across a typical desktop workspace, a wrist roll joint, and a gripper end-effector.
 

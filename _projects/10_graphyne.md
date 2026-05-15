@@ -11,7 +11,7 @@ category: research
 related_publications: true
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 Investigated α-graphyne nanoribbons as a candidate channel material for
 low-power beyond-silicon transistors. The work models ballistic quantum

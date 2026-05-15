@@ -11,7 +11,7 @@ importance: 7
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A regulated DC-DC boost converter designed at the **transistor level on the TSMC 180 nm process node** in the **Cadence** EDA environment — full custom from schematic to layout. VLSI coursework at BUET EEE.
 

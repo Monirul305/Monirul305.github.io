@@ -11,7 +11,7 @@ importance: 4
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A from-scratch implementation of an **RV32I multicycle processor** in Verilog, paired with a custom **Wishbone-interface memory controller** — built as a digital-design capstone at BUET EEE under the supervision of **Dr. A. B. M. Harun-Ur-Rashid** (Professor, EEE).
 

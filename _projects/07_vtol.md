@@ -9,7 +9,7 @@ importance: 8
 category: professional
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 Contributed to design and validation of a first-generation VTOL (Vertical Take-Off
 and Landing) quad-plane prototype combining multirotor hover capability with

@@ -10,7 +10,7 @@ importance: 1
 category: professional
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 <div class="row">
   <div class="col-sm-12">

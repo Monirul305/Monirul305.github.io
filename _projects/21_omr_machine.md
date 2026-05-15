@@ -11,7 +11,7 @@ importance: 11
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 An **Optical Mark Recognition (OMR)** machine — the kind that reads pencil-filled answer sheets for multiple-choice exams — built **entirely from discrete digital logic ICs**, with no microcontroller in the loop. BUET EEE coursework, deliberately constrained to gate-level design.
 

@@ -10,7 +10,7 @@ importance: 3
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 End-to-end computer-vision pipeline that takes raw traffic-camera footage and outputs per-vehicle real-world speed overlays — built as a coursework project at BUET EEE.
 

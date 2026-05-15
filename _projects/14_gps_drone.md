@@ -11,7 +11,7 @@ importance: 5
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A quadcopter built end-to-end for autonomous waypoint-based parcel delivery — frame design through flight control through mission logic. The objective: a flying platform that could lift a small payload, traverse to a GPS-specified destination autonomously, drop the payload, and return.
 

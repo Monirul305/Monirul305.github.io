@@ -12,7 +12,7 @@ importance: 9
 category: undergraduate
 ---
 
-{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 A low-cost airborne-particle concentration sensor built around the **light-scattering principle**, using laser illumination and a consumer **webcam** as the photodetector — a cost-conscious alternative to commercial optical particle counters. BUET EEE coursework.
 
