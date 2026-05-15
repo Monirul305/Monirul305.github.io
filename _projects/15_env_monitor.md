@@ -7,7 +7,7 @@ description: >
   bank with a relay-switched series-on-discharge / parallel-on-charge
   topology to feed the GSM modem's high transient current.
   EEE 416 group project at BUET.
-img: assets/img/projects/env_monitor.jpg
+img: assets/img/projects/env_monitor.png
 importance: 6
 category: undergraduate
 ---

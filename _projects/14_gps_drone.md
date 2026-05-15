@@ -6,7 +6,7 @@ description: >
   delivery — SolidWorks airframe, Arduino flight controller with IMU
   attitude stabilisation, GPS waypoint navigation, and a servo-actuated
   payload release. BUET EEE undergraduate build.
-img: assets/img/projects/gps_drone.jpg
+img: assets/img/projects/gps_drone.png
 importance: 5
 category: undergraduate
 ---

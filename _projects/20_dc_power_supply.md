@@ -7,7 +7,7 @@ description: >
   protection. Built end-to-end including transformer secondary,
   rectification, filtering, regulation, and enclosure. BUET EEE
   coursework.
-img: assets/img/projects/dc_power_supply.jpg
+img: assets/img/projects/dc_power_supply.png
 importance: 10
 category: undergraduate
 ---
