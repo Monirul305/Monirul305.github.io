@@ -11,7 +11,7 @@ github_repos:
     description: Autonomous GPS-waypoint drone for parcel delivery — flight controller and mission logic.
 
   - repo: Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom
-    description: 5-DOF articulated robotic arm — kinematics, control electronics, and end-effector design.
+    description: 6-DOF articulated robotic arm — kinematics, control electronics, and end-effector design. (Repo named 5-DOF; actual hardware has 6 joints including the gripper.)
 
   # Digital design / VLSI
   - repo: Monirul305/Design-and-Verification-of-a-RISC--V-Multicycle-Processor-and-a-Memory-Controller-with-Wishbone-Inte

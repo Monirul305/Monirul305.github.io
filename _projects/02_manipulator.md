@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Mobile Manipulator with Custom Closed-Form 6-DOF IK (ROS 2 / MoveIt 2)
+title: 7-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)
 description: >
-  Full real-time control stack for a 6-DOF arm + tracked base. Custom
+  Full real-time control stack for a 7-DOF arm + tracked base. Custom
   closed-form analytical IK replacing MoveIt's KDL solver. Singularity-aware
   smooth scaling, FK-anchored accumulator, 40-test unit suite.
 img: assets/img/projects/manipulator.jpg
@@ -24,7 +24,7 @@ category: professional
 
 ### Platform
 
-A tracked mobile robot with 11 independently actuated joints:
+A tracked mobile robot with 11 independently actuated joints. The **7-DOF manipulator chain** — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below; the remaining four joints drive the platform itself (flippers + tracks).
 
 | Group | Joints | Control Mode |
 |---|---|---|

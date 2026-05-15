@@ -6,7 +6,7 @@
     "email": "monirulislam.acad@gmail.com",
     "phone": "",
     "url": "https://Monirul305.github.io",
-    "summary": "Robotics R&D engineer working at the intersection of motion control, autonomous systems, and embedded hardware. R&D Engineer & Team Lead at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), Dhaka. Designed and field-deployed a production 3-robot AGV fleet in a live garment factory, a ROS 2 / MoveIt 2 manipulator stack with a custom closed-form 6-DOF IK solver, and contributed to the Smart Soinik / Jontro Soinik EOD ROV family now in UN Peacekeeping service. B.Sc. in EEE from BUET (CGPA 3.85/4.00, ranked 25 of 189, awarded with Honours). **Seeking PhD positions for Fall 2027** in robotics, motion control, or autonomous systems.",
+    "summary": "Robotics R&D engineer working at the intersection of motion control, autonomous systems, and embedded hardware. R&D Engineer & Team Lead at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), Dhaka. Designed and field-deployed a production 3-robot AGV fleet in a live garment factory, a ROS 2 / MoveIt 2 manipulator stack with a custom closed-form 7-DOF IK solver, and contributed to the Smart Soinik / Jontro Soinik EOD ROV family now in UN Peacekeeping service. B.Sc. in EEE from BUET (CGPA 3.85/4.00, ranked 25 of 189, awarded with Honours). **Seeking PhD positions for Fall 2027** in robotics, motion control, or autonomous systems.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,7 +30,7 @@
       "summary": "End-to-end design, development, and production deployment of robotic platforms across mobile manipulation, multi-robot autonomy, EOD ROVs, drones, and industrial manufacturing.",
       "highlights": [
         "Led design and production deployment of a **3-robot AGV fleet** at The Urmi Group (live RMG facility) — ROS 2, custom EKF with AprilTag fiducial fusion, distributed reservation-based path planning, FleetCore coordinator, 3-layer safety architecture. First-ever AGV solution deployed in Bangladesh.",
-        "Built a **ROS 2 / MoveIt 2 mobile manipulator control stack** for an 11-joint EOD platform — custom closed-form 6-DOF analytical IK replacing KDL, singularity-aware smooth scaling, FK-anchored accumulator, 5-state FSM, 40-test unit suite. ~3,500 lines of Python including a 2,200-line coordinator node.",
+        "Built a **ROS 2 / MoveIt 2 mobile manipulator control stack** for an 11-joint EOD platform — custom closed-form 7-DOF analytical IK replacing KDL, singularity-aware smooth scaling, FK-anchored accumulator, 5-state FSM, 40-test unit suite. ~3,500 lines of Python including a 2,200-line coordinator node.",
         "Contributed to the **Smart Soinik 1.0 (SS1.0) and Jontro Soinik 1.0 (JS1.0) EOD ROV family** — motion control for all arm DOFs, BLDC motor synchronization, RS-485 inter-node communication, custom PCB design (Altium / KiCad), 48 V power distribution. SS1.0 deployed in UN Peacekeeping Mission, Mali (2024); JS1.0 set for the Republic of Congo (2025).",
         "Designed **SD15-N autonomous target-tracking surveillance drone** — YOLOv11n on Raspberry Pi 5 + Pixhawk 2.4.8, real-time bounding-box-to-velocity-command pipeline over MAVLink. 1,000 ft altitude, 15 km range, 20 m/s.",
         "Designed **heavy-lift cargo drone** — 50 kg payload, 30 min flight, 15 km comms range, 1.5:1 thrust-to-weight ratio. Custom BMS, propulsion sizing, structural frame analysis.",
@@ -183,7 +183,7 @@
     },
     {
       "name": "Kinematics & Control",
-      "keywords": ["Closed-form analytical IK (6-DOF)", "Cascaded PID", "GA-optimized control", "Extended Kalman Filter (EKF)", "AprilTag fiducial localization", "Differential-drive PID"]
+      "keywords": ["Closed-form analytical IK (7-DOF)", "Cascaded PID", "GA-optimized control", "Extended Kalman Filter (EKF)", "AprilTag fiducial localization", "Differential-drive PID"]
     },
     {
       "name": "Embedded Systems",

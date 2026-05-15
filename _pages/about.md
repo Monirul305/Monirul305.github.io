@@ -32,7 +32,7 @@ field-deploy robotic platforms that operate in demanding real-world environments
 My recent work includes: a **production-deployed 3-robot AGV fleet** navigating a
 live garment factory floor alongside hundreds of workers (ROS 2, AprilTag EKF,
 distributed reservation-based path planning); a **ROS 2 / MoveIt 2 manipulator
-control stack** with a custom closed-form 6-DOF analytical IK solver, singularity
+control stack** for a 7-DOF arm with a custom closed-form analytical IK solver, singularity
 handling, and 40-test validation suite; and contributing to the **Smart Soinik and
 Jontro Soinik EOD ROV family** — indigenously-developed robots tested by the
 Bangladesh Army and now deployed in

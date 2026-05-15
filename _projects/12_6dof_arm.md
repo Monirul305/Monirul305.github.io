@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes
+title: 6-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes
 description: >
-  Five-degree-of-freedom serial robotic arm — SolidWorks frame, body
+  Six-degree-of-freedom serial robotic arm — SolidWorks frame, body
   fabricated on a hobby 3D printer I built in parallel, stepper-motor
   actuation through custom 3D-printed planetary gearboxes, Arduino-based
   control, and analytical inverse kinematics with closed-form algebraic
@@ -14,7 +14,7 @@ category: undergraduate
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
-A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has a fixed base, three intermediate revolute joints providing reach across a typical desktop workspace, a wrist roll joint, and a gripper end-effector.
+A 6-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has six actuated joints: **turret** (base yaw), **shoulder**, **elbow**, **wrist pan**, **wrist roll**, and **gripper** end-effector.
 
 **Mechanical design.** All structural links were designed in **SolidWorks**, sized against the torque demands at each joint, then 3D-printed on the [hobby 3D printer I built as a parallel project]({{ '/projects/16_hobby_3d_printer/' | relative_url }}) — not an outsourced or commercial machine. Joint axes and bearing locations were dimensioned so that the printed parts could be assembled without significant post-processing. Cable routing was planned at the design stage to avoid binding through the workspace.
 
@@ -22,7 +22,7 @@ A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate ro
 
 **Control.** An **Arduino** receives a target end-effector pose, computes the inverse kinematics to derive each joint angle, and dispatches synchronised step / direction pulses to the stepper drivers. A simple interpolation layer smooths motion between successive targets.
 
-**Kinematics.** Forward kinematics use a Denavit–Hartenberg parameterisation of the arm. Inverse kinematics is implemented as **analytical IK using closed-form algebraic solutions** — derived by decomposing the arm's geometry into position-reachability and wrist-orientation sub-problems, then solving each in closed form rather than relying on numerical iteration. Elbow-up / elbow-down branch selection is exposed as a parameter to the caller.
+**Kinematics.** Forward kinematics use a Denavit–Hartenberg parameterisation of the arm. Inverse kinematics is implemented as **analytical IK using closed-form algebraic solutions** — derived by decomposing the arm's geometry into a positional sub-chain (turret + shoulder + elbow) and a wrist-orientation sub-chain (wrist pan + wrist roll), then solving each in closed form rather than relying on numerical iteration. Elbow-up / elbow-down branch selection is exposed as a parameter to the caller. The gripper is commanded independently of the IK chain.
 
 A demonstration of the assembled arm performing pick-and-place is available in the repository's [demo video](https://www.youtube.com/watch?v=wLU_OnsAH6g).
 
