@@ -194,9 +194,9 @@ ninja.data = [{
           description: "Trained a YOLOv2 detector on a self-curated vehicle dataset and built a frame-by-frame tracking layer to estimate real-world vehicle speeds from monocular traffic video. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_yolov2_traffic/";
-            },},{id: "projects-5-dof-robotic-arm-3d-printed-frame-servo-actuation-inverse-kinematics",
-          title: '5-DOF Robotic Arm — 3D-Printed Frame, Servo Actuation, Inverse Kinematics',
-          description: "Five-degree-of-freedom serial robotic arm — SolidWorks frame, PLA-printed links, micro-servo actuation, Arduino-based control with closed-form inverse kinematics for end-effector positioning. First hands-on robotics build at BUET.",
+            },},{id: "projects-5-dof-robotic-arm-stepper-driven-with-3d-printed-planetary-gearboxes",
+          title: '5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
+          description: "Five-degree-of-freedom serial robotic arm — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_6dof_arm/";
             },},{id: "projects-rv32i-multicycle-processor-with-wishbone-memory-controller-verilog-fpga-tsmc-180-nm",
@@ -214,6 +214,41 @@ ninja.data = [{
           description: "Self-sustaining outdoor environmental node — Arduino UNO + GSM cellular uplink to ThingSpeak, powered by a solar-charged battery bank with a relay-switched series-on-discharge / parallel-on-charge topology to feed the GSM modem&#39;s high transient current. EEE 416 group project at BUET.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_env_monitor/";
+            },},{id: "projects-hobby-3d-printer-designed-from-scratch-in-solidworks-laser-cut-acrylic-custom-marlin",
+          title: 'Hobby 3D Printer — Designed from Scratch in SolidWorks, Laser-Cut Acrylic, Custom Marlin...',
+          description: "A 3D printer designed from scratch as a personal hobby build during COVID-19 — SolidWorks for every component, laser-cut acrylic frame, Arduino Mega controller, 5x NEMA 17 stepper motors, and a customised Marlin firmware. Distinct from the later Titan 550 industrial product.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/16_hobby_3d_printer/";
+            },},{id: "projects-regulated-dc-dc-boost-converter-schematic-amp-layout-in-tsmc-180-nm-cadence",
+          title: 'Regulated DC-DC Boost Converter — Schematic &amp;amp; Layout in TSMC 180 nm (Cadence)...',
+          description: "Designed and laid out a regulated DC-DC boost converter on TSMC 180 nm in Cadence — schematic capture, transistor-level simulation, and physical layout with parasitic extraction. VLSI coursework at BUET EEE.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/17_boost_converter/";
+            },},{id: "projects-closed-loop-induction-motor-speed-control-v-f-svpwm-in-matlab-simulink",
+          title: 'Closed-Loop Induction-Motor Speed Control — V/f + SVPWM in MATLAB Simulink',
+          description: "3-phase induction motor closed-loop speed control via V/f (volts-per-hertz) scalar control with SVPWM (Space Vector PWM) inverter modulation. Full Simulink model with speed reference, flux/voltage scheduling, and PI compensation. BUET EEE coursework.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/18_induction_motor/";
+            },},{id: "projects-optical-particle-concentration-detector-laser-light-scattering-with-webcam-readout",
+          title: 'Optical Particle-Concentration Detector — Laser Light-Scattering with Webcam Readout',
+          description: "Low-cost airborne-particle concentration sensor using laser illumination and a webcam-based intensity readout — measures the light scattered off particle–photon interaction. Built as a cost-conscious alternative to commercial particle counters. BUET EEE coursework.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/19_particle_detection/";
+            },},{id: "projects-laboratory-variable-dc-power-supply-linear-regulator-bench-build",
+          title: 'Laboratory Variable DC Power Supply — Linear-Regulator Bench Build',
+          description: "Bench-grade variable DC power supply — linear-regulator architecture with adjustable output voltage, current limiting, and short-circuit protection. Built end-to-end including transformer secondary, rectification, filtering, regulation, and enclosure. BUET EEE coursework.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20_dc_power_supply/";
+            },},{id: "projects-optical-mark-recognition-omr-machine-built-entirely-from-discrete-digital-logic",
+          title: 'Optical Mark Recognition (OMR) Machine — Built Entirely from Discrete Digital Logic',
+          description: "Built an OMR (Optical Mark Recognition) machine for multiple-choice answer sheets using only discrete digital logic ICs — no microcontroller. Optical sensing, counters, and decoders implement the full mark-detection and tally pipeline. BUET EEE coursework.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/21_omr_machine/";
+            },},{id: "projects-seven-storey-building-electrical-services-design",
+          title: 'Seven-Storey Building Electrical Services Design',
+          description: "Complete electrical-services design for a seven-storey residential building — load estimation, panel scheduling, conductor sizing, lighting and power layouts, and earthing scheme. BUET EEE coursework on building services engineering.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/22_building_electrical/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
