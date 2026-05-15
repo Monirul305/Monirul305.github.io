@@ -144,9 +144,9 @@ ninja.data = [{
           description: "Production-deployed autonomous guided vehicle fleet navigating a live garment factory alongside hundreds of workers. ROS 2, AprilTag EKF, distributed path planning, FleetCore coordinator.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01_agv_fleet/";
-            },},{id: "projects-mobile-manipulator-with-custom-closed-form-6-dof-ik-ros-2-moveit-2",
-          title: 'Mobile Manipulator with Custom Closed-Form 6-DOF IK (ROS 2 / MoveIt 2)',
-          description: "Full real-time control stack for a 6-DOF arm + tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator, 40-test unit suite.",
+            },},{id: "projects-7-dof-mobile-manipulator-with-custom-closed-form-ik-ros-2-moveit-2",
+          title: '7-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)',
+          description: "Full real-time control stack for a 7-DOF arm + tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator, 40-test unit suite.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/02_manipulator/";
             },},{id: "projects-indigenous-eod-rov-family-un-peacekeeping-deployment-mali-congo",
@@ -194,9 +194,9 @@ ninja.data = [{
           description: "Trained a YOLOv2 detector on a self-curated vehicle dataset and built a frame-by-frame tracking layer to estimate real-world vehicle speeds from monocular traffic video. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_yolov2_traffic/";
-            },},{id: "projects-5-dof-robotic-arm-stepper-driven-with-3d-printed-planetary-gearboxes",
-          title: '5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
-          description: "Five-degree-of-freedom serial robotic arm — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
+            },},{id: "projects-6-dof-robotic-arm-stepper-driven-with-3d-printed-planetary-gearboxes",
+          title: '6-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
+          description: "Six-degree-of-freedom serial robotic arm — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_6dof_arm/";
             },},{id: "projects-rv32i-multicycle-processor-with-wishbone-memory-controller-verilog-fpga-tsmc-180-nm",
