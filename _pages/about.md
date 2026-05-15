@@ -55,6 +55,16 @@ discuss potential fit.
 
 ---
 
+### Background
+
+My path to robotics started long before any formal training. I grew up in a rural village in Bangladesh — the first in my immediate family to reach higher education; my father could not finish high school, and my mother's schooling stopped at the primary level. From village primary school I made my way through secondary school in larger towns, college in Dhaka, and eventually [BUET](https://www.buet.ac.bd). The robotics interest crystallised in my first year at BUET, where I built a 5-DOF robotic arm driven by micro-servos and an Arduino. When 3D-printing the next iteration's chassis became prohibitively expensive, I built my own 3D printer during the COVID-19 lockdown — the precursor of the [Titan 550 CoreXY industrial 3D printer]({{ '/projects/08_titan550/' | relative_url }}) I would later lead at Cybernetics.
+
+At BUET I had the privilege of working with **Dr. Mahbub Alam** (Associate Professor, EEE) on nanomaterial-FET research, and with **Dr. A. B. M. Harun-Ur-Rashid** (Professor, EEE) on the [design and verification of a custom RISC-V multicycle processor]({{ '/projects/13_riscv/' | relative_url }}) — work that grounded my interest in low-level computing and hardware-software co-design. The COVID-19 disruption hit my early-semester grades, but I recovered to a 3.98 final-year GPA (with a perfect 4.00 in one semester) and earned Dean's List recognition every year of the programme.
+
+Professionally, I started in robotics R&D on the **[Soinik EOD ROV family]({{ '/projects/03_soinik_rov/' | relative_url }})**, designing the motion-control system for its 6-DOF manipulator and contributing to its low-latency internal communication stack — work that became the foundation for several of our research publications. I now lead R&D at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), where I drove the [3-robot AGV fleet deployment]({{ '/projects/01_agv_fleet/' | relative_url }}), the [ROS 2 / MoveIt 2 manipulator stack]({{ '/projects/02_manipulator/' | relative_url }}), and the Titan 550 industrial 3D printer programme. **Rashed Mujib Noman** (Country Director, Augmedix Bangladesh; previously Senior Engineering Manager at Boeing and Performance Engineer at General Motors) has been an invaluable industry mentor across these efforts — particularly on ROV, manipulator, drone, and factory-automation work.
+
+---
+
 ### Research Interests
 
 - **Motion control & manipulation** — closed-form kinematics, singularity-aware
