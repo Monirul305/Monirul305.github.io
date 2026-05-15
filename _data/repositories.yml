@@ -1,26 +1,41 @@
 github_users:
   - Monirul305
 
-repo_description_lines_max: 3
-
 github_repos:
   # Vision / ML
-  - Monirul305/Yolo-based-traffic-speed-estimation-system
+  - repo: Monirul305/Yolo-based-traffic-speed-estimation-system
+    description: Per-vehicle speed estimation from monocular highway video using YOLO object detection. BUET computer-vision course project.
 
   # Robotics / autonomy
-  - Monirul305/Automatic-drone-delivery-system-using-GPS
-  - Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom
+  - repo: Monirul305/Automatic-drone-delivery-system-using-GPS
+    description: Autonomous GPS-waypoint drone for parcel delivery — flight controller and mission logic.
+
+  - repo: Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom
+    description: 5-DOF articulated robotic arm — kinematics, control electronics, and end-effector design.
 
   # Digital design / VLSI
-  - Monirul305/Design-and-Verification-of-a-RISC--V-Multicycle-Processor-and-a-Memory-Controller-with-Wishbone-Inte
-  - Monirul305/Designing-A-regulated-Boost-converter-using-tsmc180nm-technology-in-Cadence
-  - Monirul305/Implementation-of-OMR-machine-using-digital-logic-circuit
+  - repo: Monirul305/Design-and-Verification-of-a-RISC--V-Multicycle-Processor-and-a-Memory-Controller-with-Wishbone-Inte
+    description: Custom multicycle RV32I RISC-V processor + Wishbone-interfaced memory controller, with a full testbench-based verification suite.
+
+  - repo: Monirul305/Designing-A-regulated-Boost-converter-using-tsmc180nm-technology-in-Cadence
+    description: Voltage-regulated DC-DC boost converter designed in Cadence on TSMC 180 nm — schematic capture and physical layout.
+
+  - repo: Monirul305/Implementation-of-OMR-machine-using-digital-logic-circuit
+    description: Optical Mark Recognition machine built entirely from discrete digital logic ICs — no microcontroller in the loop.
 
   # Mechatronics / hardware
-  - Monirul305/Designing-and-Implementation-of-A-3D-printing-Machine
-  - Monirul305/Real-Time-Environmental-Monitoring-System
-  - Monirul305/Detection-of-Particle-Concentration-Using-Light-Scattering-Mechanism
+  - repo: Monirul305/Designing-and-Implementation-of-A-3D-printing-Machine
+    description: Early academic implementation of a 3D printer — the precursor work that fed into the Titan 550 CoreXY platform at Cybernetics.
+
+  - repo: Monirul305/Real-Time-Environmental-Monitoring-System
+    description: IoT environmental monitoring (temperature, humidity, air quality) with real-time dashboard.
+
+  - repo: Monirul305/Detection-of-Particle-Concentration-Using-Light-Scattering-Mechanism
+    description: Particle-concentration sensor using a laser + photodetector light-scattering setup, with calibration curves and signal-conditioning circuit.
 
   # Power / control
-  - Monirul305/Closed-loop-speed-control-of-induction-motor-using-MATLAB-SIMULINK-
-  - Monirul305/Design-and-Implication-of-Laboratory-Variable-DC-Power-Supply
+  - repo: Monirul305/Closed-loop-speed-control-of-induction-motor-using-MATLAB-SIMULINK-
+    description: MATLAB / Simulink model of closed-loop speed control for a 3-phase induction motor (vector-control approach).
+
+  - repo: Monirul305/Design-and-Implication-of-Laboratory-Variable-DC-Power-Supply
+    description: Bench-grade variable DC power supply — linear-regulator design with current limiting and short-circuit protection.

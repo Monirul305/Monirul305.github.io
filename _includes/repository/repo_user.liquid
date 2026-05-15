@@ -1,34 +1,20 @@
-{% assign lang = site.lang | split: '-' | first %}
-
-{% case lang %}
-  {% when 'pt' %}
-    {% assign lang = site.lang %}
-
-  {% when 'zh' %}
-    {% assign lang_last = site.lang | split: '-' | last %}
-    {% case lang_last %}
-      {% when 'cn', 'sg', 'my', 'hans' %}
-        {% assign lang = 'cn' %}
-      {% when 'tw', 'hk', 'mo', 'hant' %}
-        {% assign lang = 'zh-tw' %}
-    {% endcase %}
-
-    {% comment %} Add a new language using when... if needed {% endcomment %}
-    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
-    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
-{% endcase %}
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
-    <img
-      class="only-light w-100"
-      alt="{{ include.username }}"
-      src="{{ site.external_services.github_readme_stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
-    >
-    <img
-      class="only-dark w-100"
-      alt="{{ include.username }}"
-      src="{{ site.external_services.github_readme_stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
-    >
+<div class="repo p-2">
+  <a href="https://github.com/{{ include.username }}" target="_blank" rel="noopener external" class="repo-card-link">
+    <div class="repo-card repo-user-card">
+      <img
+        class="repo-user-avatar"
+        src="https://github.com/{{ include.username }}.png?size=160"
+        alt="{{ include.username }}"
+        width="80"
+        height="80"
+      >
+      <div class="repo-user-info">
+        <div class="repo-user-name">
+          <i class="fa-brands fa-github"></i>
+          <strong>@{{ include.username }}</strong>
+        </div>
+        <span class="repo-card-cta">View profile <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </div>
+    </div>
   </a>
 </div>
