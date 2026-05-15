@@ -11,6 +11,8 @@ category: research
 related_publications: true
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 ### Motivation
 
 Differential-drive platforms — AGVs, mobile robots, ROV thrusters — demand tight

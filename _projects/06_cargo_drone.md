@@ -9,6 +9,8 @@ importance: 6
 category: professional
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 Led design and optimisation of a heavy-lift multirotor cargo drone for logistics
 and emergency-response applications. Key engineering challenges: advanced battery
 management for 30-minute endurance at full payload, structural frame analysis for

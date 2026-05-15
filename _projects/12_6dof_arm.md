@@ -12,6 +12,8 @@ importance: 1
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has a fixed base, three intermediate revolute joints providing reach across a typical desktop workspace, a wrist roll joint, and a gripper end-effector.
 
 **Mechanical design.** All structural links were designed in **SolidWorks**, sized against the torque demands at each joint, then 3D-printed on the [hobby 3D printer I built as a parallel project]({{ '/projects/16_hobby_3d_printer/' | relative_url }}) — not an outsourced or commercial machine. Joint axes and bearing locations were dimensioned so that the printed parts could be assembled without significant post-processing. Cable routing was planned at the design stage to avoid binding through the workspace.

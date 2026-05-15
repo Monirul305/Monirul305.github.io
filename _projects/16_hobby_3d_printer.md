@@ -11,6 +11,8 @@ importance: 2
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A 3D printer built from scratch as a personal hobby project during the COVID-19 lockdown — primarily so I could fabricate the chassis, links, and custom planetary gearboxes for the [5-DOF robotic arm]({{ '/projects/12_6dof_arm/' | relative_url }}) without relying on outsourced printing. The machine has been my workhorse for every undergraduate mechanical project since.
 
 This is **not** the Titan 550 — that's a much later **industrial product** I led at Cybernetics, built from the ground up for production use. This hobby printer is the personal undergraduate build that preceded any of that work.

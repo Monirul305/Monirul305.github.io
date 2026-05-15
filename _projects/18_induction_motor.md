@@ -11,6 +11,8 @@ importance: 8
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A complete **MATLAB Simulink** model of a closed-loop variable-speed drive for a 3-phase induction motor — combining **V/f (volts-per-hertz) scalar control** with **SVPWM (Space Vector Pulse Width Modulation)** for inverter switching. Coursework in power electronics / electric machines at BUET EEE.
 
 **Why V/f + SVPWM.** Scalar V/f keeps the stator flux roughly constant by scaling output voltage proportionally to commanded frequency — the simplest practical control law for an induction machine. SVPWM is the modulation strategy used to translate the desired stator-voltage vector into the six switching states of a 3-phase inverter, achieving a higher modulation index and lower harmonic distortion than naïve sinusoidal PWM.

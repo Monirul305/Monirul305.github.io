@@ -12,6 +12,8 @@ importance: 6
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A self-sustaining environmental monitoring node designed for unattended outdoor deployment — built as a four-person group project for **EEE 416** at BUET, with teammates Fariza Siddiqua, A. F. M. Mahfuzul Kabir, and Shuvro Chowdhury.
 
 The node continuously measures **air quality, temperature, and humidity**, and uploads the readings to a **ThingSpeak** cloud dashboard over the **GSM cellular network** — giving real-time visibility into a remote site without any local infrastructure beyond sunlight.

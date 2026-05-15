@@ -10,6 +10,8 @@ importance: 3
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 End-to-end computer-vision pipeline that takes raw traffic-camera footage and outputs per-vehicle real-world speed overlays — built as a coursework project at BUET EEE.
 
 The pipeline has three parts. First, a **custom vehicle-detection dataset** assembled from local traffic footage, with bounding-box annotations across vehicle classes. Second, a **YOLOv2 detector trained in MATLAB** on this dataset — anchor-box configuration tuned to the size distribution of the captured frames, with precision/recall validation on a held-out split. Third, a **frame-by-frame tracking and speed-estimation layer**: detections are associated across consecutive frames, pixel-space displacement is converted to ground-plane distance using a calibrated reference, and instantaneous speed is computed from the known frame rate.

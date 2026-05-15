@@ -12,6 +12,8 @@ importance: 10
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A bench-grade **variable DC power supply** designed for laboratory use — built end-to-end from transformer secondary through the regulator to the front-panel enclosure. BUET EEE coursework.
 
 **Topology.** A classic **linear regulator** chain: step-down transformer → full-wave rectifier → smoothing capacitor → adjustable voltage regulator with feedback. Linear regulation was the right choice here over a switcher — the goal is **clean, low-noise output suitable for benchtop analog work**, where the additional cost of a switching supply's filtering and EMI control isn't worth it for the modest currents involved.

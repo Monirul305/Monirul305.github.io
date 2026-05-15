@@ -11,6 +11,8 @@ importance: 4
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A from-scratch implementation of an **RV32I multicycle processor** in Verilog, paired with a custom **Wishbone-interface memory controller** — built as a digital-design capstone at BUET EEE under the supervision of **Dr. A. B. M. Harun-Ur-Rashid** (Professor, EEE).
 
 **Datapath and control.** The processor implements the **RV32I integer instruction subset** with a classic multicycle datapath — separate fetch, decode, execute, memory, and write-back stages sharing a single ALU and memory port across cycles. The control unit is a finite-state machine, decoding each instruction and stepping it through the correct number of cycles for its type (R / I / S / B / U / J).

@@ -12,6 +12,8 @@ importance: 9
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A low-cost airborne-particle concentration sensor built around the **light-scattering principle**, using laser illumination and a consumer **webcam** as the photodetector — a cost-conscious alternative to commercial optical particle counters. BUET EEE coursework.
 
 **Principle.** When laser light passes through a gas containing suspended particulates, photons scatter off the particles via Mie / Rayleigh scattering depending on particle size relative to wavelength. The **intensity of the scattered light is proportional (over a working range) to the particle concentration** in the illuminated volume.

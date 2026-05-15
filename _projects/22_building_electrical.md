@@ -11,6 +11,8 @@ importance: 12
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A complete **electrical-services design package** for a seven-storey residential building — the standard end-to-end design exercise in BUET EEE's building services / utilities course.
 
 **Scope of the design.**

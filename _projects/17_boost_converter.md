@@ -11,6 +11,8 @@ importance: 7
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 A regulated DC-DC boost converter designed at the **transistor level on the TSMC 180 nm process node** in the **Cadence** EDA environment — full custom from schematic to layout. VLSI coursework at BUET EEE.
 
 **Circuit design.** Standard switched-inductor boost topology, with a closed feedback loop providing **output-voltage regulation** against input-voltage variation and load-current changes. The control loop comprises an error amplifier, compensation network, and PWM comparator driving the switching transistor — all designed at the transistor level rather than relying on macromodels.

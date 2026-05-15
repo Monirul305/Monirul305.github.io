@@ -11,6 +11,8 @@ category: professional
 related_publications: true
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 <div class="row">
   <div class="col-sm-12">
     <div class="alert alert-success" role="alert">

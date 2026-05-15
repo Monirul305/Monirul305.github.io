@@ -9,6 +9,8 @@ importance: 5
 category: professional
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 Next-generation ROV demonstrating significantly expanded capability over the
 [Soinik family](../03_soinik_rov): a 6-DOF robotic arm carrying **20 kg while
 moving at 5 km/h**, paired with a comprehensive multi-camera and wireless video

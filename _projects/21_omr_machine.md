@@ -11,6 +11,8 @@ importance: 11
 category: undergraduate
 ---
 
+{% include figure.liquid path=page.img class="img-fluid rounded z-depth-1" %}
+
 An **Optical Mark Recognition (OMR)** machine — the kind that reads pencil-filled answer sheets for multiple-choice exams — built **entirely from discrete digital logic ICs**, with no microcontroller in the loop. BUET EEE coursework, deliberately constrained to gate-level design.
 
 **The constraint that made this interesting.** Building an OMR reader with a microcontroller is a routine project — read each photodiode, count the dark marks in software, done. The point of this build was to do the same task **without programmable silicon** — using only logic gates, counters, shift registers, comparators, and decoders.
