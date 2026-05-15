@@ -6,7 +6,7 @@ description: >
   COVID-19 — SolidWorks for every component, laser-cut acrylic frame,
   Arduino Mega controller, 5x NEMA 17 stepper motors, and a customised
   Marlin firmware. Distinct from the later Titan 550 industrial product.
-img: assets/img/projects/titan550.jpg
+img: assets/img/projects/hobby_3d_printer.jpg
 importance: 2
 category: undergraduate
 ---

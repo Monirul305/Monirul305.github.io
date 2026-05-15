@@ -6,7 +6,7 @@ description: >
   180 nm in Cadence — schematic capture, transistor-level simulation,
   and physical layout with parasitic extraction. VLSI coursework at
   BUET EEE.
-img: assets/img/projects/riscv.jpg
+img: assets/img/projects/boost_converter.jpg
 importance: 7
 category: undergraduate
 ---

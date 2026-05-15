@@ -6,7 +6,7 @@ description: >
   building — load estimation, panel scheduling, conductor sizing,
   lighting and power layouts, and earthing scheme. BUET EEE
   coursework on building services engineering.
-img: assets/img/projects/env_monitor.jpg
+img: assets/img/projects/building_electrical.jpg
 importance: 12
 category: undergraduate
 ---

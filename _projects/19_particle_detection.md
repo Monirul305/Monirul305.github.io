@@ -7,7 +7,7 @@ description: >
   light scattered off particle–photon interaction. Built as a
   cost-conscious alternative to commercial particle counters. BUET
   EEE coursework.
-img: assets/img/projects/graphyne.jpg
+img: assets/img/projects/particle_detection.jpg
 importance: 9
 category: undergraduate
 ---

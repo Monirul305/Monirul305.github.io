@@ -6,7 +6,7 @@ description: >
   answer sheets using only discrete digital logic ICs — no
   microcontroller. Optical sensing, counters, and decoders implement
   the full mark-detection and tally pipeline. BUET EEE coursework.
-img: assets/img/projects/riscv.jpg
+img: assets/img/projects/omr_machine.jpg
 importance: 11
 category: undergraduate
 ---
