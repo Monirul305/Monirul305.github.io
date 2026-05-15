@@ -191,27 +191,27 @@ ninja.data = [{
               window.location.href = "/projects/10_graphyne/";
             },},{id: "projects-vehicle-detection-amp-speed-estimation-from-traffic-footage-yolov2-matlab",
           title: 'Vehicle Detection &amp;amp; Speed Estimation from Traffic Footage (YOLOv2 + MATLAB)',
-          description: "Generated a large vehicle detection dataset and trained YOLOv2 in MATLAB to detect vehicles and estimate speeds from traffic footage.",
+          description: "Trained a YOLOv2 detector on a self-curated vehicle dataset and built a frame-by-frame tracking layer to estimate real-world vehicle speeds from monocular traffic video. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_yolov2_traffic/";
-            },},{id: "projects-6-dof-robotic-arm-with-pid-amp-inverse-kinematics-solidworks-3d-print-arduino",
-          title: '6-DOF Robotic Arm with PID &amp;amp; Inverse Kinematics (SolidWorks + 3D Print +...',
-          description: "Designed in SolidWorks, fabricated via 3D printing, controlled with PID and inverse kinematics for precise end-effector positioning.",
+            },},{id: "projects-5-dof-robotic-arm-3d-printed-frame-servo-actuation-inverse-kinematics",
+          title: '5-DOF Robotic Arm — 3D-Printed Frame, Servo Actuation, Inverse Kinematics',
+          description: "Five-degree-of-freedom serial robotic arm — SolidWorks frame, PLA-printed links, micro-servo actuation, Arduino-based control with closed-form inverse kinematics for end-effector positioning. First hands-on robotics build at BUET.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_6dof_arm/";
-            },},{id: "projects-risc-v-processor-verilog-fpga-tsmc-180-nm-implementation-flow",
-          title: 'RISC-V Processor — Verilog → FPGA → TSMC 180 nm Implementation Flow',
-          description: "Designed a RISC-V processor core in Verilog using Cadence tools. Verified on FPGA and evaluated in a TSMC 180 nm implementation flow.",
+            },},{id: "projects-rv32i-multicycle-processor-with-wishbone-memory-controller-verilog-fpga-tsmc-180-nm",
+          title: 'RV32I Multicycle Processor with Wishbone Memory Controller (Verilog · FPGA · TSMC 180...',
+          description: "From-scratch RV32I multicycle processor in Verilog with a custom Wishbone-interfaced memory controller, full testbench-based verification, FPGA validation, and a TSMC 180 nm physical-design flow in Cadence. Supervised by Dr. A. B. M. Harun-Ur-Rashid (BUET EEE).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_riscv/";
-            },},{id: "projects-autonomous-gps-waypoint-drone-with-servo-actuated-payload-delivery",
-          title: 'Autonomous GPS Waypoint Drone with Servo-Actuated Payload Delivery',
-          description: "Designed airframe in SolidWorks, implemented PID attitude control, GPS waypoint navigation, and a payload deployment mechanism.",
+            },},{id: "projects-autonomous-gps-waypoint-delivery-drone-solidworks-arduino-imu-gps-pid",
+          title: 'Autonomous GPS-Waypoint Delivery Drone (SolidWorks · Arduino · IMU + GPS · PID)...',
+          description: "Quadcopter built end-to-end for autonomous waypoint-based parcel delivery — SolidWorks airframe, Arduino flight controller with IMU attitude stabilisation, GPS waypoint navigation, and a servo-actuated payload release. BUET EEE undergraduate build.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_gps_drone/";
-            },},{id: "projects-solar-powered-remote-environmental-monitor-arduino-gsm-telemetry",
-          title: 'Solar-Powered Remote Environmental Monitor (Arduino + GSM Telemetry)',
-          description: "Self-powered remote monitoring node: Arduino + solar + GSM, transmitting temperature, humidity, CO₂ over cellular. Custom PCB.",
+            },},{id: "projects-solar-powered-remote-environmental-monitor-arduino-gsm-thingspeak-relay-switched-battery-bank",
+          title: 'Solar-Powered Remote Environmental Monitor (Arduino · GSM · ThingSpeak · Relay-Switched Battery Bank)...',
+          description: "Self-sustaining outdoor environmental node — Arduino UNO + GSM cellular uplink to ThingSpeak, powered by a solar-charged battery bank with a relay-switched series-on-discharge / parallel-on-charge topology to feed the GSM modem&#39;s high transient current. EEE 416 group project at BUET.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_env_monitor/";
             },},{id: "teachings-data-science-fundamentals",
