@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Selected GitHub repositories — code artifacts behind several of the <a href="{{ '/projects/' | relative_url }}">projects</a>, plus academic / coursework work across digital design, control, power electronics, and IC design.
+description: Selected GitHub repositories — code artifacts behind several of the <a href="/projects/">projects</a>, plus academic / coursework work across digital design, control, power electronics, and IC design.
 nav: true
 nav_order: 4
 ---
