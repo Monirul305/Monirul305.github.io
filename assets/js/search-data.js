@@ -179,9 +179,9 @@ ninja.data = [{
           description: "Large-format industrial 3D printer built from scratch. CoreXY kinematics, 510×510×550 mm build volume, ±0.02 mm repeatability, Marlin 2.0.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/08_titan550/";
-            },},{id: "projects-tele-operated-rov-6-dof-manipulator-cofdm-multi-camera-teleoperation",
-          title: 'Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation',
-          description: "Next-generation ROV with 6-DOF arm (20 kg @ 5 km/h), six IP cameras, 1.4 GHz COFDM 1 km video link, HCU/OCU dual control.",
+            },},{id: "projects-jontro-soinik-v1-tele-op-amp-multi-camera-vision-cofdm-hcu-ocu",
+          title: 'Jontro Soinik v1 — Tele-Op &amp;amp; Multi-Camera Vision (COFDM, HCU/OCU)',
+          description: "Deep-dive on Jontro Soinik v1&#39;s teleoperation and vision subsystem — 6-camera IP head, 1.4 GHz COFDM 1 km video link, HCU / OCU / wired-optical control hand-off.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/09_advanced_rov_cofdm/";
             },},{id: "projects-α-graphyne-nanoribbon-fet-ballistic-transport-modeling-micromachines-2023",
