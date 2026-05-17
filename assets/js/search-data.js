@@ -121,8 +121,8 @@ ninja.data = [{
           section: "News",},{id: "news-paper-published-in-micromachines-mdpi-performance-analysis-of-an-α-graphyne-nano-field-effect-transistor-doi",
           title: 'Paper published in Micromachines (MDPI): Performance Analysis of an α-Graphyne Nano-Field Effect Transistor....',
           description: "",
-          section: "News",},{id: "news-smart-soinik-1-0-gifted-to-the-peruvian-armed-forces-by-the-bangladesh-army-now-deployed-under-the-un-peacekeeping-mission-in-the-republic-of-mali-first-made-in-bangladesh-military-robot-in-active-un-service",
-          title: 'Smart Soinik 1.0 gifted to the Peruvian Armed Forces by the Bangladesh Army...',
+          section: "News",},{id: "news-jontro-soinik-v1-gifted-to-the-peruvian-armed-forces-by-the-bangladesh-army-now-deployed-under-the-un-peacekeeping-mission-in-the-republic-of-mali-first-made-in-bangladesh-military-robot-in-active-un-service",
+          title: 'Jontro Soinik v1 gifted to the Peruvian Armed Forces by the Bangladesh Army...',
           description: "",
           section: "News",},{id: "news-paper-published-at-ieee-iccit-2024-optimizing-master-slave-broadcast-communication-in-multi-node-networks-using-rs485-standard-doi",
           title: 'Paper published at IEEE ICCIT 2024: Optimizing Master-Slave Broadcast Communication in Multi-Node Networks...',
@@ -130,8 +130,8 @@ ninja.data = [{
           section: "News",},{id: "news-co-authored-manuscript-submitted-a-dual-network-feedback-communication-system-for-multi-node-unmanned-robotic-control-currently-under-review",
           title: 'Co-authored manuscript submitted: A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control...',
           description: "",
-          section: "News",},{id: "news-jontro-soinik-1-0-js1-0-handover-ceremony-at-bangladesh-army-hq-auditorium-bangladesh-s-3rd-generation-eod-rov-set-for-deployment-in-the-un-peacekeeping-mission-in-the-republic-of-congo-in-2025",
-          title: 'Jontro Soinik 1.0 (JS1.0) handover ceremony at Bangladesh Army HQ Auditorium — Bangladesh’s...',
+          section: "News",},{id: "news-jontro-soinik-v2-handover-ceremony-at-bangladesh-army-hq-auditorium-bangladesh-s-3rd-generation-eod-rov-set-for-deployment-in-the-un-peacekeeping-mission-in-the-republic-of-congo-in-2025",
+          title: 'Jontro Soinik v2 handover ceremony at Bangladesh Army HQ Auditorium — Bangladesh’s 3rd-generation...',
           description: "",
           section: "News",},{id: "news-first-author-manuscript-submitted-differential-drive-synchronization-using-genetic-algorithm-optimized-cascaded-pid-controllers-on-stm32-based-mcu-currently-under-review",
           title: 'First-author manuscript submitted: Differential-Drive Synchronization Using Genetic Algorithm Optimized Cascaded PID Controllers on...',
@@ -151,7 +151,7 @@ ninja.data = [{
               window.location.href = "/projects/02_manipulator/";
             },},{id: "projects-indigenous-eod-rov-family-un-peacekeeping-deployment-mali-congo",
           title: 'Indigenous EOD ROV Family — UN Peacekeeping Deployment (Mali, Congo)',
-          description: "Smart Soinik 1.0 (SS1.0) and Jontro Soinik 1.0 (JS1.0) — Bangladesh&#39;s 2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed. Motion control, BLDC sync, RS485 communication, custom PCBs.",
+          description: "Jontro Soinik v1 and v2 — Bangladesh&#39;s 2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed. Star → custom-bus communication evolution, S-curve arm motion, differential-drive synchronization, custom PCBs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_soinik_rov/";
             },},{id: "projects-ga-optimized-cascaded-pid-for-bldc-motor-synchronization-stm32-first-author-paper",
