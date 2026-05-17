@@ -72,12 +72,32 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 **Other contributions across both platforms**
 - **Inter-node RS485 communication** for motion commands and sensor feedback (v1 link layer; carried through into the v2 bus PHY) {% cite tanvir2024rs485 %}
 - **Dual-network feedback communication** — fault-tolerant pathways for multi-node unmanned robotic control {% cite tanvir2025dual %}
-- **Custom PCB design and CNC fabrication** for the control and communication subsystems (Altium Designer, KiCad)
+- **Custom PCB design and in-house CNC milling** for the control and communication subsystems — schematic and layout in Altium Designer / KiCad, then milled on a small 3-axis CNC at the Cybernetics bench by hand. Every controller board on both v1 and v2 came off that machine; no external fab in the loop.
 - **48 V power distribution** and energy management for extended field operations
 
 {% include figure.liquid path="assets/img/projects/jontro-soinik-v1-firmware-dev.jpeg" class="project-hero-img rounded z-depth-1" alt="Firmware development bench for Jontro Soinik v1." %}
 
 <p class="text-center"><em>v1 firmware-development bench — central-node controller talking to peripheral controllers over the star fan-out.</em></p>
+
+---
+
+### PCB Design & In-House CNC Milling
+
+Every controller and communication board on both ROVs was designed and milled in-house. I drew the schematics and layouts in Altium Designer / KiCad, then ran the boards off on a small 3-axis CNC at the bench — drilling, isolation routing, and outline cut all done myself. Keeping the fab loop inside the room shortened a typical board-spin from days to hours and let the design iterate at the pace the firmware needed.
+
+{% include figure.liquid path="assets/img/projects/jontro-soinik-pcb-cnc.jpeg" class="project-hero-img rounded z-depth-1" alt="Hand-milled PCBs for the Jontro Soinik ROV control electronics." %}
+
+<p class="text-center"><em>Hand-milled control PCBs straight off the 3-axis CNC.</em></p>
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/jontro-soinik-pcb-cnc.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2"><em>3-axis CNC isolation-routing a controller board for the ROV.</em></p>
+  </div>
+</div>
 
 ---
 
