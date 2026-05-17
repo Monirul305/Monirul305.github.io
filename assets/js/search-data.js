@@ -164,11 +164,11 @@ ninja.data = [{
           description: "ML-based real-time target tracking on a surveillance hexacopter. YOLOv11n on Raspberry Pi 5, Pixhawk 2.4.8, MAVLink. 1000 ft, 15 km range, three payload variants.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05_sd15n/";
-            },},{id: "projects-heavy-lift-cargo-drone-50-kg-payload-30-min-endurance-15-km-comms",
-          title: 'Heavy-Lift Cargo Drone (50 kg payload, 30 min endurance, 15 km comms)',
-          description: "Multirotor cargo drone for logistics and emergency response. 50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio.",
+            },},{id: "projects-heavy-lift-multirotor-drone-50-kg-payload-30-min-endurance-15-km-comms",
+          title: 'Heavy-Lift Multirotor Drone (50 kg payload, 30 min endurance, 15 km comms)',
+          description: "Heavy-lift multirotor for logistics and emergency response. 50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio. Includes an interactive battery + motor sizing tool.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/06_cargo_drone/";
+              window.location.href = "/projects/06_heavy_lift_drone/";
             },},{id: "projects-hybrid-vtol-quad-plane-multirotor-hover-fixed-wing-cruise",
           title: 'Hybrid VTOL Quad-Plane — Multirotor Hover + Fixed-Wing Cruise',
           description: "First-generation VTOL quad-plane prototype for heavy-lift and long-duration surveillance. Maiden flight validated core design.",
