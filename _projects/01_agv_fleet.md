@@ -131,10 +131,10 @@ Productised by Cybernetics as **CyberFleet** — marketed as the first-ever AGV 
 
 ---
 
-### Demo Video
+### Demo Videos
 
-<div class="row justify-content-center mt-3">
-  <div class="col-sm-8">
+<div class="row mt-3">
+  <div class="col-sm-6">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item"
         src="https://www.youtube.com/embed/ooK1592gYgM?start=4"
@@ -143,6 +143,17 @@ Productised by Cybernetics as **CyberFleet** — marketed as the first-ever AGV 
     <p class="text-center mt-2">
       <em>Zero Collisions: How 3 Autonomous Robots Share a Busy Garment Factory Floor</em>
       — Cybernetics Hi-Tech (May 2026)
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/L_Uprap0PQ4"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Precise Robot Path Following Using ArUco Marker Localization and PID Waypoint Control</em>
+      — early single-robot validation: camera + wheel-encoder sensor fusion driving a PID waypoint tracker through pivot, straight-line, and goal-stop segments. The marker scheme later evolved from ArUco to AprilTag for the production fleet, but the sensor-fusion-plus-PID skeleton is the same one running today.
     </p>
   </div>
 </div>
