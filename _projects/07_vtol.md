@@ -18,7 +18,7 @@ long-duration surveillance for both commercial and defense applications.
 
 ### Why a Quad-Plane
 
-A pure multirotor (like the [50 kg cargo drone](../06_cargo_drone)) trades
+A pure multirotor (like the [50 kg heavy-lift drone](../06_heavy_lift_drone)) trades
 endurance for vertical agility. A pure fixed-wing trades vertical agility for
 endurance. A quad-plane runs four vertical rotors for take-off, landing, and
 hover, then transitions to a forward-thrust fixed-wing configuration for

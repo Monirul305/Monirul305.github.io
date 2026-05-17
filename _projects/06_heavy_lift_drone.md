@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Heavy-Lift Cargo Drone (50 kg payload, 30 min endurance, 15 km comms)
+title: Heavy-Lift Multirotor Drone (50 kg payload, 30 min endurance, 15 km comms)
 description: >
-  Multirotor cargo drone for logistics and emergency response.
+  Heavy-lift multirotor for logistics and emergency response.
   50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio.
+  Includes an interactive battery + motor sizing tool.
 img: assets/img/projects/cargo_drone.jpg
 importance: 6
 category: professional
@@ -11,7 +12,7 @@ category: professional
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
-Led design and optimisation of a heavy-lift multirotor cargo drone for logistics
+Led design and optimisation of a heavy-lift multirotor drone for logistics
 and emergency-response applications. Key engineering challenges: advanced battery
 management for 30-minute endurance at full payload, structural frame analysis for
 asymmetric load distribution, propulsion sizing to achieve a **1.5:1
@@ -41,6 +42,16 @@ flight under variable wind at altitude.
 
 This is the heavy-lift platform in [Cybernetics' drone product line](https://cyberneticsbd.com/cargo-drone/);
 the [SD15-N surveillance drone](../05_sd15n) is the lighter-weight tracking variant.
+
+### Interactive Sizing Tool
+
+The battery-pack and motor-sizing study that drove this drone's design has been ported to a browser-side calculator. Enter the component weights, battery-cell specs, motor thrust/current/throttle curve, and mission profile — it enumerates feasible Yₛ × Zₚ pack configurations and reports MTOW, throttle %, per-motor current, and forward-flight velocity for each payload level you ask about.
+
+<p>
+  <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}" class="btn btn-primary">Launch the sizing calculator →</a>
+</p>
+
+<p class="text-muted"><small>Coming soon — the tool currently lives in a separate workstream; this page will deep-link into it as soon as it's ready.</small></p>
 
 ### Tech Stack
 
