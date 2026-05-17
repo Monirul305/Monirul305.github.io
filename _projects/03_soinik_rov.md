@@ -91,11 +91,11 @@ Every controller and communication board on both ROVs was designed and milled in
 
 <div class="row justify-content-center mt-3">
   <div class="col-sm-8">
-    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
+    <video class="hover-autoplay-video img-fluid rounded z-depth-1" controls muted loop preload="metadata" playsinline style="width: 100%;">
       <source src="{{ '/assets/video/jontro-soinik-pcb-cnc.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="text-center mt-2"><em>3-axis CNC isolation-routing a controller board for the ROV.</em></p>
+    <p class="text-center mt-2"><em>3-axis CNC isolation-routing a controller board for the ROV. <small class="text-muted">(hover to play)</small></em></p>
   </div>
 </div>
 
@@ -118,19 +118,23 @@ Initiator circuit: 4× 24 V shock-tube sets · Deployment time ≤ 5 min
 
 ### Field Operation & Test Videos
 
+<p class="text-center text-muted"><small>Hover over any video to start playback (muted). Move the cursor away to pause.</small></p>
+
 <div class="row mt-3">
   <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 hover-autoplay-yt" data-yt-id="Mi29-6XXE8M">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/Mi29-6XXE8M"
+        src="https://www.youtube.com/embed/Mi29-6XXE8M?mute=1&enablejsapi=1"
+        allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-1"><em>Door-opening operation — Jontro Soinik v2</em></p>
   </div>
   <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 hover-autoplay-yt" data-yt-id="K-sZqb6KH98">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/K-sZqb6KH98"
+        src="https://www.youtube.com/embed/K-sZqb6KH98?mute=1&enablejsapi=1"
+        allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-1"><em>Screw-removal operation — Jontro Soinik v2</em></p>
@@ -139,22 +143,50 @@ Initiator circuit: 4× 24 V shock-tube sets · Deployment time ≤ 5 min
 
 <div class="row mt-3">
   <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 hover-autoplay-yt" data-yt-id="symk5vmXX-Q">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/symk5vmXX-Q"
+        src="https://www.youtube.com/embed/symk5vmXX-Q?mute=1&enablejsapi=1"
+        allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-1"><em>IP55 water-protection test (Bangladesh Army IE&amp;I)</em></p>
   </div>
   <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 hover-autoplay-yt" data-yt-id="Mipwd6lcz5s">
       <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/Mipwd6lcz5s"
+        src="https://www.youtube.com/embed/Mipwd6lcz5s?mute=1&enablejsapi=1"
+        allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-1"><em>Jontro Soinik v2 — Cybernetics promo</em></p>
   </div>
 </div>
+
+<script>
+(function () {
+  // YouTube iframes: swap src on hover-enter to add autoplay; revert on hover-leave.
+  // mouseenter/mouseleave on the WRAPPER do not fire when crossing into the iframe child,
+  // so they reliably bound the hover region around each embed.
+  document.querySelectorAll('.hover-autoplay-yt').forEach(function (wrap) {
+    var id = wrap.dataset.ytId;
+    var iframe = wrap.querySelector('iframe');
+    if (!id || !iframe) return;
+    var baseSrc    = 'https://www.youtube.com/embed/' + id + '?mute=1&enablejsapi=1';
+    var playSrc    = 'https://www.youtube.com/embed/' + id + '?autoplay=1&mute=1&enablejsapi=1';
+    wrap.addEventListener('mouseenter', function () { iframe.src = playSrc; });
+    wrap.addEventListener('mouseleave', function () { iframe.src = baseSrc; });
+  });
+
+  // HTML5 <video>: play on hover, pause + rewind on leave.
+  document.querySelectorAll('.hover-autoplay-video').forEach(function (v) {
+    v.addEventListener('mouseenter', function () {
+      var p = v.play();
+      if (p && typeof p.catch === 'function') { p.catch(function () {}); }
+    });
+    v.addEventListener('mouseleave', function () { v.pause(); v.currentTime = 0; });
+  });
+})();
+</script>
 
 ---
 
