@@ -37,6 +37,10 @@ control complexity.
 **Status:** Maiden flight completed successfully — core design principles validated
 on the first generation. Future work targets payload capacity and cruise endurance.
 
+{% include figure.liquid path="assets/img/projects/vtol-field.jpeg" class="project-hero-img rounded z-depth-1" alt="On the test field with the first-generation VTOL quad-plane." %}
+
+<p class="text-center"><em>On the field with the first-generation VTOL quad-plane between test sorties.</em></p>
+
 ### Tech Stack
 
 `VTOL design` · `Fixed-wing aerodynamics` · `ArduPilot` · `Flight controller tuning`

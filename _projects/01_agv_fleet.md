@@ -59,6 +59,17 @@ Per-robot pose `(x, y, θ)` is published at **50 Hz**, fusing wheel-encoder odom
 - **Mode switching** — while moving, the EKF is the source of truth; while parked, a complementary filter blends nearby-tag readings into a drift-free parked pose. Returning to motion snaps the EKF to the refined parked pose so the robot starts driving from a clean fix.
 - **Gating** — each camera reading is checked for freshness, distance, and bearing before it enters the filter.
 
+<div class="row mt-3 mb-2">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/agv-localization-bench-front.jpeg" class="img-fluid rounded z-depth-1" alt="AGV localization test bench — front view." %}
+    <p class="text-center mt-1"><small class="text-muted">Localization test bench — front view. AprilTag layout in front of the cameras for the EKF tuning rig.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/agv-localization-bench-side.jpeg" class="img-fluid rounded z-depth-1" alt="AGV localization test bench — side view." %}
+    <p class="text-center mt-1"><small class="text-muted">Same bench, side view — the two USB cameras and encoder-equipped drive used to capture ground-truth fixes.</small></p>
+  </div>
+</div>
+
 **Path Planning — Distributed A\* with Peer-Aware Reservations**
 Each robot runs an A* planner over a shared **63 × 171 occupancy grid at 0.4 m / cell** (≈ 25 m × 68 m) of the facility. Plans are not centrally coordinated; instead, each robot continuously **publishes its current planned path** as a sequence of timestamped grid waypoints, and every other robot subscribes.
 

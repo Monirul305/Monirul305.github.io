@@ -85,9 +85,16 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 
 Every controller and communication board on both ROVs was designed and milled in-house. I drew the schematics and layouts in Altium Designer / KiCad, then ran the boards off on a small 3-axis CNC at the bench — drilling, isolation routing, and outline cut all done myself. Keeping the fab loop inside the room shortened a typical board-spin from days to hours and let the design iterate at the pace the firmware needed.
 
-{% include figure.liquid path="assets/img/projects/jontro-soinik-pcb-cnc.jpeg" class="project-hero-img rounded z-depth-1" alt="Hand-milled PCBs for the Jontro Soinik ROV control electronics." %}
-
-<p class="text-center"><em>Hand-milled control PCBs straight off the 3-axis CNC.</em></p>
+<div class="row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/cnc-pcb-mill.jpeg" class="img-fluid rounded z-depth-1" alt="3-axis CNC mill used to fabricate ROV controller PCBs in-house." %}
+    <p class="text-center mt-1"><small class="text-muted">The 3-axis CNC mill — every board on both ROVs came off this machine.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/jontro-soinik-pcb-cnc.jpeg" class="img-fluid rounded z-depth-1" alt="Hand-milled PCBs for the Jontro Soinik ROV control electronics." %}
+    <p class="text-center mt-1"><small class="text-muted">Hand-milled control PCBs straight off the mill, before stuffing.</small></p>
+  </div>
+</div>
 
 <div class="row justify-content-center mt-3">
   <div class="col-sm-8">
