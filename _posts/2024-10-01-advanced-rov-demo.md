@@ -34,7 +34,7 @@ This ROV is designed for performance in demanding environments, offering reliabi
 
 - **Video editor:** Shakil Tanvir
 - **Company:** [Cybernetics Hi-Tech Solutions (Pvt) Ltd.](https://cyberneticsbd.com)
-- **Project page on this site:** [Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation]({{ '/projects/09_advanced_rov_cofdm/' | relative_url }})
+- **Project page on this site:** [Jontro Soinik v1 — Tele-Op & Multi-Camera Vision (COFDM, HCU/OCU)]({{ '/projects/09_advanced_rov_cofdm/' | relative_url }}). For the full robot, see the [EOD ROV family page]({{ '/projects/03_soinik_rov/' | relative_url }}).
 
 ---
 

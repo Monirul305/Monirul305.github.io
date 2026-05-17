@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation
+title: Jontro Soinik v1 — Tele-Op & Multi-Camera Vision (COFDM, HCU/OCU)
 description: >
-  Next-generation ROV with 6-DOF arm (20 kg @ 5 km/h), six IP cameras,
-  1.4 GHz COFDM 1 km video link, HCU/OCU dual control.
+  Deep-dive on Jontro Soinik v1's teleoperation and vision subsystem —
+  6-camera IP head, 1.4 GHz COFDM 1 km video link, HCU / OCU / wired-optical
+  control hand-off.
 img: assets/img/projects/advanced_rov.jpg
 importance: 5
 category: professional
@@ -11,11 +12,16 @@ category: professional
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
-Next-generation ROV demonstrating significantly expanded capability over the
-[Soinik family](../03_soinik_rov): a 6-DOF robotic arm carrying **20 kg while
-moving at 5 km/h**, paired with a comprehensive multi-camera and wireless video
-system. Targeted at field operations where situational awareness and operator
-adaptability are the limiting factors.
+<div class="row">
+  <div class="col-sm-12">
+    <div class="alert alert-info" role="alert">
+      <strong>Scope.</strong> This page goes deep on the teleoperation control modes and the multi-camera + COFDM video subsystem of <strong>Jontro Soinik v1</strong>. For the full robot — chassis, arm, communication architecture, UN deployment context — see the main
+      <a href="{{ '/projects/03_soinik_rov/' | relative_url }}">EOD ROV family page</a>.
+    </div>
+  </div>
+</div>
+
+The vision and tele-op stack documented here is what an operator actually sees and touches on Jontro Soinik v1 in the field: six IP cameras feeding back over a long-range RF video link, two physical control units sized for different mission profiles, and a wired fallback that keeps the robot under operator command when the RF environment turns hostile.
 
 ### Vision System — Six IP Cameras
 
@@ -27,27 +33,24 @@ adaptability are the limiting factors.
 | Thermal | Heat-signature monitoring |
 | All cameras | Night-vision capability |
 
-Live video transmitted over a **1.4 GHz COFDM** link at up to **1 km range**,
-chosen for low-latency, secure video transport that holds up in RF-noisy
-environments where commodity 2.4/5 GHz video links degrade.
+Live video is transmitted over a **1.4 GHz COFDM** link at up to **1 km range**, chosen for low-latency, secure video transport that holds up in RF-noisy environments where commodity 2.4 / 5 GHz video links degrade. The arm carries **20 kg while moving at 5 km/h**, so the camera-to-claw closed loop has to stay tight on the operator end even as the platform is moving under load.
 
 ### Operator-Side Control — Three Modes
 
-- **HCU (Handheld Control Unit)** — short-range, lightweight portable operation
-- **OCU (Operation Control Unit)** — long-range with full diagnostics and
-  multi-camera switching
-- **Wired optical fallback** — fibre tether for fully RF-contested environments,
-  preserving operator control when the wireless channels are jammed
+- **HCU (Handheld Control Unit)** — short-range, lightweight portable operation for setup, line-of-sight tasks, and operator pre-checks.
+- **OCU (Operation Control Unit)** — long-range console with the full diagnostics view, multi-camera switching, and the primary mission interface.
+- **Wired optical fallback** — fibre tether for fully RF-contested environments, preserving operator control when the wireless channels are jammed or unusable.
 
 ### Engineering Focus
 
-- **Multi-camera streaming pipeline** over COFDM — synchronisation across six
-  feeds, latency budgeting for arm-end-effector teleop, bandwidth allocation
-  per camera role.
-- **Heavy-payload arm dynamics** — 20 kg lift while in transit at 5 km/h
-  imposes coupling between locomotion and manipulation control loops.
-- **Fail-soft control hand-off** — automatic degrade from wireless OCU to
-  wired fallback when link quality drops below thresholds.
+- **Multi-camera streaming pipeline** over COFDM — synchronisation across six feeds, latency budgeting for arm-end-effector teleop, bandwidth allocation per camera role.
+- **Heavy-payload arm dynamics** — lifting 20 kg while in transit at 5 km/h imposes real coupling between locomotion and manipulation control loops, which the operator console has to mask.
+- **Fail-soft control hand-off** — automatic degrade from wireless OCU to wired fallback when link quality drops below thresholds, so the robot never silently goes out of operator reach.
+
+### Demo
+
+Short field-operations clip of the full vision + tele-op stack is mirrored as a blog entry:
+[Tele-Operated ROV Demo — 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}).
 
 ### Tech Stack
 
