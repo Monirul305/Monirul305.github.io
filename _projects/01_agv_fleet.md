@@ -60,11 +60,15 @@ Per-robot pose `(x, y, θ)` is published at **50 Hz**, fusing wheel-encoder odom
 - **Gating** — each camera reading is checked for freshness, distance, and bearing before it enters the filter.
 
 <div class="row mt-3 mb-2">
-  <div class="col-sm-6">
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/agv-marker-placement.jpeg" class="img-fluid rounded z-depth-1" alt="In-situ AprilTag placement along the factory corridor." %}
+    <p class="text-center mt-1"><small class="text-muted">Placing AprilTag fiducials along the corridor — fix density tuned to the EKF's drift envelope.</small></p>
+  </div>
+  <div class="col-sm-4">
     {% include figure.liquid path="assets/img/projects/agv-localization-bench-front.jpeg" class="img-fluid rounded z-depth-1" alt="AGV localization test bench — front view." %}
     <p class="text-center mt-1"><small class="text-muted">Localization test bench — front view. AprilTag layout in front of the cameras for the EKF tuning rig.</small></p>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-4">
     {% include figure.liquid path="assets/img/projects/agv-localization-bench-side.jpeg" class="img-fluid rounded z-depth-1" alt="AGV localization test bench — side view." %}
     <p class="text-center mt-1"><small class="text-muted">Same bench, side view — the two USB cameras and encoder-equipped drive used to capture ground-truth fixes.</small></p>
   </div>
@@ -105,6 +109,10 @@ Layered above all three: the FleetCore heartbeat / directory / failsafe substrat
 | Status | RGB LED tower (GPIO) |
 | Middleware | ROS 2 (Python) |
 | Clock sync | NTP across all nodes |
+
+{% include figure.liquid path="assets/img/projects/agv-wiring.jpeg" class="project-hero-img rounded z-depth-1" alt="Hand-built per-robot wiring loom — Raspberry Pi, motor drives, LiDAR, USB camera fan-out." %}
+
+<p class="text-center"><em>Final per-robot wiring — Raspberry Pi, motor drives, LiDAR, and the dual-camera fan-out laced and routed by hand.</em></p>
 
 ---
 
