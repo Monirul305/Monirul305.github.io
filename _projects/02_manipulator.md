@@ -22,9 +22,9 @@ category: professional
   </div>
 </div>
 
-### Platform
+### Platform — Jontro Soinik 2.0
 
-A tracked mobile robot with 11 independently actuated joints. The **7-DOF manipulator chain** — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below; the remaining four joints drive the platform itself (flippers + tracks).
+**Jontro Soinik 2.0** is a tracked unmanned ground vehicle with a 7-DOF hybrid manipulator on top, tele-operated over an RC link. The full chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below; the remaining four joints drive the platform itself (flippers + tracks).
 
 | Group | Joints | Control Mode |
 |---|---|---|
@@ -179,6 +179,24 @@ Default SCALE_R = 0.15 m: **≥ 40% reduction** in home-pose swing, X-tracking e
 
 ---
 
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/fVKDyWmPwtU?start=25"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Jontro Soinik 2.0 — Tracked Robot with 7-DOF Arm in Action</em>
+      — full-system RViz / MoveIt walkthrough and live tele-op
+    </p>
+  </div>
+</div>
+
+---
+
 ### Tech Stack
 
-`ROS 2` · `MoveIt 2` · `ros2_control` · `JointTrajectoryController` · `Python` · `URDF/Xacro` · `SRDF` · `SBus/UART` · `Closed-form IK` · `Python unittest`
+`ROS 2 (Jazzy)` · `MoveIt 2` · `ros2_control` · `JointTrajectoryController` · `Python` · `URDF/Xacro` · `SRDF` · `SBus/UART` · `Closed-form IK` · `Python unittest`
