@@ -33,8 +33,8 @@ My recent work includes: a **production-deployed 3-robot AGV fleet** navigating 
 live garment factory floor alongside hundreds of workers (ROS 2, AprilTag EKF,
 distributed reservation-based path planning); a **ROS 2 / MoveIt 2 manipulator
 control stack** for a 7-DOF arm with a custom closed-form analytical IK solver, singularity
-handling, and 40-test validation suite; and contributing to the **Smart Soinik and
-Jontro Soinik EOD ROV family** — indigenously-developed robots tested by the
+handling, and 40-test validation suite; and contributing to the **Jontro Soinik
+EOD ROV family** — indigenously-developed robots tested by the
 Bangladesh Army and now deployed in
 [UN Peacekeeping Missions](https://cyberneticsbd.com/smart-soinik-1-0/) in
 Mali and the Republic of Congo.
@@ -96,5 +96,5 @@ discuss potential fit.
 ### Selected Field Deployments
 
 - **3-robot AGV fleet** — live production at The Urmi Group RMG facility, 2025–present
-- **Smart Soinik 1.0 EOD ROV** — UN Peacekeeping Mission, Mali, 2024 (Bangladesh Army → Peruvian Armed Forces handover)
-- **Jontro Soinik 1.0 EOD ROV** — tested by Bangladesh Army, set for UN Peacekeeping deployment in the Republic of Congo, 2025
+- **Jontro Soinik v1 EOD ROV** — UN Peacekeeping Mission, Mali, 2024 (Bangladesh Army → Peruvian Armed Forces handover)
+- **Jontro Soinik v2 EOD ROV** — tested by Bangladesh Army, set for UN Peacekeeping deployment in the Republic of Congo, 2025
