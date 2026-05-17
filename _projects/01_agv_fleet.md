@@ -40,30 +40,45 @@ The system has two layers: a **centralised fleet coordinator (FleetCore)** manag
 
 #### FleetCore — Fleet Coordinator
 
-- Tracks real-time status of every robot
-- Maintains a job queue fed by physical call stations across the factory floor
-- Dispatches tasks to available robots
-- Enforces **mutual exclusion** on shared unload stations — only one robot assigned at a time, others queue in staging positions
-- **Guaranteed delivery**: job dispatch is confirmed through observable robot state transitions, not dropped silently under network load
+A ROS 2 dispatcher that turns operator button-presses at calling stations into AGV missions and runs them through pickup → unload → return cycles. Architected to **fail closed** at every layer.
+
+- **FIFO job queue** fed by physical call-station button presses; rising-edge detection prevents duplicate enqueues.
+- **Per-robot FSMs** track each robot's `IDLE` / `WORKING` / `RECOVERING` / `INACTIVE` state from heartbeats and availability messages — using sequence counters rather than single messages, so transient comms glitches don't flip the FSM.
+- **Mutual exclusion** on shared unload stations: the lift and inbound scanner are single-occupant resources; robots blocked on a busy station queue in dedicated staging bays.
+- **Layered timeouts** for accept, arrival, and pickup / unload gates — each timeout releases shared resources, mints a fresh job ID, and sends the robot back to its waiting station to retry.
+- **Deadlock recovery**: when several robots stall on simultaneous obstacle flags, FleetCore issues staggered re-dispatches with fresh job IDs so each robot's nav stack treats the next leg as a new goal.
+- **Heartbeat / directory / failsafe substrate**: every robot must continuously broadcast a liveness heartbeat to stay in the active-robot directory; top-level `home` / `reset` / `failsafe` switches give the operator a single-button override of the whole fleet.
 
 #### Per-Robot Navigation Stack
 
-**Localization — Custom EKF**
-Multi-sensor fusion combining wheel encoder odometry with absolute pose fixes from ceiling-mounted AprilTag fiducials detected by dual side-mounted USB cameras. A custom Extended Kalman Filter integrates these sources continuously, with bias estimation and outlier rejection to maintain accuracy in a 68-metre feature-poor corridor.
+**Localization — Custom 5-State EKF with Two Operating Modes**
+Per-robot pose `(x, y, θ)` is published at **50 Hz**, fusing wheel-encoder odometry with absolute pose fixes from two side-mounted USB cameras detecting AprilTag fiducials.
 
-**Path Planning — Distributed Reservation-Based**
-Robots plan routes on a discrete grid of the facility map. Each robot is aware of its peers' **planned future paths** (as time-stamped reservations) and plans around them. A priority scheme resolves conflicts — no central traffic controller, no bottleneck.
+- The EKF state is **5-dimensional** — pose plus learned linear and angular velocity biases that absorb systematic encoder errors (wheel-radius miscalibration, slip) over the long corridor.
+- **Camera-latency compensation** — every camera update is applied at its true measurement timestamp via a rewind-and-replay step on a bounded encoder history buffer, not at the time the measurement arrived.
+- **Mode switching** — while moving, the EKF is the source of truth; while parked, a complementary filter blends nearby-tag readings into a drift-free parked pose. Returning to motion snaps the EKF to the refined parked pose so the robot starts driving from a clean fix.
+- **Gating** — each camera reading is checked for freshness, distance, and bearing before it enters the filter.
 
-**Motion Control — Closed-Loop PID**
-PID controller translating planned paths into differential-drive wheel velocity commands at high frequency, issued over **RS-485 Modbus RTU** to motor drive units {% cite tanvir2024rs485 %}.
+**Path Planning — Distributed A\* with Peer-Aware Reservations**
+Each robot runs an A* planner over a shared **63 × 171 occupancy grid at 0.4 m / cell** (≈ 25 m × 68 m) of the facility. Plans are not centrally coordinated; instead, each robot continuously **publishes its current planned path** as a sequence of timestamped grid waypoints, and every other robot subscribes.
+
+- The planner enforces three peer-conflict rules: **node conflict** (spatial–temporal overlap with a peer waypoint), **edge swap** (head-on conflict on the same edge), and **final-cell occupation** (no plan terminates inside another robot's planned end cell).
+- A **planner / manager split** keeps the A* search stateless and on-demand, while a per-robot manager handles when to re-plan, how to react to obstacles, and how to keep the published timestamps fresh.
+- **Continuous timestamp maintenance** — the plan is computed once but its waypoint timestamps are rigidly shifted on every publish so peers always see realistic ETAs, not stale ones. This is what makes the spatiotemporal conflict checks actually work in practice.
+- **Obstacle handling without dropping the path** — when an obstacle persists, the old plan keeps publishing with shifted timestamps so peers stay committed to a coherent fleet picture; only when a clean replacement plan is found does it swap in.
+
+**Motion Control — Closed-Loop PID over RS-485 Modbus RTU**
+A PID controller translates planned paths into differential-drive wheel velocity commands at high frequency, issued over **RS-485 Modbus RTU** to the motor drives {% cite tanvir2024rs485 %}.
 
 **Safety — Three Layers**
 
 | Layer | Mechanism | Trigger |
 |---|---|---|
-| 1 — Immediate | Forward-facing LiDAR zone | Emergency motor stop on obstacle |
-| 2 — Readiness | Subsystem health gating | No motion until all subsystems healthy |
+| 1 — Immediate | Forward-facing LiDAR safety zone | Emergency motor stop on obstacle |
+| 2 — Readiness | Subsystem health gating | No motion until every subsystem reports healthy |
 | 3 — Planning | Peer-aware conflict avoidance | Robots never plan into each other's space |
+
+Layered above all three: the FleetCore heartbeat / directory / failsafe substrate halts motion fleet-wide on a single operator button.
 
 ---
 
