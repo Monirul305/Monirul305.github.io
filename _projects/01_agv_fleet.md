@@ -59,7 +59,7 @@ Per-robot pose `(x, y, θ)` is published at **50 Hz**, fusing wheel-encoder odom
 - **Mode switching** — while moving, the EKF is the source of truth; while parked, a complementary filter blends nearby-tag readings into a drift-free parked pose. Returning to motion snaps the EKF to the refined parked pose so the robot starts driving from a clean fix.
 - **Gating** — each camera reading is checked for freshness, distance, and bearing before it enters the filter.
 
-<div class="row mt-3 mb-2">
+<div class="row project-photo-row mt-3 mb-2">
   <div class="col-sm-4">
     {% include figure.liquid path="assets/img/projects/agv-marker-placement.jpeg" class="img-fluid rounded z-depth-1" alt="In-situ AprilTag placement along the factory corridor." %}
     <p class="text-center mt-1"><small class="text-muted">Placing AprilTag fiducials along the corridor — fix density tuned to the EKF's drift envelope.</small></p>

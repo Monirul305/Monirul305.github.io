@@ -206,6 +206,27 @@ figure:has(.project-hero-img) {
   text-align: center;
 }
 
+// Uniform multi-photo grids inside project detail pages
+//
+// When a project page lays out 2–3 photos in a single row (col-sm-6
+// or col-sm-4), source images come in mixed aspect ratios and the
+// strip looks ragged. Add `class="row project-photo-row ..."` to the
+// wrapping row and every tile is forced to the same 4:3 frame with
+// object-fit: cover (crop to fill, no warp). Captions sit below
+// unchanged.
+.project-photo-row [class*="col-"] picture img,
+.project-photo-row [class*="col-"] figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.project-photo-row [class*="col-"] figure,
+.project-photo-row [class*="col-"] picture {
+  margin: 0;
+}
+
 // Repositories
 
 @media (min-width: 768px) {
