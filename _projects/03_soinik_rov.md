@@ -43,6 +43,10 @@ The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-de
 | Range (LOS) | 1000 ft | 1000 ft |
 | Disrupter | — | ✓ 24 V actuation circuit |
 
+{% include figure.liquid path="assets/img/projects/jontro-soinik-v2-pair.jpg" class="project-hero-img rounded z-depth-1" alt="Two Jontro Soinik v2 ROVs lined up side by side after the build is complete." %}
+
+<p class="text-center"><em>Two v2 units side by side at hand-off — same chassis, same arm, same custom-bus electronics, ready for delivery.</em></p>
+
 ---
 
 ### Army Validation — v2
@@ -75,9 +79,9 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 - **Custom PCB design and in-house CNC milling** for the control and communication subsystems — schematic and layout in Altium Designer / KiCad, then milled on a small 3-axis CNC at the Cybernetics bench by hand. Every controller board on both v1 and v2 came off that machine; no external fab in the loop.
 - **48 V power distribution** and energy management for extended field operations
 
-{% include figure.liquid path="assets/img/projects/jontro-soinik-v1-firmware-dev.jpeg" class="project-hero-img rounded z-depth-1" alt="Firmware development bench for Jontro Soinik v1." %}
+{% include figure.liquid path="assets/img/projects/jontro-soinik-v2-firmware-debug.jpg" class="project-hero-img rounded z-depth-1" alt="Debugging Jontro Soinik v2 firmware at the Cybernetics bench." %}
 
-<p class="text-center"><em>v1 firmware-development bench — central-node controller talking to peripheral controllers over the star fan-out.</em></p>
+<p class="text-center"><em>v2 firmware-debug bench — driving the custom multi-drop bus from the central controller while the peripheral nodes report back.</em></p>
 
 ---
 
@@ -139,16 +143,6 @@ Before each unit ships, I run operator-training sessions and on-site evaluations
   <div class="col-sm-4">
     {% include figure.liquid path="assets/img/projects/eod-rov-supervision.jpg" class="img-fluid rounded z-depth-1" alt="Supervising the post-training evaluation exam of the soldiers." %}
     <p class="text-center mt-1"><small class="text-muted">Supervising the post-training evaluation exam at the receiving unit.</small></p>
-  </div>
-</div>
-
-<div class="row justify-content-center mt-3">
-  <div class="col-sm-8">
-    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
-      <source src="{{ '/assets/video/jontro-soinik-v1-operation.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="text-center mt-2"><em>Jontro Soinik v1 — field-operation clip.</em></p>
   </div>
 </div>
 

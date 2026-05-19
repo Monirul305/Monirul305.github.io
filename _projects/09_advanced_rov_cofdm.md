@@ -23,9 +23,16 @@ category: professional
 
 The vision and tele-op stack documented here is what an operator actually sees and touches on Jontro Soinik v1 in the field: six IP cameras feeding back over a long-range RF video link, two physical control units sized for different mission profiles, and a wired fallback that keeps the robot under operator command when the RF environment turns hostile.
 
-{% include figure.liquid path="assets/img/projects/jontro-soinik-v1-bench.jpg" class="project-hero-img rounded z-depth-1" alt="Working on Jontro Soinik v1 at the Cybernetics bench during the build phase." %}
-
-<p class="text-center"><em>Bench work on Jontro Soinik v1 during the build phase.</em></p>
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/jontro-soinik-v1-bench.jpg" class="img-fluid rounded z-depth-1" alt="Working on Jontro Soinik v1 at the Cybernetics bench during the build phase." %}
+    <p class="text-center mt-1"><small class="text-muted">Bench work on v1 during the build phase — arm, tracks, and electronics on the test fixture.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/jontro-soinik-v1-firmware-dev.jpeg" class="img-fluid rounded z-depth-1" alt="Firmware development bench for Jontro Soinik v1." %}
+    <p class="text-center mt-1"><small class="text-muted">v1 firmware-development bench — central control node talking to peripheral controllers over the star fan-out.</small></p>
+  </div>
+</div>
 
 ### Vision System — Six IP Cameras
 
@@ -51,9 +58,19 @@ Live video is transmitted over a **1.4 GHz COFDM** link at up to **1 km range**,
 - **Heavy-payload arm dynamics** — lifting 20 kg while in transit at 5 km/h imposes real coupling between locomotion and manipulation control loops, which the operator console has to mask.
 - **Fail-soft control hand-off** — automatic degrade from wireless OCU to wired fallback when link quality drops below thresholds, so the robot never silently goes out of operator reach.
 
-### Demo
+### Field-Operation Clip
 
-Short field-operations clip of the full vision + tele-op stack is mirrored as a blog entry:
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/jontro-soinik-v1-operation.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2"><em>Jontro Soinik v1 — field operation, full vision + tele-op stack live.</em></p>
+  </div>
+</div>
+
+A longer field-operations clip of the same stack is mirrored as a blog entry:
 [Tele-Operated ROV Demo — 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}).
 
 ### Tech Stack
