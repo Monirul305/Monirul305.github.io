@@ -174,9 +174,9 @@ ninja.data = [{
           description: "First-generation VTOL quad-plane prototype for heavy-lift and long-duration surveillance. Maiden flight validated core design.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/07_vtol/";
-            },},{id: "projects-industrial-corexy-3d-printer-510-510-550-mm-0-02-mm-repeatability",
-          title: 'Industrial CoreXY 3D Printer — 510 × 510 × 550 mm, ±0.02 mm...',
-          description: "Large-format industrial 3D printer built from scratch. CoreXY kinematics, 510×510×550 mm build volume, ±0.02 mm repeatability, Marlin 2.0.",
+            },},{id: "projects-titan-550-industrial-corexy-3d-printer-510-510-550-mm-0-02-mm-repeatability",
+          title: 'Titan 550 — Industrial CoreXY 3D Printer (510 × 510 × 550 mm,...',
+          description: "Large-format industrial 3D printer built from scratch as a Cybernetics product. CoreXY kinematics, 510×510×550 mm build volume, ±0.02 mm repeatability, direct-drive dual-gear extruder, BigTreeTech / TMC2209 electronics, Marlin 2.0.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/08_titan550/";
             },},{id: "projects-jontro-soinik-v1-tele-op-amp-multi-camera-vision-cofdm-hcu-ocu",
