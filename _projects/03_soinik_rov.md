@@ -123,6 +123,31 @@ Initiator circuit: 4× 24 V shock-tube sets · Deployment time ≤ 5 min
 
 ---
 
+### Operator Training & Field Handover
+
+Before each unit ships, I run operator-training sessions and on-site evaluations with the receiving units — walking soldiers through the control modes, fault-recovery sequence, and the full mission envelope, then supervising hands-on evaluation exams.
+
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/eod-rov-training-1.jpg" class="img-fluid rounded z-depth-1" alt="Operator training session on the Indigenous EOD ROV." %}
+    <p class="text-center mt-1"><small class="text-muted">Operator-training session — walking soldiers through the control modes.</small></p>
+  </div>
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/eod-rov-training-2.jpg" class="img-fluid rounded z-depth-1" alt="Continued operator training on the Indigenous EOD ROV." %}
+    <p class="text-center mt-1"><small class="text-muted">Mission-envelope walkthrough — manipulator, drive, and camera workflow.</small></p>
+  </div>
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/eod-rov-supervision.jpg" class="img-fluid rounded z-depth-1" alt="Supervising the post-training evaluation exam of the soldiers." %}
+    <p class="text-center mt-1"><small class="text-muted">Supervising the post-training evaluation exam at the receiving unit.</small></p>
+  </div>
+</div>
+
+{% include figure.liquid path="assets/img/projects/jontro-soinik-v1-bench.jpg" class="project-hero-img rounded z-depth-1" alt="Working on Jontro Soinik v1 at the Cybernetics bench." %}
+
+<p class="text-center"><em>Bench work on Jontro Soinik v1 during the build phase.</em></p>
+
+---
+
 ### Field Operation & Test Videos
 
 <div class="row mt-3">

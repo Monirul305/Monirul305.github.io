@@ -179,6 +179,23 @@ Default SCALE_R = 0.15 m: **≥ 40% reduction** in home-pose swing, X-tracking e
 
 ---
 
+### Carbon-Fibre Carrier Manufacturing
+
+The 7-DOF chain mounts on a custom carbon-fibre carrier I laid up by hand. The carrier had to be light enough to keep the platform's payload margin while stiff enough that the arm's IK assumptions about a rigid base actually hold under load.
+
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-1.jpg" class="img-fluid rounded z-depth-1" alt="Hand-laying carbon-fibre cloth on the manipulator carrier mould." %}
+    <p class="text-center mt-1"><small class="text-muted">Hand lay-up of the carbon-fibre carrier — orienting plies before cure.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" alt="Trimmed and post-cured carbon-fibre carrier shell for the 7-DOF manipulator." %}
+    <p class="text-center mt-1"><small class="text-muted">Post-cure trimming and fit-up to the chassis hard-points.</small></p>
+  </div>
+</div>
+
+---
+
 ### Demo Video
 
 <div class="row justify-content-center mt-3">

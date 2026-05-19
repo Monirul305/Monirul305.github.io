@@ -40,6 +40,10 @@ flight under variable wind at altitude.
 - **Power-distribution PCBs** designed in Altium for high-current routing and
   in-flight current/voltage monitoring.
 
+{% include figure.liquid path="assets/img/projects/heavy-lift-drone-aero-brief.jpg" class="project-hero-img rounded z-depth-1" alt="Walking through the heavy-lift drone's aerodynamics simulation results." %}
+
+<p class="text-center"><em>Walking the team through the heavy-lift drone's aerodynamics-simulation results at design review.</em></p>
+
 This is the heavy-lift platform in [Cybernetics' drone product line](https://cyberneticsbd.com/cargo-drone/);
 the [SD15-N surveillance drone](../05_sd15n) is the lighter-weight tracking variant.
 

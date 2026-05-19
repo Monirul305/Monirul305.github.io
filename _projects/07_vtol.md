@@ -37,9 +37,26 @@ control complexity.
 **Status:** Maiden flight completed successfully — core design principles validated
 on the first generation. Future work targets payload capacity and cruise endurance.
 
-{% include figure.liquid path="assets/img/projects/vtol-field.jpeg" class="project-hero-img rounded z-depth-1" alt="On the test field with the first-generation VTOL quad-plane." %}
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/vtol-field.jpeg" class="img-fluid rounded z-depth-1" alt="On the test field with the first-generation VTOL quad-plane." %}
+    <p class="text-center mt-1"><small class="text-muted">On the field with the first-generation VTOL quad-plane between sorties.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/vtol-preflight.jpg" class="img-fluid rounded z-depth-1" alt="Pre-flight check on the VTOL quad-plane." %}
+    <p class="text-center mt-1"><small class="text-muted">Pre-flight check — control-surface throws, prop direction, and link integrity.</small></p>
+  </div>
+</div>
 
-<p class="text-center"><em>On the field with the first-generation VTOL quad-plane between test sorties.</em></p>
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/vtol-demo.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2"><em>VTOL quad-plane — flight demo.</em></p>
+  </div>
+</div>
 
 ### Tech Stack
 
