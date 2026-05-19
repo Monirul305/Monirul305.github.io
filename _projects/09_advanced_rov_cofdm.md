@@ -23,6 +23,10 @@ category: professional
 
 The vision and tele-op stack documented here is what an operator actually sees and touches on Jontro Soinik v1 in the field: six IP cameras feeding back over a long-range RF video link, two physical control units sized for different mission profiles, and a wired fallback that keeps the robot under operator command when the RF environment turns hostile.
 
+{% include figure.liquid path="assets/img/projects/jontro-soinik-v1-bench.jpg" class="project-hero-img rounded z-depth-1" alt="Working on Jontro Soinik v1 at the Cybernetics bench during the build phase." %}
+
+<p class="text-center"><em>Bench work on Jontro Soinik v1 during the build phase.</em></p>
+
 ### Vision System — Six IP Cameras
 
 | Role | Capabilities |

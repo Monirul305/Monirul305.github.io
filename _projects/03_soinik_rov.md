@@ -142,9 +142,15 @@ Before each unit ships, I run operator-training sessions and on-site evaluations
   </div>
 </div>
 
-{% include figure.liquid path="assets/img/projects/jontro-soinik-v1-bench.jpg" class="project-hero-img rounded z-depth-1" alt="Working on Jontro Soinik v1 at the Cybernetics bench." %}
-
-<p class="text-center"><em>Bench work on Jontro Soinik v1 during the build phase.</em></p>
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <video controls preload="metadata" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/jontro-soinik-v1-operation.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2"><em>Jontro Soinik v1 — field-operation clip.</em></p>
+  </div>
+</div>
 
 ---
 
