@@ -194,6 +194,14 @@ The 7-DOF chain mounts on a custom carbon-fibre carrier I laid up by hand. The c
   </div>
 </div>
 
+### Drive-Wheel Assembly
+
+The tracked base's left/right drive groups are velocity-controlled open-loop from SBus (see the platform table above). Each drive wheel takes its own brace, bearing, and pulley mount built up at the bench.
+
+{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Building up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
+
+<p class="text-center"><em>Building up the drive-wheel assembly for the tracked base — bearing seats, pulleys, and brace plates lined up before lacing.</em></p>
+
 ---
 
 ### Demo Video
