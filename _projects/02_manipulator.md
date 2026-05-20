@@ -189,8 +189,8 @@ The mechanical side of this platform — the carbon-fibre carrier the 7-DOF chai
     <p class="text-center mt-1"><small class="text-muted">Assisting with the carbon-fibre carrier lay-up — orienting plies before cure.</small></p>
   </div>
   <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" alt="Trimmed and post-cured carbon-fibre carrier shell for the 7-DOF manipulator." %}
-    <p class="text-center mt-1"><small class="text-muted">Post-cure trim and fit-up to the chassis hard-points.</small></p>
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" alt="Pre-resin-infusion trimming of the dry carbon-fibre lay-up in the mould." %}
+    <p class="text-center mt-1"><small class="text-muted">Pre-resin-infusion trimming — dressing the dry lay-up in the mould before vacuum infusion.</small></p>
   </div>
 </div>
 
