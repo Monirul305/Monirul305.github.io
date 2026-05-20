@@ -179,28 +179,24 @@ Default SCALE_R = 0.15 m: **≥ 40% reduction** in home-pose swing, X-tracking e
 
 ---
 
-### Carbon-Fibre Carrier Manufacturing
+### Mechanical Build (Supporting Role)
 
-The 7-DOF chain mounts on a custom carbon-fibre carrier I laid up by hand. The carrier had to be light enough to keep the platform's payload margin while stiff enough that the arm's IK assumptions about a rigid base actually hold under load.
+The mechanical side of this platform — the carbon-fibre carrier the 7-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions. My own contribution on this project is the control / software stack documented in the rest of this page.
 
 <div class="row project-photo-row mt-3">
   <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-1.jpg" class="img-fluid rounded z-depth-1" alt="Hand-laying carbon-fibre cloth on the manipulator carrier mould." %}
-    <p class="text-center mt-1"><small class="text-muted">Hand lay-up of the carbon-fibre carrier — orienting plies before cure.</small></p>
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-1.jpg" class="img-fluid rounded z-depth-1" alt="Assisting with the carbon-fibre carrier lay-up on the manipulator." %}
+    <p class="text-center mt-1"><small class="text-muted">Assisting with the carbon-fibre carrier lay-up — orienting plies before cure.</small></p>
   </div>
   <div class="col-sm-6">
     {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" alt="Trimmed and post-cured carbon-fibre carrier shell for the 7-DOF manipulator." %}
-    <p class="text-center mt-1"><small class="text-muted">Post-cure trimming and fit-up to the chassis hard-points.</small></p>
+    <p class="text-center mt-1"><small class="text-muted">Post-cure trim and fit-up to the chassis hard-points.</small></p>
   </div>
 </div>
 
-### Drive-Wheel Assembly
+{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
 
-The tracked base's left/right drive groups are velocity-controlled open-loop from SBus (see the platform table above). Each drive wheel takes its own brace, bearing, and pulley mount built up at the bench.
-
-{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Building up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
-
-<p class="text-center"><em>Building up the drive-wheel assembly for the tracked base — bearing seats, pulleys, and brace plates lined up before lacing.</em></p>
+<p class="text-center"><em>Helping build up the drive-wheel assembly for the tracked base — bearing seats, pulleys, and brace plates laid out before lacing.</em></p>
 
 ---
 
