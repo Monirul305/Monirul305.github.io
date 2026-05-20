@@ -79,9 +79,16 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 - **Custom PCB design and in-house CNC milling** for the control and communication subsystems — schematic and layout in Altium Designer / KiCad, then milled on a small 3-axis CNC at the Cybernetics bench by hand. Every controller board on both v1 and v2 came off that machine; no external fab in the loop.
 - **48 V power distribution** and energy management for extended field operations
 
-{% include figure.liquid path="assets/img/projects/jontro-soinik-v2-firmware-debug.jpg" class="project-hero-img rounded z-depth-1" alt="Debugging Jontro Soinik v2 firmware at the Cybernetics bench." %}
-
-<p class="text-center"><em>v2 firmware-debug bench — driving the custom multi-drop bus from the central controller while the peripheral nodes report back.</em></p>
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/jontro-soinik-v2-firmware-debug.jpg" class="img-fluid rounded z-depth-1" alt="Debugging Jontro Soinik v2 firmware on the bench." %}
+    <p class="text-center mt-1"><small class="text-muted">v2 firmware-debug bench — driving the custom multi-drop bus from the central controller while the peripheral nodes report back.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/jontro-soinik-v2-final-debug.jpeg" class="img-fluid rounded z-depth-1" alt="Final firmware debugging on two fully assembled v2 ROVs." %}
+    <p class="text-center mt-1"><small class="text-muted">Final firmware debugging on two fully assembled v2 units — last pass before hand-off.</small></p>
+  </div>
+</div>
 
 ---
 
