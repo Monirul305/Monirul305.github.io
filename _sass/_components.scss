@@ -206,6 +206,58 @@ figure:has(.project-hero-img) {
   text-align: center;
 }
 
+// Drone Battery Optimizer — emphasised "Launch the tool" CTA on the
+// heavy-lift drone project page. Bootstrap btn-primary btn-lg gets a
+// slightly larger paddings, an icon gap, a soft drop shadow, and a
+// subtle pulsing glow ring that pauses on hover (replaced by a lift
+// + brighter shadow). Designed to catch the eye against body copy
+// without looking like ad chrome.
+.btn-launch-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.75rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 0.55rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  animation: btn-launch-pulse 2.6s ease-in-out infinite;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+  i {
+    font-size: 1.1rem;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    animation: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    transition: none;
+  }
+}
+
+@keyframes btn-launch-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 6px 20px rgba(0, 0, 0, 0.22),
+      0 0 0 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.26),
+      0 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+}
+
 // Uniform multi-photo grids inside project detail pages
 //
 // When a project page lays out 2–3 photos in a single row (col-sm-6

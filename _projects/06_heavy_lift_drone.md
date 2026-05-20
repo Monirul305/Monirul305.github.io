@@ -62,8 +62,13 @@ the [SD15-N surveillance drone](../05_sd15n) is the lighter-weight tracking vari
 
 The battery-pack and motor sizing study that drove this drone's design has been ported into a browser-side **Drone Battery Optimizer**. Enter the component weights, cell specs, motor thrust / current / throttle curve, and mission profile — it enumerates feasible Yₛ × Zₚ pack configurations and reports MTOW, throttle %, per-motor current, and forward-flight velocity for each payload level. All math runs locally; no backend.
 
-<p>
-  <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}" class="btn btn-primary">Launch the Drone Battery Optimizer →</a>
+<p class="text-center my-4">
+  <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}"
+     class="btn btn-primary btn-lg btn-launch-tool">
+    <i class="fa-solid fa-bolt"></i>
+    Launch the Drone Battery Optimizer
+    <span aria-hidden="true">→</span>
+  </a>
 </p>
 
 ### Tech Stack
