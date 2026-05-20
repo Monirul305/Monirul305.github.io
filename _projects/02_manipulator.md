@@ -98,9 +98,19 @@ The fix: after each IK execution, run FK on the joint solution and re-anchor the
 
 ---
 
-### Hardware Build (Supporting Role)
+### Electrical Build & Integration
 
-The hardware side of this platform — the carbon-fibre carrier the 7-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points, and the on-vehicle harness — was led by Cybernetics' mechanical and integration teams. I helped on the bench with lay-up, fit-up, wiring, and assembly while the design leads drove the decisions. My own contribution on this project is the control / software stack documented in the rest of this page.
+Alongside the software stack, I led the **electrical side** of this platform — the on-vehicle harness routed through the carbon-fibre carrier, power distribution to the arm motors and drive groups, sensor / encoder wiring, and the radio / SBus chain that feeds the coordinator node. From schematic-level decisions through harness build and system bring-up, this side was mine.
+
+{% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="project-hero-img rounded z-depth-1" alt="Wiring the on-carrier harness during integration." %}
+
+<p class="text-center"><em>Routing the on-carrier harness during integration — power and signal lines through the carrier into the avionics bay.</em></p>
+
+---
+
+### Mechanical Build (Supporting Role)
+
+The mechanical side — the carbon-fibre carrier the 7-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions.
 
 <div class="row project-photo-row mt-3">
   <div class="col-sm-6">
@@ -113,16 +123,9 @@ The hardware side of this platform — the carbon-fibre carrier the 7-DOF chain 
   </div>
 </div>
 
-<div class="row project-photo-row mt-3">
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="img-fluid rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
-    <p class="text-center mt-1"><small class="text-muted">Helping build up the drive-wheel assembly — bearing seats, pulleys, and brace plates laid out before lacing.</small></p>
-  </div>
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Assisting with the on-carrier harness during integration." %}
-    <p class="text-center mt-1"><small class="text-muted">Assisting with the on-carrier harness during integration — power and signal lines through the carrier into the avionics bay.</small></p>
-  </div>
-</div>
+{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
+
+<p class="text-center"><em>Helping build up the drive-wheel assembly — bearing seats, pulleys, and brace plates laid out before lacing.</em></p>
 
 ---
 
