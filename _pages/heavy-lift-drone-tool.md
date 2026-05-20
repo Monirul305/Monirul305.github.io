@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /projects/06_heavy_lift_drone/tool/
-title: Hercules HL-50 — Sizing Calculator
-description: Interactive battery-pack and motor sizing for the Hercules HL-50 heavy-lift multirotor.
+title: Drone Battery Optimizer — Heavy-Lift Multirotor Sizing
+description: Interactive in-browser battery-pack and motor sizing for a heavy-lift multirotor. Pick a preset, tweak the inputs, and the optimizer reports feasible configurations live.
 nav: false
 chart:
   chartjs: true

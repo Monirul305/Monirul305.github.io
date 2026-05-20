@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Hercules HL-50 — Heavy-Lift Multirotor (50 kg payload, 30 min endurance, 15 km comms)
+title: Heavy-Lift Multirotor (50 kg) + Drone Battery Optimizer
 description: >
-  Hercules HL-50 — heavy-lift multirotor for logistics and emergency response.
-  50 kg payload, 30 min flight, 15 km comms range, 1.5:1 T/W ratio.
-  Includes an interactive in-browser battery + motor sizing tool.
+  Heavy-lift multirotor for logistics and emergency response —
+  50 kg payload, 30 min flight, 15 km comms, 1.5:1 T/W ratio.
+  This page ships with an interactive in-browser Drone Battery
+  Optimizer that sizes the pack and motor against your mission.
 img: assets/img/projects/cargo_drone.jpg
 importance: 6
 category: professional
@@ -12,7 +13,17 @@ category: professional
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
-**Hercules HL-50** — led design and optimisation of a heavy-lift multirotor drone for logistics
+<div class="row">
+  <div class="col-sm-12">
+    <div class="alert alert-info" role="alert">
+      <strong>Interactive tool inside.</strong> This page bundles a
+      <strong>Drone Battery Optimizer</strong> — pick a preset, tweak the mission and airframe inputs, and the optimizer reports feasible battery configurations against your payload. Jump straight there:
+      <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}">Launch the optimizer →</a>
+    </div>
+  </div>
+</div>
+
+Led design and optimisation of a heavy-lift multirotor drone for logistics
 and emergency-response applications. Key engineering challenges: advanced battery
 management for 30-minute endurance at full payload, structural frame analysis for
 asymmetric load distribution, propulsion sizing to achieve a **1.5:1
@@ -47,12 +58,12 @@ flight under variable wind at altitude.
 This is the heavy-lift platform in [Cybernetics' drone product line](https://cyberneticsbd.com/cargo-drone/);
 the [SD15-N surveillance drone](../05_sd15n) is the lighter-weight tracking variant.
 
-### Interactive Sizing Tool
+### Drone Battery Optimizer
 
-The battery-pack and motor-sizing study that drove this drone's design has been ported to a browser-side calculator. Enter the component weights, battery-cell specs, motor thrust/current/throttle curve, and mission profile — it enumerates feasible Yₛ × Zₚ pack configurations and reports MTOW, throttle %, per-motor current, and forward-flight velocity for each payload level you ask about.
+The battery-pack and motor sizing study that drove this drone's design has been ported into a browser-side **Drone Battery Optimizer**. Enter the component weights, cell specs, motor thrust / current / throttle curve, and mission profile — it enumerates feasible Yₛ × Zₚ pack configurations and reports MTOW, throttle %, per-motor current, and forward-flight velocity for each payload level. All math runs locally; no backend.
 
 <p>
-  <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}" class="btn btn-primary">Launch the sizing calculator →</a>
+  <a href="{{ '/projects/06_heavy_lift_drone/tool/' | relative_url }}" class="btn btn-primary">Launch the Drone Battery Optimizer →</a>
 </p>
 
 ### Tech Stack
