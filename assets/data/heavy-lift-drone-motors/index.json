@@ -1,0 +1,17 @@
+{
+  "default_motor": "x15",
+  "motors": [
+    {
+      "id": "x15",
+      "name": "X15 (heavy-lift class)",
+      "file": "x15.json",
+      "class": "heavy-lift"
+    },
+    {
+      "id": "as2317",
+      "name": "T-Motor AS2317",
+      "file": "as2317.json",
+      "class": "hobby"
+    }
+  ]
+}

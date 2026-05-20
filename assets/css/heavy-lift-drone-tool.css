@@ -1,0 +1,135 @@
+/* Heavy-Lift Drone Sizing Calculator
+ * Uses al-folio's CSS custom properties when available (auto light/dark);
+ * falls back to sensible defaults so the standalone HTML works too.
+ */
+
+:root {
+  --hldt-fallback-bg: #ffffff;
+  --hldt-fallback-card: #f8f9fa;
+  --hldt-fallback-text: #212529;
+  --hldt-fallback-muted: #6c757d;
+  --hldt-fallback-divider: rgba(0, 0, 0, 0.1);
+  --hldt-fallback-accent: #b509ac;
+}
+
+.hldt-root {
+  color: var(--global-text-color, var(--hldt-fallback-text));
+  font-family: inherit;
+}
+
+.hldt-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.hldt-card {
+  background-color: var(--global-card-bg-color, var(--hldt-fallback-card));
+  color: var(--global-text-color, var(--hldt-fallback-text));
+  border: 1px solid var(--global-divider-color, var(--hldt-fallback-divider));
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hldt-section-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--global-theme-color, var(--hldt-fallback-accent));
+  font-size: 1.05rem;
+}
+
+.hldt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1rem;
+}
+
+.hldt-field label {
+  font-size: 0.85rem;
+  margin-bottom: 0.15rem;
+  color: var(--global-text-color-light, var(--hldt-fallback-muted));
+  display: block;
+}
+
+.hldt-field input,
+.hldt-field select {
+  background-color: var(--global-bg-color, var(--hldt-fallback-bg));
+  color: var(--global-text-color, var(--hldt-fallback-text));
+  border: 1px solid var(--global-divider-color, var(--hldt-fallback-divider));
+}
+
+.hldt-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.hldt-chart-wrap {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#hldt-motor-info {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--global-theme-color, var(--hldt-fallback-accent));
+  background-color: var(--global-code-bg-color, rgba(0, 0, 0, 0.03));
+  border-radius: 0.25rem;
+}
+
+#hldt-results-table {
+  font-size: 0.9rem;
+}
+
+#hldt-results-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--global-card-bg-color, var(--hldt-fallback-card));
+  z-index: 1;
+}
+
+#hldt-infeasible-summary {
+  margin-top: 0.5rem;
+}
+
+.hldt-collapse-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hldt-collapse-toggle::after {
+  content: '−';
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.hldt-collapse-toggle.collapsed::after {
+  content: '+';
+}
+
+/* Sticky preset bar on wider screens */
+@media (min-width: 992px) {
+  .hldt-presets {
+    position: sticky;
+    top: 80px;
+    z-index: 5;
+    background-color: var(--global-bg-color, var(--hldt-fallback-bg));
+    padding: 0.5rem 0;
+  }
+}
+
+/* Hide the file upload input */
+#hldt-upload-input {
+  display: none;
+}
