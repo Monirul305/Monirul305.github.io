@@ -111,6 +111,22 @@
     const margin = params.thrust_safety_margin;
     const throttleMax = params.throttle_max_value;
 
+    // Voltage compatibility: only evaluate S values the motor was characterised at.
+    const sMinMotor = motor.meta.pack_series_min;
+    const sMaxMotor = motor.meta.pack_series_max;
+    if ((sMinMotor != null && s < sMinMotor) || (sMaxMotor != null && s > sMaxMotor)) {
+      return {
+        feasible: false,
+        status: 'voltage_incompatible',
+        s,
+        p,
+        payload,
+        mtow: 0,
+        batteryWeight: s * p * cellWeight,
+        detail: `Motor data only valid for ${sMinMotor}S${sMinMotor === sMaxMotor ? '' : '–' + sMaxMotor + 'S'}`
+      };
+    }
+
     const batteryWeight = s * p * cellWeight;
     const fixedWeight =
       params.frame_weight +
@@ -399,7 +415,8 @@
     discharge_limited: { text: 'Discharge short', cls: 'bg-warning text-dark' },
     capacity_and_discharge_limited: { text: 'Cap + discharge short', cls: 'bg-warning text-dark' },
     mission_time_short: { text: 'Mission too short', cls: 'bg-secondary' },
-    extrapolation: { text: 'Outside motor data', cls: 'bg-secondary' }
+    extrapolation: { text: 'Outside motor data', cls: 'bg-secondary' },
+    voltage_incompatible: { text: 'Voltage incompatible with motor', cls: 'bg-secondary' }
   };
 
   // ──────────────────────────────────────────────────────────────
@@ -624,6 +641,7 @@
       STATE.activeMotor = buildMotorModel(STATE.motors[id]);
       STATE.activeMotorId = id;
       renderMotorInfo();
+      syncSeriesRangeToMotor();
       return;
     }
     // Built-in?
@@ -636,6 +654,7 @@
       STATE.activeMotor = buildMotorModel(json);
       STATE.activeMotorId = id;
       renderMotorInfo();
+      syncSeriesRangeToMotor();
       return;
     }
     // Local upload?
@@ -645,6 +664,7 @@
       STATE.activeMotor = buildMotorModel(uploads[id]);
       STATE.activeMotorId = id;
       renderMotorInfo();
+      syncSeriesRangeToMotor();
       return;
     }
     throw new Error('Motor not found: ' + id);
@@ -673,18 +693,45 @@
     const el = document.getElementById('hldt-motor-info');
     if (!el || !m) return;
     const meta = m.meta;
+    const sMin = meta.pack_series_min;
+    const sMax = meta.pack_series_max;
+    const sLabel =
+      sMin != null && sMax != null
+        ? sMin === sMax
+          ? sMin + 'S'
+          : sMin + '–' + sMax + 'S'
+        : '?';
     el.innerHTML = `
       <strong>${meta.motor_name}</strong>
       ${meta.manufacturer ? ' — ' + meta.manufacturer : ''}
       <br>
       <small class="text-muted">
         Test voltage: ${meta.test_voltage ?? '?'} V
+        · Pack series: <strong>${sLabel}</strong>
         ${meta.kv ? ' · ' + meta.kv + ' KV' : ''}
         · Max thrust: ${(m.maxThrustG / 1000).toFixed(2)} kg
         · Data points: ${meta.data.length}
         ${meta.source ? ' · Source: ' + meta.source : ''}
       </small>
     `;
+  }
+
+  // When a motor loads, force the form's series range to match the motor's
+  // compatible pack voltage. Optimizer enforces this anyway; the form just
+  // makes it visible.
+  function syncSeriesRangeToMotor() {
+    const m = STATE.activeMotor;
+    if (!m) return;
+    const sMin = m.meta.pack_series_min;
+    const sMax = m.meta.pack_series_max;
+    if (sMin != null) {
+      const el = document.getElementById('hldt-series_cells_min');
+      if (el) el.value = sMin;
+    }
+    if (sMax != null) {
+      const el = document.getElementById('hldt-series_cells_max');
+      if (el) el.value = sMax;
+    }
   }
 
   function refreshMotorDropdown() {
@@ -782,12 +829,24 @@
       }
     }
 
+    // Infer compatible pack series from test voltage (LiPo nominal 3.7 V/cell).
+    // User can override after upload by editing the saved JSON if needed.
+    let packSeriesMin = opts.pack_series_min ?? null;
+    let packSeriesMax = opts.pack_series_max ?? null;
+    if (packSeriesMin == null && opts.test_voltage) {
+      const inferred = Math.round(opts.test_voltage / 3.7);
+      packSeriesMin = inferred;
+      packSeriesMax = inferred;
+    }
+
     return {
       id: 'upload_' + Date.now(),
       motor_name: opts.motor_name || 'Uploaded motor',
       manufacturer: opts.manufacturer || '',
       test_voltage: opts.test_voltage || null,
       kv: opts.kv || null,
+      pack_series_min: packSeriesMin,
+      pack_series_max: packSeriesMax,
       source: 'User upload',
       data
     };

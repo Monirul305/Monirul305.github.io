@@ -8,6 +8,8 @@
   "weight_g": 1200,
   "max_continuous_current": 200,
   "recommended_pack_series": 18,
+  "pack_series_min": 18,
+  "pack_series_max": 18,
   "source": "Motor_Performance_Table.xlsx (project file)",
   "data": [
     {
