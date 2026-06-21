@@ -100,12 +100,12 @@
   ],
   "publications": [
     {
-      "name": "Differential-Drive Synchronization Using Genetic Algorithm Optimized Cascaded PID Controllers on STM32-Based MCU",
-      "title": "Differential-Drive Synchronization Using Genetic Algorithm Optimized Cascaded PID Controllers on STM32-Based MCU",
-      "publisher": "Manuscript under review (2025) — First author",
-      "releaseDate": "2025",
-      "url": "",
-      "summary": "Proposed and implemented a Genetic Algorithm-tuned cascaded PID control scheme on an STM32 MCU for precise real-time synchronization of BLDC motors in differential-drive robotic platforms. Outperforms manual and Ziegler-Nichols-tuned baselines under varying loads and battery-voltage disturbances. *Corresponding author; preprint available on request.*"
+      "name": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
+      "title": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
+      "publisher": "IEEE Access — under review (2026) — First author",
+      "releaseDate": "2026",
+      "url": "https://Monirul305.github.io/assets/pdf/draft-motor-sync-2026.pdf",
+      "summary": "Distributed dual-MCU implementation of bilateral cross-coupled speed synchronization for a tracked differential-drive vehicle driven by two deliberately mismatched 3-phase BLDC motors. Each motor regulated by its own MCU running a PID loop with velocity/acceleration feedforward; a bilateral cross-coupled term, evaluated identically on both nodes from a dedicated 1 ms inter-MCU speed exchange, drives the inter-motor speed difference toward zero. All gains GA-tuned offline. Reduces peak transient inter-motor speed error by 79 %, RMS by 73 %, accumulated straight-line heading drift by 80 % vs an independent-PID baseline. *Corresponding author; draft linked above.*"
     },
     {
       "name": "A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control",

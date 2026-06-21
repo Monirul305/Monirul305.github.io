@@ -42,6 +42,36 @@
   }
 }
 
+@article{islam2025gapid,
+  title        = {Experimental Speed Synchronization of a Dual-{BLDC} Tracked Differential-Drive Vehicle Using a {GA}-Tuned Bilateral Cross-Coupled Controller on a Dual-{MCU} Architecture},
+  author       = {Islam, Md Monirul and Tonmoy, Fiaz Ahmed and Tanvir, Md Shakil and Islam, Mainul and Hasan, Mahamudul and Razeen, Raihan Ur Rashid},
+  journal      = {IEEE Access (Under Review)},
+  year         = {2026},
+  abbr         = {Submitted},
+  selected     = {true},
+  note         = {First-author manuscript submitted to IEEE Access, 2026},
+  additional_info = {Corresponding author. Draft PDF linked below; final preprint available on request.},
+  pdf          = {draft-motor-sync-2026.pdf},
+  abstract     = {
+    Distributed dual-MCU implementation of bilateral cross-coupled speed
+    synchronization for a tracked differential-drive vehicle driven by two
+    deliberately mismatched 3-phase BLDC "auto-rickshaw" motors. Each motor is
+    regulated by its own microcontroller running a PID loop with velocity and
+    acceleration feedforward; a bilateral cross-coupled term, evaluated
+    identically on both nodes from a dedicated 1 ms inter-MCU speed exchange,
+    drives the inter-motor speed difference toward zero, while a master node
+    distributes commands and logs data over an RS-485 bus. All PID gains are
+    obtained offline against an identified motor model by a genetic algorithm
+    and then deployed on the vehicle. Relative to an independent-PID
+    (synchronization-off) baseline, the controller reduces peak transient
+    inter-motor speed error by 79 %, RMS by 73 %, and accumulated straight-line
+    heading drift by 80 %; under single-track load disturbance it cuts sustained
+    speed difference and heading excursion by ~65 %. The result is a transparent,
+    low-cost synchronization scheme that needs no runtime plant model and runs
+    on commodity microcontrollers.
+  }
+}
+
 @article{tanvir2025dual,
   title        = {A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control},
   author       = {Tanvir, Md Shakil and Islam, Md Monirul and Tonmoy, Fiaz Ahmed and Islam, Mainul and Hasan, Mahamudul and Razeen, Raihan Ur Rashid},
@@ -55,25 +85,5 @@
     Designed a fault-tolerant dual-network feedback communication architecture
     providing redundant pathways for coordinating unmanned multi-node robotic
     systems — addressing single-point-of-failure risks in field-deployed platforms.
-  }
-}
-
-@article{islam2025gapid,
-  title        = {Differential-Drive Synchronization Using Genetic Algorithm Optimized Cascaded {PID} Controllers on {STM32} Based {MCU}},
-  author       = {Islam, Md Monirul and Tonmoy, Fiaz Ahmed and Tanvir, Md Shakil and Islam, Mainul and Hasan, Mahamudul and Razeen, Raihan Ur Rashid},
-  journal      = {Under Review},
-  year         = {2025},
-  abbr         = {Submitted},
-  selected     = {true},
-  note         = {First-author manuscript under review, 2025},
-  additional_info = {Corresponding author. Preprint available on request.},
-  abstract     = {
-    Proposed and implemented a Genetic Algorithm-tuned cascaded PID control scheme
-    on an STM32 MCU for precise real-time synchronization of BLDC motors in
-    differential-drive robotic platforms. The cascade structure separates outer
-    position and inner velocity loops; GA evolves the six PID gains offline against
-    a fitness function combining settling time, overshoot, and steady-state
-    synchronization error. Outperforms manual and Ziegler-Nichols tuned baselines
-    under varying loads and battery-voltage disturbances typical of field deployment.
   }
 }
