@@ -19,6 +19,19 @@ assets/webpage_output/
 # assets/pdf/ and ship the PDF; the editable source stays local.
 assets/*.docx
 assets/*.doc
+
+# LaTeX build artifacts left behind in the CV source folder. The
+# canonical shipped PDF is at assets/pdf/CV_Monirul_Islam.pdf; the
+# .tex source lives in assets/mycv_2025/. Anything else MiKTeX/
+# latexmk generates next to the .tex should never be committed.
+assets/mycv_2025/*.pdf
+assets/mycv_2025/*.aux
+assets/mycv_2025/*.log
+assets/mycv_2025/*.out
+assets/mycv_2025/*.toc
+assets/mycv_2025/*.fls
+assets/mycv_2025/*.fdb_latexmk
+assets/mycv_2025/*.synctex.gz
 Gemfile.lock
 node_modules/
 vendor
