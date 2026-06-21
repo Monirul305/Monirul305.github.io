@@ -102,7 +102,7 @@
     {
       "name": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
       "title": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
-      "publisher": "IEEE Access — under review (2026) — First author",
+      "publisher": "Manuscript under review (2026) — First author",
       "releaseDate": "2026",
       "url": "https://Monirul305.github.io/assets/pdf/draft-motor-sync-2026.pdf",
       "summary": "Distributed dual-MCU implementation of bilateral cross-coupled speed synchronization for a tracked differential-drive vehicle driven by two deliberately mismatched 3-phase BLDC motors. Each motor regulated by its own MCU running a PID loop with velocity/acceleration feedforward; a bilateral cross-coupled term, evaluated identically on both nodes from a dedicated 1 ms inter-MCU speed exchange, drives the inter-motor speed difference toward zero. All gains GA-tuned offline. Reduces peak transient inter-motor speed error by 79 %, RMS by 73 %, accumulated straight-line heading drift by 80 % vs an independent-PID baseline. *Corresponding author; draft linked above.*"
@@ -110,8 +110,8 @@
     {
       "name": "A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control",
       "title": "A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control",
-      "publisher": "Manuscript under review (2025) — Co-author",
-      "releaseDate": "2025",
+      "publisher": "Manuscript under review (2026) — Co-author",
+      "releaseDate": "2026",
       "url": "https://Monirul305.github.io/assets/pdf/draft-dual-network-2026.pdf",
       "summary": "Designed a fault-tolerant dual-network feedback communication architecture providing redundant pathways for coordinating unmanned multi-node robotic systems. *Co-author; draft linked above.*"
     },
