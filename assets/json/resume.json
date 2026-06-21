@@ -100,6 +100,14 @@
   ],
   "publications": [
     {
+      "name": "Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory",
+      "title": "Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory",
+      "publisher": "Manuscript in preparation (2026) — First author",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Decentralized A* path-planning and coordination scheme deployed on a 3-robot AGV fleet running inside a live garment factory alongside hundreds of workers with no physical separation. Each robot publishes its plan as timestamped grid waypoints; peers treat them as spatiotemporal reservations with three conflict checks (node / edge-swap / final-cell). Continuous timestamp maintenance keeps ETAs honest between replans, and obstacles are handled without dropping the active plan. Months of zero-collision production operation; case study reports protocol + throughput / recovery measurements. *Corresponding author; manuscript in preparation.*"
+    },
+    {
       "name": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
       "title": "Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture",
       "publisher": "Manuscript under review (2026) — First author",

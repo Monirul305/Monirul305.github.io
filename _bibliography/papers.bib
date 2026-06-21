@@ -42,6 +42,37 @@
   }
 }
 
+@article{islam2026agvfleet,
+  title        = {Peer-Aware Distributed Path Planning for a Production-Deployed Multi-{AGV} Fleet in a Human-Occupied Garment Factory},
+  author       = {Islam, Md Monirul and {3 others}},
+  journal      = {In Preparation},
+  year         = {2026},
+  abbr         = {In Prep},
+  selected     = {true},
+  additional_info = { (first / corresponding author — manuscript in preparation)},
+  abstract     = {
+    Reports on a fully decentralized path-planning and coordination scheme
+    deployed on a 3-robot AGV fleet operating continuously inside a live garment
+    factory alongside hundreds of human workers, with no physical separation.
+    Each robot runs its own A* planner over a shared occupancy grid and
+    publishes the resulting plan as a sequence of timestamped grid waypoints;
+    every other robot subscribes and treats the peer trajectories as
+    spatiotemporal reservations subject to three conflict checks — node
+    conflict, edge swap, and final-cell occupation. A continuous
+    timestamp-maintenance step keeps published ETAs realistic between
+    re-planning events so peer reservations remain meaningful in steady state.
+    Obstacles are handled without dropping the active plan: the old
+    timestamped path keeps publishing while the planner searches for a clean
+    replacement, preserving a coherent fleet-wide picture until a safe swap is
+    available. Combined with a fail-closed coordinator providing FSM-based
+    state tracking, mutual exclusion on shared resources, and layered
+    timeouts, the system has accumulated months of zero-collision production
+    operation. The paper reports the coordination protocol, the deployment
+    case study, and quantitative throughput / recovery measurements collected
+    on the factory floor.
+  }
+}
+
 @article{islam2025gapid,
   title        = {Experimental Speed Synchronization of a Dual-{BLDC} Tracked Differential-Drive Vehicle Using a {GA}-Tuned Bilateral Cross-Coupled Controller on a Dual-{MCU} Architecture},
   author       = {Islam, Md Monirul and {3 others}},
