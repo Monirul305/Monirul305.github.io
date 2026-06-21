@@ -112,8 +112,8 @@
       "title": "A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control",
       "publisher": "Manuscript under review (2025) — Co-author",
       "releaseDate": "2025",
-      "url": "",
-      "summary": "Designed a fault-tolerant dual-network feedback communication architecture providing redundant pathways for coordinating unmanned multi-node robotic systems. *Preprint available on request.*"
+      "url": "https://Monirul305.github.io/assets/pdf/draft-dual-network-2026.pdf",
+      "summary": "Designed a fault-tolerant dual-network feedback communication architecture providing redundant pathways for coordinating unmanned multi-node robotic systems. *Co-author; draft linked above.*"
     },
     {
       "name": "Optimizing Master-Slave Broadcast Communication in Multi-Node Networks Using RS485 Standard",

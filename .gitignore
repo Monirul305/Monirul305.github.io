@@ -14,6 +14,11 @@ assets/rendercv/rendercv_output/*.typ
 # copied out into their final repo paths; keep the archive locally for
 # reference but never commit it.
 assets/webpage_output/
+
+# Paper-draft source documents (.docx). Convert to PDF into
+# assets/pdf/ and ship the PDF; the editable source stays local.
+assets/*.docx
+assets/*.doc
 Gemfile.lock
 node_modules/
 vendor
