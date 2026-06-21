@@ -133,7 +133,7 @@ ninja.data = [{
           section: "News",},{id: "news-jontro-soinik-v2-handover-ceremony-at-bangladesh-army-hq-auditorium-bangladesh-s-3rd-generation-eod-rov-set-for-deployment-in-the-un-peacekeeping-mission-in-the-republic-of-congo-in-2025",
           title: 'Jontro Soinik v2 handover ceremony at Bangladesh Army HQ Auditorium — Bangladesh’s 3rd-generation...',
           description: "",
-          section: "News",},{id: "news-first-author-manuscript-submitted-experimental-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-bilateral-cross-coupled-controller-on-a-dual-mcu-architecture-under-review-at-ieee-access",
+          section: "News",},{id: "news-first-author-manuscript-submitted-experimental-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-bilateral-cross-coupled-controller-on-a-dual-mcu-architecture-currently-under-review",
           title: 'First-author manuscript submitted: Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using...',
           description: "",
           section: "News",},{id: "news-agv-fleet-system-featured-on-youtube-zero-collisions-how-3-autonomous-robots-share-a-busy-garment-factory-floor-full-walkthrough-of-the-ros-2-navigation-stack-fleetcore-coordinator-apriltag-ekf-and-3-layer-safety-architecture-deployed-at-the-urmi-group-watch-3-45",
