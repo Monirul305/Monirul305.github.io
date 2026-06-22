@@ -9,7 +9,7 @@ description: >
   EEE coursework.
 img: assets/img/projects/particle_detection.png
 importance: 9
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

@@ -8,7 +8,7 @@ description: >
   BUET EEE.
 img: assets/img/projects/boost_converter.jpg
 importance: 7
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

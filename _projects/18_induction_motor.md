@@ -8,7 +8,7 @@ description: >
   flux/voltage scheduling, and PI compensation. BUET EEE coursework.
 img: assets/img/projects/induction_motor.jpg
 importance: 8
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

@@ -8,7 +8,7 @@ description: >
   payload release. BUET EEE undergraduate build.
 img: assets/img/projects/gps_drone.png
 importance: 5
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

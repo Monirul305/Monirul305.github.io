@@ -7,7 +7,7 @@ description: >
   monocular traffic video. BUET EEE coursework.
 img: assets/img/projects/yolov2.jpg
 importance: 3
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

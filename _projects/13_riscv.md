@@ -8,7 +8,7 @@ description: >
   flow in Cadence. Supervised by Dr. A. B. M. Harun-Ur-Rashid (BUET EEE).
 img: assets/img/projects/riscv.jpg
 importance: 4
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

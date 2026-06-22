@@ -8,7 +8,7 @@ description: >
   the full mark-detection and tally pipeline. BUET EEE coursework.
 img: assets/img/projects/omr_machine.jpg
 importance: 11
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

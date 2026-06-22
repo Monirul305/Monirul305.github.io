@@ -9,7 +9,7 @@ description: >
   EEE 416 group project at BUET.
 img: assets/img/projects/env_monitor.png
 importance: 6
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}

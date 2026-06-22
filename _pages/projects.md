@@ -5,7 +5,7 @@ permalink: /projects/
 description: Professional systems, research work, and undergraduate projects. All professional projects were built and deployed at Cybernetics Hi-Tech Solutions.
 nav: true
 nav_order: 3
-display_categories: [professional, research, undergraduate]
+display_categories: [professional, research, undergraduate, "lab finals"]
 horizontal: false
 ---
 

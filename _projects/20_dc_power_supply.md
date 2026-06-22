@@ -9,7 +9,7 @@ description: >
   coursework.
 img: assets/img/projects/dc_power_supply.png
 importance: 10
-category: undergraduate
+category: lab finals
 ---
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
