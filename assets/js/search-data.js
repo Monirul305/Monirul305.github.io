@@ -244,11 +244,6 @@ ninja.data = [{
           description: "Built an OMR (Optical Mark Recognition) machine for multiple-choice answer sheets using only discrete digital logic ICs — no microcontroller. Optical sensing, counters, and decoders implement the full mark-detection and tally pipeline. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/21_omr_machine/";
-            },},{id: "projects-seven-storey-building-electrical-services-design",
-          title: 'Seven-Storey Building Electrical Services Design',
-          description: "Complete electrical-services design for a seven-storey residential building — load estimation, panel scheduling, conductor sizing, lighting and power layouts, and earthing scheme. BUET EEE coursework on building services engineering.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/22_building_electrical/";
             },},{id: "projects-fault-tolerant-dual-network-feedback-communication-for-multi-node-unmanned-robotic-platforms-co-author-paper",
           title: 'Fault-Tolerant Dual-Network Feedback Communication for Multi-Node Unmanned Robotic Platforms (Co-Author Paper)',
           description: "Two physically and electrically independent feedback networks running in parallel between every control node, with receiver-side fallback on channel degradation. Targets single-point-of-failure risks in field-deployed unmanned robotic platforms. Co-author manuscript under review.",
