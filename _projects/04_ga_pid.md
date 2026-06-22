@@ -1,10 +1,11 @@
 ---
 layout: page
-title: GA-Optimized Cascaded PID for BLDC Motor Synchronization (STM32, First-Author Paper)
+title: GA-Tuned Bilateral Cross-Coupled BLDC Synchronization on a Dual-MCU Architecture (First-Author Paper)
 description: >
-  Genetic Algorithm-tuned cascaded PID on STM32 for precise real-time
-  synchronization of BLDC motors in differential-drive platforms.
-  First-author paper under review.
+  Distributed dual-MCU speed-synchronization scheme for a tracked
+  differential-drive vehicle driven by two deliberately mismatched
+  BLDC motors. Bilateral cross-coupled controller with GA-tuned gains.
+  First-author manuscript under review.
 img: assets/img/projects/ga_pid.jpg
 importance: 1
 category: research
@@ -15,38 +16,35 @@ related_publications: true
 
 ### Motivation
 
-Differential-drive platforms — AGVs, mobile robots, ROV thrusters — demand tight
-wheel-speed synchronization to track straight-line and curved trajectories without
-drift. Classical PID tuning (Ziegler-Nichols, manual gain scheduling) leaves
-significant tracking error when motor parameters drift with load, temperature, or
-battery state.
+Differential-drive and skid-steer ground vehicles steer by the relative speed of their left and right drives, so any uncommanded difference between the two track speeds appears directly as heading drift and path error. The problem is aggravated by low-cost brushless DC (BLDC) motors that — like the auto-rickshaw motors used in this work — exhibit unit-to-unit variation in winding resistance and back-EMF constant, so at equal command the two drives accelerate and cruise differently. This mismatch is a persistent, structured disturbance rather than random noise: it biases one track faster than the other for the entire run, producing exactly the steady heading drift that independent per-motor control cannot see.
 
 ### Approach
 
-A **cascaded PID** structure separates the outer position loop and inner velocity
-loop, giving two independent bandwidth points. Six gain parameters (Kp, Ki, Kd
-for each loop) are encoded as a chromosome in a **Genetic Algorithm** that evolves
-offline against a fitness function combining settling time, overshoot, and
-steady-state synchronization error from a step-response benchmark.
+I designed a **distributed dual-MCU bilateral cross-coupled speed-synchronization controller**:
 
-The resulting gains are flashed to an **STM32F4**-class MCU running at 1 kHz
-inner-loop rate via HAL drivers. GA inference cost is negligible in deployment —
-only the tuned gains run on hardware.
+- Each motor is regulated by its **own microcontroller** running a **PID loop with velocity and acceleration feedforward**.
+- A **bilateral cross-coupled term**, evaluated identically on both nodes from a dedicated **1 ms inter-MCU speed exchange**, drives the inter-motor speed difference toward zero.
+- A **master node** distributes commands and logs data over an **RS-485 bus**.
+- All gains are obtained offline against an **identified motor model** by a **genetic algorithm** and then deployed on the vehicle.
+
+The cross-coupled term is symmetric (both motors react to the same error signal), so the synchronization behaviour is well-defined regardless of which motor is the leader at any instant. The 1 ms speed exchange keeps the cross-coupling tight enough to suppress the unit-to-unit mismatch in real time.
 
 ### Validation
 
-System validated under:
-- Varying mechanical loads across the motor speed range
+The controller is benchmarked against an **independent-PID baseline** (the synchronization-off case) on a real tracked vehicle driven by two deliberately mismatched auto-rickshaw BLDC motors. Test scenarios include:
+
+- Step-response benchmarks across the motor speed range
 - Battery-voltage variation (dominant field disturbance)
-- Step-response benchmarks comparing GA-tuned vs. Ziegler-Nichols vs. manual baselines
+- Single-track load disturbances (simulating one wheel encountering uneven ground)
+
+Relative to the independent-PID baseline, the bilateral cross-coupled controller delivers a sharp reduction in both transient and steady-state inter-motor speed error, plus a substantial reduction in accumulated heading drift on straight-line runs and in heading excursion under single-track load disturbance.
 
 ### Status
 
-**First-author manuscript under review** {% cite islam2025gapid %}. This paper represents
-my highest degree of independent research contribution within the Cybernetics R&D programme.
+**First-author manuscript under review** {% cite islam2025gapid %}. This work is my highest-degree independent research contribution within the Cybernetics R&D programme and is the basis of the differential-drive synchronization layer shipped on the [Jontro Soinik v2 EOD ROV]({{ '/projects/03_soinik_rov/' | relative_url }}).
 
 ---
 
 ### Tech Stack
 
-`STM32F4` · `Embedded C` · `HAL drivers` · `Cascaded PID` · `Genetic Algorithm` · `BLDC motors` · `MATLAB (simulation)`
+`STM32 (HAL)` · `Embedded C` · `Bilateral cross-coupled control` · `Genetic Algorithm tuning` · `BLDC motors` · `RS-485 master / dual-MCU comms` · `MATLAB (model identification & GA)`

@@ -1,11 +1,8 @@
 ---
 layout: page
-title: projects
+title: project and research
 permalink: /projects/
-description: >
-  Professional systems, research work, and undergraduate projects.
-  All professional projects were built and deployed at
-  <a href="https://cyberneticsbd.com" target="_blank">Cybernetics Hi-Tech Solutions</a>.
+description: Professional systems, research work, and undergraduate projects. All professional projects were built and deployed at Cybernetics Hi-Tech Solutions.
 nav: true
 nav_order: 3
 display_categories: [professional, research, undergraduate]
