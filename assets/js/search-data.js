@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
+        },{id: "nav-project-and-research",
+          title: "project and research",
           description: "Professional systems, research work, and undergraduate projects. All professional projects were built and deployed at Cybernetics Hi-Tech Solutions.",
           section: "Navigation",
           handler: () => {
@@ -154,9 +154,9 @@ ninja.data = [{
           description: "Jontro Soinik v1 and v2 — Bangladesh&#39;s 2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed. Star → custom-bus communication evolution, S-curve arm motion, differential-drive synchronization, custom PCBs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_soinik_rov/";
-            },},{id: "projects-ga-optimized-cascaded-pid-for-bldc-motor-synchronization-stm32-first-author-paper",
-          title: 'GA-Optimized Cascaded PID for BLDC Motor Synchronization (STM32, First-Author Paper)',
-          description: "Genetic Algorithm-tuned cascaded PID on STM32 for precise real-time synchronization of BLDC motors in differential-drive platforms. First-author paper under review.",
+            },},{id: "projects-ga-tuned-bilateral-cross-coupled-bldc-synchronization-on-a-dual-mcu-architecture-first-author-paper",
+          title: 'GA-Tuned Bilateral Cross-Coupled BLDC Synchronization on a Dual-MCU Architecture (First-Author Paper)',
+          description: "Distributed dual-MCU speed-synchronization scheme for a tracked differential-drive vehicle driven by two deliberately mismatched BLDC motors. Bilateral cross-coupled controller with GA-tuned gains. First-author manuscript under review.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/04_ga_pid/";
             },},{id: "projects-vision-guided-target-tracking-surveillance-drone-yolov11n-on-raspberry-pi-5-pixhawk",
@@ -249,6 +249,11 @@ ninja.data = [{
           description: "Complete electrical-services design for a seven-storey residential building — load estimation, panel scheduling, conductor sizing, lighting and power layouts, and earthing scheme. BUET EEE coursework on building services engineering.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22_building_electrical/";
+            },},{id: "projects-fault-tolerant-dual-network-feedback-communication-for-multi-node-unmanned-robotic-platforms-co-author-paper",
+          title: 'Fault-Tolerant Dual-Network Feedback Communication for Multi-Node Unmanned Robotic Platforms (Co-Author Paper)',
+          description: "Two physically and electrically independent feedback networks running in parallel between every control node, with receiver-side fallback on channel degradation. Targets single-point-of-failure risks in field-deployed unmanned robotic platforms. Co-author manuscript under review.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/23_dual_network/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
