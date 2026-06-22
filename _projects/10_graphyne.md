@@ -6,7 +6,7 @@ description: >
   Quantified I–V behavior and subthreshold slope. Published in
   Micromachines (MDPI), 2023.
 img: assets/img/projects/graphyne.jpg
-importance: 2
+importance: 3
 category: research
 related_publications: true
 ---

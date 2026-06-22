@@ -7,13 +7,10 @@ description: >
   on channel degradation. Targets single-point-of-failure risks in
   field-deployed unmanned robotic platforms. Co-author manuscript
   under review.
-img: assets/img/projects/jontro-soinik-v2-firmware-debug.jpg
-importance: 3
+importance: 2
 category: research
 related_publications: true
 ---
-
-{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 ### Motivation
 
