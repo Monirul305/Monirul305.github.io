@@ -108,9 +108,16 @@ Standard tele-op runs directly through the closed-form IK described above — th
 
 Alongside the software stack, I led the **electrical side** of this platform — the on-vehicle harness routed through the carbon-fibre carrier, power distribution to the arm motors and drive groups, sensor / encoder wiring, and the radio / SBus chain that feeds the coordinator node. From schematic-level decisions through harness build and system bring-up, this side was mine.
 
-{% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="project-hero-img rounded z-depth-1" alt="Wiring the on-carrier harness during integration." %}
-
-<p class="text-center"><em>Routing the on-carrier harness during integration — power and signal lines through the carrier into the avionics bay.</em></p>
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Wiring the on-carrier harness during integration." %}
+    <p class="text-center mt-1"><small class="text-muted">Routing the on-carrier harness — power and signal lines through the carrier into the avionics bay.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Working on the internal wiring of the 7-DOF mobile manipulator." %}
+    <p class="text-center mt-1"><small class="text-muted">Inside the chassis — dressing the internal harness, motor-drive lines, and sensor feedback paths.</small></p>
+  </div>
+</div>
 
 ---
 
