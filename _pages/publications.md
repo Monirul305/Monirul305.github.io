@@ -18,12 +18,12 @@ nav_order: 2
 
 ## Peer-reviewed
 
-{% bibliography --query "@*[status=Published]" %}
+{% bibliography --query @*[status=Published] %}
 
 ## Under review
 
-{% bibliography --query "@*[status=Submitted]" %}
+{% bibliography --query @*[status=Submitted] %}
 
 ## In preparation
 
-{% bibliography --query "@*[status=InPrep]" %}
+{% bibliography --query @*[status=InPrep] %}
