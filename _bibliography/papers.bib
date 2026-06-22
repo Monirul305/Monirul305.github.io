@@ -112,8 +112,20 @@
   additional_info = { (co-author — draft PDF linked below)},
   pdf          = {draft-dual-network-2026.pdf},
   abstract     = {
-    Designed a fault-tolerant dual-network feedback communication architecture
-    providing redundant pathways for coordinating unmanned multi-node robotic
-    systems — addressing single-point-of-failure risks in field-deployed platforms.
+    Field-deployed multi-node unmanned robotic platforms rely on continuous
+    feedback exchange between control nodes — sensor readings, drive-state
+    telemetry, watchdog liveness. When that exchange traverses a single
+    network, any link failure (wiring damage, connector fatigue, RF
+    interference) silently degrades coordination and becomes a single point of
+    failure for the whole platform. This paper proposes a fault-tolerant
+    dual-network feedback communication architecture in which two physically
+    and electrically independent feedback networks carry the same coordination
+    stream in parallel between every node. The receiver continuously monitors
+    per-channel health and falls back to the surviving network on degradation
+    without losing a control cycle, while the master node logs the event for
+    post-mission diagnostics. The architecture is targeted at unmanned
+    multi-node robotic platforms operating in environments where any single
+    wired or RF link can drop intermittently, and is validated on a
+    multi-DOF unmanned ROV with deliberately injected single-channel faults.
   }
 }
