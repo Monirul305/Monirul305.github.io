@@ -6,13 +6,10 @@ description: >
   differential-drive vehicle driven by two deliberately mismatched
   BLDC motors. Bilateral cross-coupled controller with GA-tuned gains.
   First-author manuscript under review.
-img: assets/img/projects/ga_pid.jpg
 importance: 1
 category: research
 related_publications: true
 ---
-
-{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 ### Motivation
 

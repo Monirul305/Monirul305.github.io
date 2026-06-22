@@ -5,13 +5,10 @@ description: >
   Modeled ballistic quantum transport in α-graphyne nanoribbons.
   Quantified I–V behavior and subthreshold slope. Published in
   Micromachines (MDPI), 2023.
-img: assets/img/projects/graphyne.jpg
 importance: 3
 category: research
 related_publications: true
 ---
-
-{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
 Investigated α-graphyne nanoribbons as a candidate channel material for
 low-power beyond-silicon transistors. The work models ballistic quantum
