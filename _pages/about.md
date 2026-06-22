@@ -24,35 +24,13 @@ selected_papers: true
 social: true
 ---
 
-I'm **Md Monirul Islam** — a robotics R&D engineer working at the intersection of
-motion control, autonomous systems, and embedded hardware. As R&D Engineer and Team
-Lead at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), I design and
-field-deploy robotic platforms that operate in demanding real-world environments.
+I'm **Md Monirul Islam** — a robotics R&D engineer at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), Dhaka, working at the systems-engineering end of robots that have to survive contact with the real world.
 
-My recent work includes: a **production-deployed 3-robot AGV fleet** navigating a
-live garment factory floor alongside hundreds of workers (ROS 2, AprilTag EKF,
-distributed reservation-based path planning); a **ROS 2 / MoveIt 2 control
-stack** for a tracked mobile manipulator combining a 7-DOF arm with a 2-DOF
-anti-flipper arm — custom closed-form analytical IK solver, singularity
-handling, and a unit-test validation suite; and contributing to the **Jontro Soinik
-EOD ROV family** — indigenously-developed robots tested by the
-Bangladesh Army and now deployed in
-[UN Peacekeeping Missions](https://cyberneticsbd.com/smart-soinik-1-0/) in
-Mali and the Republic of Congo.
+The research direction I want to take into a PhD is **coordinated mobile manipulation in dense, human-occupied environments** — small teams of mobile robots, some of them carrying manipulators, sharing a workspace with humans and with each other under no physical barriers, with safety properties that hold up under realistic sensor, network, and mechanical fault. I have built parts of every layer this question touches: a production 3-robot AGV fleet running for months in a live garment factory ([deployment]({{ '/projects/01_agv_fleet/' | relative_url }})), a 7-DOF mobile manipulator with a from-scratch closed-form analytical IK designed to mount on Bangladesh's next-generation Jontro Soinik EOD ROV ([manipulator]({{ '/projects/02_manipulator/' | relative_url }})), and the embedded drive layer underneath both — a first-author manuscript under review on GA-tuned bilateral cross-coupled BLDC synchronisation ([paper]({{ '/projects/04_ga_pid/' | relative_url }})). What I want to add in a PhD is the methodological rigor that field-deployed engineering rarely produces on its own: formal safety / completeness arguments on the multi-robot side, singularity-formal whole-body control on the manipulation side, and the ablation / benchmark / publishable-result discipline that turns shipped systems into research contributions. The full direction, the open problems I'd attack, and the gap-closing plan are on the [research statement]({{ '/research-statement/' | relative_url }}) page.
 
-I earned my **B.Sc. in Electrical and Electronic Engineering** from
-[BUET](https://www.buet.ac.bd) (CGPA 3.85/4.00, final year 3.98/4.00, ranked
-25 of 189, awarded with Honours). I hold two published papers — in
-[Micromachines (MDPI)](https://doi.org/10.3390/mi14071385) and
-[IEEE ICCIT 2024](https://doi.org/10.1109/ICCIT64611.2024.11022430) — with two
-more manuscripts under review, including a first-author paper on GA-optimized
-cascaded PID control for BLDC motor synchronization.
+I earned my **B.Sc. in Electrical and Electronic Engineering** from [BUET](https://www.buet.ac.bd) (CGPA 3.85 / 4.00, final year 3.98 / 4.00, ranked 25 of 189, awarded with Honours). I hold two peer-reviewed papers ([MDPI Micromachines 2023](https://doi.org/10.3390/mi14071385), [IEEE ICCIT 2024](https://doi.org/10.1109/ICCIT64611.2024.11022430)) and three further manuscripts in flight — one first-author under review on the BLDC synchronisation work above, one first-author in preparation on the AGV fleet, and one co-author under review on a fault-tolerant dual-network feedback architecture. See the [publications]({{ '/publications/' | relative_url }}) page for author position and status on each.
 
-**I am seeking a PhD position starting Fall 2027** in robotics, motion control, or
-autonomous systems. I am particularly interested in groups working on real-time
-control for manipulation, multi-robot coordination, sensor-driven autonomy, and
-field robotics. If your lab works on any of these, I would welcome the chance to
-discuss potential fit.
+**I am seeking a PhD position starting Fall 2027** in robotics, with strongest fit at groups whose work spans multi-robot coordination, mobile manipulation, or field robotics — and whose graduate students both ship hardware and prove things about it. If your lab works on any of these, I would welcome the chance to discuss fit.
 
 ---
 
@@ -63,20 +41,6 @@ discuss potential fit.
 **Dr. A. B. M. Harun-Ur-Rashid** (Professor, EEE, BUET) supervised the [design and verification of a custom RISC-V multicycle processor]({{ '/projects/13_riscv/' | relative_url }}) paired with a Wishbone-interfaced memory controller, including the full testbench-based verification flow — my closest exposure to hardware design and verification methodology.
 
 **Rashed Mujib Noman** — Country Director, Augmedix Bangladesh; previously Senior Engineering Manager at Boeing and Performance Engineer at General Motors — has been my long-running industry mentor at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), covering ROV, robotic-arm, 3D-printer, drone, and factory-automation programmes.
-
----
-
-### Research Interests
-
-- **Motion control & manipulation** — closed-form kinematics, singularity-aware
-  control, cascaded PID and evolutionary-tuned controllers, real-time trajectory
-  dispatch on embedded targets
-- **Multi-robot systems & fleet management** — distributed path planning,
-  mutual-exclusion scheduling, human-safe operation architectures
-- **Sensor fusion & state estimation** — EKF fusing wheel odometry with fiducial
-  absolute-pose fixes, bias estimation, outlier rejection
-- **Embedded systems for real-time control** — ROS 2, STM32/ARM Cortex-M,
-  RS-485 Modbus RTU, SBus RC interfaces, fault-tolerant firmware
 
 ---
 
