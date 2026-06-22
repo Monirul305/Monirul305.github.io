@@ -8,7 +8,7 @@ description: >
   rectification, filtering, regulation, and enclosure. BUET EEE
   coursework.
 img: assets/img/projects/dc_power_supply.png
-importance: 10
+importance: 8
 category: lab finals
 ---
 

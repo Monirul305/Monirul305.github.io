@@ -7,7 +7,7 @@ description: >
   attitude stabilisation, GPS waypoint navigation, and a servo-actuated
   payload release. BUET EEE undergraduate build.
 img: assets/img/projects/gps_drone.png
-importance: 5
+importance: 4
 category: lab finals
 ---
 

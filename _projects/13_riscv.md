@@ -7,7 +7,7 @@ description: >
   verification, FPGA validation, and a TSMC 180 nm physical-design
   flow in Cadence. Supervised by Dr. A. B. M. Harun-Ur-Rashid (BUET EEE).
 img: assets/img/projects/riscv.jpg
-importance: 4
+importance: 1
 category: lab finals
 ---
 

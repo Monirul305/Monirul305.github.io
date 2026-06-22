@@ -7,7 +7,7 @@ description: >
   inverter modulation. Full Simulink model with speed reference,
   flux/voltage scheduling, and PI compensation. BUET EEE coursework.
 img: assets/img/projects/induction_motor.jpg
-importance: 8
+importance: 3
 category: lab finals
 ---
 

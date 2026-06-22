@@ -7,7 +7,7 @@ description: >
   and physical layout with parasitic extraction. VLSI coursework at
   BUET EEE.
 img: assets/img/projects/boost_converter.jpg
-importance: 7
+importance: 2
 category: lab finals
 ---
 
