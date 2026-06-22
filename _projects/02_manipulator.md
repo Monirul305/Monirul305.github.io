@@ -2,9 +2,9 @@
 layout: page
 title: 7-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)
 description: >
-  Full real-time control stack for a 7-DOF arm + tracked base. Custom
-  closed-form analytical IK replacing MoveIt's KDL solver. Singularity-aware
-  smooth scaling, FK-anchored accumulator, 40-test unit suite.
+  Full real-time control stack for a 7-DOF arm + 2-DOF anti-flipper arm
+  on a tracked base. Custom closed-form analytical IK replacing MoveIt's
+  KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.
 img: assets/img/projects/manipulator.jpg
 importance: 1
 category: professional
@@ -15,9 +15,7 @@ category: professional
 <div class="row">
   <div class="col-sm-12">
     <div class="alert alert-info" role="alert">
-      <strong>Scope:</strong> ~3,500 lines of Python across coordinator, IK solver,
-      FK module, SBus decoder, and 40-test unit suite. Full URDF/SRDF description
-      and MoveIt 2 / ros2_control integration.
+      <strong>Scope:</strong> Full real-time control stack written in Python — coordinator node, custom IK solver, FK module, SBus decoder, and a unit-test suite. Full URDF/SRDF description with MoveIt 2 / ros2_control integration.
     </div>
   </div>
 </div>
@@ -50,7 +48,7 @@ sbus_publisher  ──(SbusControl @200Hz)──▶  coordinator_node
                                         /plan_kinematic_path
 ```
 
-**coordinator_node** (2,200 lines) handles: operator-intent translation, IK solving, FSM state management, trajectory dispatch, MoveIt collision gating, watchdog, and diagnostics at 10 Hz.
+**coordinator_node** handles: operator-intent translation, IK solving, FSM state management, trajectory dispatch, MoveIt collision gating, watchdog, and diagnostics at 10 Hz.
 
 ---
 
@@ -58,7 +56,7 @@ sbus_publisher  ──(SbusControl @200Hz)──▶  coordinator_node
 
 **Why not numerical (KDL)?** MoveIt's default KDL solver had three problems on this arm: solve-time jitter that broke the dispatch rhythm, silent failures at singularities, and free choice of solution branch that produced surprise arm flips.
 
-**Custom analytical solver:** A from-scratch closed-form solver that decomposes the chain into turret (yaw), planar 2R + prismatic (shoulder / elbow / telescope), and wrist (pitch-roll) stages. Constant-time arithmetic, no convergence loops, deterministic, and biased toward the current arm configuration so it stays on the operator's expected branch. Backed by a 40-test unit suite covering workspace sweeps, joint-limit clipping, branch consistency at boundaries, and FK round-tripping.
+**Custom analytical solver:** A from-scratch closed-form solver that decomposes the chain into turret (yaw), planar 2R + prismatic (shoulder / elbow / telescope), and wrist (pitch-roll) stages. Constant-time arithmetic, no convergence loops, deterministic, and biased toward the current arm configuration so it stays on the operator's expected branch. Backed by a unit-test suite covering workspace sweeps, joint-limit clipping, branch consistency at boundaries, and FK round-tripping.
 
 ---
 

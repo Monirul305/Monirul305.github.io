@@ -34,7 +34,7 @@ live garment factory floor alongside hundreds of workers (ROS 2, AprilTag EKF,
 distributed reservation-based path planning); a **ROS 2 / MoveIt 2 control
 stack** for a tracked mobile manipulator combining a 7-DOF arm with a 2-DOF
 anti-flipper arm — custom closed-form analytical IK solver, singularity
-handling, and 40-test validation suite; and contributing to the **Jontro Soinik
+handling, and a unit-test validation suite; and contributing to the **Jontro Soinik
 EOD ROV family** — indigenously-developed robots tested by the
 Bangladesh Army and now deployed in
 [UN Peacekeeping Missions](https://cyberneticsbd.com/smart-soinik-1-0/) in
