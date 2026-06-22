@@ -24,12 +24,14 @@ category: professional
 
 ### Platform — Jontro Soinik 2.0
 
-**Jontro Soinik 2.0** is a tracked unmanned ground vehicle with a 7-DOF hybrid manipulator on top, tele-operated over an RC link. The full chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below; the remaining four joints drive the platform itself (flippers + tracks).
+**Jontro Soinik 2.0** is a tracked unmanned ground vehicle tele-operated over an RC link, carrying three coordinated subsystems on the same chassis: a **7-DOF arm** for primary manipulation, a **2-DOF anti-flipper arm** mounted on the carrier (which both stabilises the vehicle in transit and contributes to the on-board collision-avoidance envelope — the manipulator cannot plan into the anti-flipper's swept volume), and a **differential-drive tracked base**. The arm chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below.
+
+> **Deployment status.** Hardware assembly is in progress; once field-tested, the platform is set for deployment in UN peacekeeping missions, joining the [Jontro Soinik v1 / v2 EOD ROV family]({{ '/projects/03_soinik_rov/' | relative_url }}) already in UN service.
 
 | Group | Joints | Control Mode |
 |---|---|---|
 | **Arm** | turret, shoulder, elbow, telescope, wrist_pan, wrist_roll | Position (JTC via ros2_control) |
-| **Flippers** | front_flipper, rear_flipper | Position (JTC) |
+| **Anti-flipper arm** | front_flipper, rear_flipper | Position (JTC) — also a collision-avoidance element |
 | **Drive** | left_drive, right_drive | Velocity (open-loop from SBus) |
 | **Gripper** | gripper | Torque (open-loop from SBus) |
 
@@ -76,6 +78,12 @@ The fix: after each IK execution, run FK on the joint solution and re-anchor the
 
 ---
 
+### Motion Planning (Special Commands)
+
+Standard tele-op runs directly through the closed-form IK described above — the operator gets instant Cartesian response with no planner latency. **Special commands** that require coordinated multi-joint motion — return-to-rest, the home pose, named configuration setpoints — go through **MoveIt 2's planning service** (`/plan_kinematic_path`) instead. The planned trajectory is dispatched through the same `FollowJointTrajectory` action server that handles tele-op output, and the per-tick `/check_state_validity` collision filter applies to both paths.
+
+---
+
 ### State Machine & Operator Interface
 
 **Operation modes:** `DISARMED` · `ARMED` · `ACTUATING`
@@ -92,7 +100,7 @@ The fix: after each IK execution, run FK on the joint solution and re-anchor the
 
 | Tier | Mechanism | Detail |
 |---|---|---|
-| 1 — Collision | MoveIt `/check_state_validity` | Every flipper tick; 200 ms timeout; single-flight lock |
+| 1 — Collision | MoveIt `/check_state_validity` | Checks the **arm, anti-flipper arm, and carrier** together every flipper tick; 200 ms timeout; single-flight lock |
 | 2 — Joint delta | Per-tick max cap (0.5 rad / 0.5 m) | Excess → reject + force re-arm |
 | 3 — Radio link | 2 s SBus watchdog | Cancel trajectories, refuse commands until re-arm |
 
