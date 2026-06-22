@@ -24,7 +24,7 @@ The design is targeted at unmanned multi-node robotic platforms operating in env
 
 ### My Role
 
-**Co-author.** I contributed to the architecture design, the hardware-level fallback implementation, and the failure-injection validation on the ROV testbed. The full author list and additional detail are in the [publications]({{ '/publications/' | relative_url }}) entry and the linked draft PDF.
+**Co-author.** I contributed to the architecture design, the hardware-level fallback implementation, and the failure-injection validation on the ROV testbed. The full author list and additional detail are in the [publications]({{ '/publications/' | relative_url }}) entry.
 
 ### Status
 
