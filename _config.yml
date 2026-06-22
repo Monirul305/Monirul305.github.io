@@ -154,8 +154,6 @@ collections:
     output: true
   projects:
     output: true
-  teachings:
-    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -191,7 +189,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -329,6 +326,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    status,
     supp,
     video,
     website,
