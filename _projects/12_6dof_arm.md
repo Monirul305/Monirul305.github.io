@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 6-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes
+title: 5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes
 description: >
-  Six-degree-of-freedom serial robotic arm — SolidWorks frame, body
+  Five-degree-of-freedom serial robotic arm (plus gripper) — SolidWorks frame, body
   fabricated on a hobby 3D printer I built in parallel, stepper-motor
   actuation through custom 3D-printed planetary gearboxes, Arduino-based
   control, and analytical inverse kinematics with closed-form algebraic
@@ -14,7 +14,7 @@ category: undergraduate
 
 {% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
 
-A 6-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has six actuated joints: **turret** (base yaw), **shoulder**, **elbow**, **wrist pan**, **wrist roll**, and **gripper** end-effector.
+A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate robotics project at BUET — mechanical design, custom drivetrain, fabrication, and control software all done in-house. The arm has five actuated joints — **turret** (base yaw), **shoulder**, **elbow**, **wrist pan**, **wrist roll** — plus a **gripper** end-effector.
 
 **Mechanical design.** All structural links were designed in **SolidWorks**, sized against the torque demands at each joint, then 3D-printed on the [hobby 3D printer I built as a parallel project]({{ '/projects/16_hobby_3d_printer/' | relative_url }}) — not an outsourced or commercial machine. Joint axes and bearing locations were dimensioned so that the printed parts could be assembled without significant post-processing. Cable routing was planned at the design stage to avoid binding through the workspace.
 
