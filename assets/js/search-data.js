@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 7-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript under review on GA-tuned bilateral cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
+          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript under review on GA-tuned bilateral cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -88,11 +88,11 @@ ninja.data = [{
             window.location.href = "/blog/2025/agv-lidar-tile-mapping/";
           
         },
-      },{id: "post-tele-operated-rov-demo-6-dof-heavy-lift-arm-six-camera-cofdm-link-hcu-ocu-dual-control",
+      },{id: "post-tele-operated-rov-demo-5-dof-heavy-lift-arm-six-camera-cofdm-link-hcu-ocu-dual-control",
         
-          title: "Tele-Operated ROV Demo: 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control",
+          title: "Tele-Operated ROV Demo: 5-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control",
         
-        description: "A LinkedIn-post mirror — short demo of our newest tele-operated ROV. 6-DOF manipulator (20 kg @ 5 km/h), six IP cameras over a 1.4 GHz COFDM 1 km link, dual HCU/OCU control with a wired optical fallback.",
+        description: "A LinkedIn-post mirror — short demo of our newest tele-operated ROV. 5-DOF manipulator plus gripper (20 kg @ 5 km/h), six IP cameras over a 1.4 GHz COFDM 1 km link, dual HCU/OCU control with a wired optical fallback.",
         section: "Posts",
         handler: () => {
           
@@ -103,7 +103,7 @@ ninja.data = [{
         
           title: "Under the Hood of the ROV: Addressable RS485 Master-Slave for BLDC-Servo Drive",
         
-        description: "A teammate&#39;s LinkedIn deep-dive — Shakil Tanvir&#39;s addressable RS485 master-slave communication system driving the 6-DOF ROV with integrated BLDC servos. Motor specs, control-loop tuning, and a stair-climbing torque fix via RS232 reconfiguration. (His work, not mine — I was on the same team.)",
+        description: "A teammate&#39;s LinkedIn deep-dive — Shakil Tanvir&#39;s addressable RS485 master-slave communication system driving the 5-DOF ROV with integrated BLDC servos. Motor specs, control-loop tuning, and a stair-climbing torque fix via RS232 reconfiguration. (His work, not mine — I was on the same team.)",
         section: "Posts",
         handler: () => {
           
@@ -144,9 +144,9 @@ ninja.data = [{
           description: "Production-deployed autonomous guided vehicle fleet navigating a live garment factory alongside hundreds of workers. ROS 2, AprilTag EKF, distributed path planning, FleetCore coordinator.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01_agv_fleet/";
-            },},{id: "projects-7-dof-mobile-manipulator-with-custom-closed-form-ik-ros-2-moveit-2",
-          title: '7-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)',
-          description: "Full real-time control stack for a 7-DOF arm + 2-DOF anti-flipper arm on a tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.",
+            },},{id: "projects-6-dof-mobile-manipulator-with-custom-closed-form-ik-ros-2-moveit-2",
+          title: '6-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)',
+          description: "Full real-time control stack for a 6-DOF arm + 2-DOF anti-flipper arm on a tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/02_manipulator/";
             },},{id: "projects-indigenous-eod-rov-family-un-peacekeeping-deployment-mali-congo",
