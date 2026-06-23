@@ -7,7 +7,7 @@ description: >
   actuation through custom 3D-printed planetary gearboxes, Arduino-based
   control, and analytical inverse kinematics with closed-form algebraic
   solutions.
-img: assets/img/projects/6dof_arm.jpg
+img: assets/img/projects/5dof_arm.jpg
 importance: 1
 category: undergraduate
 ---
@@ -30,4 +30,4 @@ A demonstration of the assembled arm performing pick-and-place is available in t
 
 `SolidWorks` · `3D printing (hobby printer)` · `Custom planetary gearbox` · `Stepper motors` · `Arduino` · `Analytical IK (closed-form)` · `Denavit–Hartenberg`
 
-[**Code & demo on GitHub →**](https://github.com/Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-fo-Freedom)
+[**Code & demo on GitHub →**](https://github.com/Monirul305/Designing-and-Implementation-of-Robotic-Arm-with-5-Degree-of-Freedom)
