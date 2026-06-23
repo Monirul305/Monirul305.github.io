@@ -26,12 +26,12 @@ related_publications: true
 
 ### Platform Overview
 
-The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-developed Explosive Ordnance Disposal ROVs. Both platforms carry a 6-DOF manipulator on a tracked chassis with a multi-camera sensor head; v2 adds IP55 weather protection, a disrupter, and a fully bus-based control architecture.
+The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-developed Explosive Ordnance Disposal ROVs. Both platforms carry a 5-DOF manipulator (plus gripper) on a tracked chassis with a multi-camera sensor head; v2 adds IP55 weather protection, a disrupter, and a fully bus-based control architecture.
 
 | | Jontro Soinik v1 | Jontro Soinik v2 |
 |---|---|---|
 | Generation | 2nd | 3rd |
-| Arm DOF | 6 | 6 |
+| Arm DOF | 5 (+ gripper) | 5 (+ gripper) |
 | Comms topology | **Star** (central node ↔ peripherals) | **Custom multi-drop bus** |
 | IP Rating | — | **IP55** |
 | Speed | 4 km/h | 5 km/h |
@@ -62,7 +62,7 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 ### My Contributions
 
 **Communication architecture — v1 star → v2 custom bus**
-- **v1** ran a **star topology**: a central control node connected over discrete point-to-point links to every peripheral controller — the drive motors, the 7 arm motors (6 joints + claw), the PTZ camera node, and the rest of the on-vehicle subsystems. Each peripheral terminated on its own dedicated channel back to the centre.
+- **v1** ran a **star topology**: a central control node connected over discrete point-to-point links to every peripheral controller — the drive motors, the 6 arm motors (5 joints + claw), the PTZ camera node, and the rest of the on-vehicle subsystems. Each peripheral terminated on its own dedicated channel back to the centre.
 - **v2** replaces the star with a **custom multi-drop bus** developed in-house: all peripherals share a single communication medium, dramatically reducing harness count, simplifying the chassis wiring, and making it cheap to add new nodes without re-routing back to the centre.
 
 **Motion control**

@@ -71,7 +71,7 @@ Live video is transmitted over a **1.4 GHz COFDM** link at up to **1 km range**,
 </div>
 
 A longer field-operations clip of the same stack is mirrored as a blog entry:
-[Tele-Operated ROV Demo — 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}).
+[Tele-Operated ROV Demo — 5-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}).
 
 ### Tech Stack
 

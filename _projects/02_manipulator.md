@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 7-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)
+title: 6-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)
 description: >
-  Full real-time control stack for a 7-DOF arm + 2-DOF anti-flipper arm
+  Full real-time control stack for a 6-DOF arm + 2-DOF anti-flipper arm
   on a tracked base. Custom closed-form analytical IK replacing MoveIt's
   KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.
 img: assets/img/projects/manipulator.jpg
@@ -22,7 +22,7 @@ category: professional
 
 ### Platform — Jontro Soinik 2.0
 
-**Jontro Soinik 2.0** is a tracked unmanned ground vehicle tele-operated over an RC link, carrying three coordinated subsystems on the same chassis: a **7-DOF arm** for primary manipulation, a **2-DOF anti-flipper arm** mounted on the carrier (which both stabilises the vehicle in transit and contributes to the on-board collision-avoidance envelope — the manipulator cannot plan into the anti-flipper's swept volume), and a **differential-drive tracked base**. The arm chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll, gripper` — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below.
+**Jontro Soinik 2.0** is the lightweight, carbon-fibre, man-transportable generation of the Jontro Soinik EOD ROV family — a ~25 kg carrier carrying a detachable ~25 kg arm with a 5 kg payload, where the carrier can drive independently of the arm. Unlike the heavier (~130 kg) v1 / v2 platforms, which are direct-teleop only, 2.0 is the generation that adds on-board autonomy: the custom closed-form IK, motion planning, and obstacle avoidance described below. It is tele-operated over an RC link and carries three coordinated subsystems on the same chassis: a **6-DOF arm** for primary manipulation, a **2-DOF anti-flipper arm** mounted on the carrier (which both stabilises the vehicle in transit and contributes to the on-board collision-avoidance envelope — the manipulator cannot plan into the anti-flipper's swept volume), and a **differential-drive tracked base**. The arm chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll` (6 DOF) plus a `gripper` end-effector — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below.
 
 > **Deployment status.** Hardware assembly is in progress; once field-tested, the platform is set for deployment in UN peacekeeping missions, joining the [Jontro Soinik v1 / v2 EOD ROV family]({{ '/projects/03_soinik_rov/' | relative_url }}) already in UN service.
 
@@ -114,7 +114,7 @@ Alongside the software stack, I led the **electrical side** of this platform —
     <p class="text-center mt-1"><small class="text-muted">Routing the on-carrier harness — power and signal lines through the carrier into the avionics bay.</small></p>
   </div>
   <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Working on the internal wiring of the 7-DOF mobile manipulator." %}
+    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Working on the internal wiring of the 6-DOF mobile manipulator." %}
     <p class="text-center mt-1"><small class="text-muted">Inside the chassis — dressing the internal harness, motor-drive lines, and sensor feedback paths.</small></p>
   </div>
 </div>
@@ -123,7 +123,7 @@ Alongside the software stack, I led the **electrical side** of this platform —
 
 ### Mechanical Build (Supporting Role)
 
-The mechanical side — the carbon-fibre carrier the 7-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions.
+The mechanical side — the carbon-fibre carrier the 6-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions.
 
 <div class="row project-photo-row mt-3">
   <div class="col-sm-6">
@@ -136,7 +136,7 @@ The mechanical side — the carbon-fibre carrier the 7-DOF chain mounts on, the 
   </div>
 </div>
 
-{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 7-DOF mobile manipulator's tracked base." %}
+{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 6-DOF mobile manipulator's tracked base." %}
 
 <p class="text-center"><em>Helping build up the drive-wheel assembly — bearing seats, pulleys, and brace plates laid out before lacing.</em></p>
 
@@ -152,7 +152,7 @@ The mechanical side — the carbon-fibre carrier the 7-DOF chain mounts on, the 
         allowfullscreen></iframe>
     </div>
     <p class="text-center mt-2">
-      <em>Jontro Soinik 2.0 — Tracked Robot with 7-DOF Arm in Action</em>
+      <em>Jontro Soinik 2.0 — Tracked Robot with 6-DOF Arm in Action</em>
       — full-system RViz / MoveIt walkthrough and live tele-op
     </p>
   </div>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Tele-Operated ROV Demo: 6-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control"
+title: "Tele-Operated ROV Demo: 5-DOF Heavy-Lift Arm, Six-Camera COFDM Link, HCU/OCU Dual Control"
 date: 2024-10-01 10:00:00
-description: A LinkedIn-post mirror — short demo of our newest tele-operated ROV. 6-DOF manipulator (20 kg @ 5 km/h), six IP cameras over a 1.4 GHz COFDM 1 km link, dual HCU/OCU control with a wired optical fallback.
+description: A LinkedIn-post mirror — short demo of our newest tele-operated ROV. 5-DOF manipulator plus gripper (20 kg @ 5 km/h), six IP cameras over a 1.4 GHz COFDM 1 km link, dual HCU/OCU control with a wired optical fallback.
 tags: robotics rov teleoperation cofdm embedded
 categories: linkedin
 featured: false
@@ -15,7 +15,7 @@ We're thrilled to share a demonstration of our newest **ROV in action** — show
 
 ### 🦾 Precision & Power
 
-- Equipped with a **6-DOF manipulator**, the ROV delivers exceptional accuracy in pick-and-place operations — even while carrying heavy loads up to **20 kg at speeds up to 5 km/h**.
+- Equipped with a **5-DOF manipulator** (plus gripper), the ROV delivers exceptional accuracy in pick-and-place operations — even while carrying heavy loads up to **20 kg at speeds up to 5 km/h**.
 
 ### 🎥 Advanced Camera System
 

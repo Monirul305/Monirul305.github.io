@@ -2,7 +2,7 @@
 layout: post
 title: "Under the Hood of the ROV: Addressable RS485 Master-Slave for BLDC-Servo Drive"
 date: 2024-08-14 10:00:00
-description: A teammate's LinkedIn deep-dive — Shakil Tanvir's addressable RS485 master-slave communication system driving the 6-DOF ROV with integrated BLDC servos. Motor specs, control-loop tuning, and a stair-climbing torque fix via RS232 reconfiguration. (His work, not mine — I was on the same team.)
+description: A teammate's LinkedIn deep-dive — Shakil Tanvir's addressable RS485 master-slave communication system driving the 5-DOF ROV with integrated BLDC servos. Motor specs, control-loop tuning, and a stair-climbing torque fix via RS232 reconfiguration. (His work, not mine — I was on the same team.)
 tags: robotics rov rs485 bldc embedded motor-control
 categories: linkedin
 featured: false
@@ -19,7 +19,7 @@ If the [ROV demo post]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}) sho
 
 Shakil's design uses an **addressable RS485 master–slave bus** to coordinate the ROV's motion: a single master controller addressing multiple BLDC-servo slaves over a single half-duplex line. Each slave is an **integrated-driver BLDC servo motor**, chosen so the closed-loop current/velocity loops live on the motor itself — the master only sends high-level setpoints.
 
-The same bus also drives the **6-DOF manipulator arm**. One protocol, one wiring topology, every actuator on the vehicle.
+The same bus also drives the **5-DOF manipulator arm** (plus gripper). One protocol, one wiring topology, every actuator on the vehicle.
 
 ### 🔧 The stair-climbing torque problem
 
@@ -58,7 +58,7 @@ For our team specifically, the carry-over has already happened: the AGV fleet's 
 
 - **Original author:** Shakil Tanvir — Research & Development, Cybernetics Hi-Tech Solutions
 - **Related posts:** [Tele-Operated ROV Demo]({{ '/blog/2024/advanced-rov-demo/' | relative_url }}) · [AGV fleet production deployment]({{ '/blog/2026/agv-fleet-production-deployment/' | relative_url }})
-- **Project page on this site:** [Tele-Operated ROV — 6-DOF Manipulator + COFDM Multi-Camera Teleoperation]({{ '/projects/09_advanced_rov_cofdm/' | relative_url }})
+- **Project page on this site:** [Tele-Operated ROV — 5-DOF Manipulator + COFDM Multi-Camera Teleoperation]({{ '/projects/09_advanced_rov_cofdm/' | relative_url }})
 
 ---
 
