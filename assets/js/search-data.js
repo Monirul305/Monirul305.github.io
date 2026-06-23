@@ -198,7 +198,7 @@ ninja.data = [{
           title: '5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
           description: "Five-degree-of-freedom serial robotic arm (plus gripper) — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/12_6dof_arm/";
+              window.location.href = "/projects/12_5dof_arm/";
             },},{id: "projects-rv32i-multicycle-processor-with-wishbone-memory-controller-verilog-fpga-tsmc-180-nm",
           title: 'RV32I Multicycle Processor with Wishbone Memory Controller (Verilog · FPGA · TSMC 180...',
           description: "From-scratch RV32I multicycle processor in Verilog with a custom Wishbone-interfaced memory controller, full testbench-based verification, FPGA validation, and a TSMC 180 nm physical-design flow in Cadence. Supervised by Dr. A. B. M. Harun-Ur-Rashid (BUET EEE).",
