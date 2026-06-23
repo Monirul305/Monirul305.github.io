@@ -194,9 +194,9 @@ ninja.data = [{
           description: "Trained a YOLOv2 detector on a self-curated vehicle dataset and built a frame-by-frame tracking layer to estimate real-world vehicle speeds from monocular traffic video. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_yolov2_traffic/";
-            },},{id: "projects-6-dof-robotic-arm-stepper-driven-with-3d-printed-planetary-gearboxes",
-          title: '6-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
-          description: "Six-degree-of-freedom serial robotic arm — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
+            },},{id: "projects-5-dof-robotic-arm-stepper-driven-with-3d-printed-planetary-gearboxes",
+          title: '5-DOF Robotic Arm — Stepper-Driven with 3D-Printed Planetary Gearboxes',
+          description: "Five-degree-of-freedom serial robotic arm (plus gripper) — SolidWorks frame, body fabricated on a hobby 3D printer I built in parallel, stepper-motor actuation through custom 3D-printed planetary gearboxes, Arduino-based control, and analytical inverse kinematics with closed-form algebraic solutions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_6dof_arm/";
             },},{id: "projects-rv32i-multicycle-processor-with-wishbone-memory-controller-verilog-fpga-tsmc-180-nm",
