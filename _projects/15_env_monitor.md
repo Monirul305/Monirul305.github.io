@@ -28,6 +28,21 @@ The node continuously measures **air quality, temperature, and humidity**, and u
 
 This series-on-discharge / parallel-on-charge architecture is what makes the node deployable as a solar-only field unit, not just a benchtop demo.
 
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/NIPp1ySjQOk"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Walkthrough of the monitoring node — sensing, GSM uplink, and the relay-switched battery reconfiguration.</em>
+    </p>
+  </div>
+</div>
+
 ### Tech Stack
 
 `Arduino UNO` · `GSM cellular` · `ThingSpeak` · `Solar charging` · `Relay-switched battery bank` · `Voltage regulation` · `Air-quality / temp / humidity sensing`

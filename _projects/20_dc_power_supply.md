@@ -25,7 +25,20 @@ A bench-grade **variable DC power supply** designed for laboratory use — built
 - **Short-circuit protection** — output shorts are detected and the supply enters fold-back current limiting until the fault clears, with no permanent damage to the pass element.
 - **Heat-sinked pass transistor** — the linear topology dissipates the input-to-output voltage difference as heat, so the pass element is mounted on an appropriately sized heat sink with thermal-shutdown protection.
 
-A short video demonstration of the supply in operation — voltage / current adjustment and fault response — is available on the repository's [video presentation](https://www.youtube.com/watch?v=ZSO7t5vjk-Y).
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/ZSO7t5vjk-Y"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Bench supply in operation — voltage / current adjustment and short-circuit fault response.</em>
+    </p>
+  </div>
+</div>
 
 ### Tech Stack
 

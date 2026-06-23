@@ -29,7 +29,20 @@ An **Optical Mark Recognition (OMR)** machine — the kind that reads pencil-fil
 
 The entire data path is purely combinational + sequential logic on the board, with no firmware to debug — what you see on the schematic is what's running on the hardware.
 
-A demonstration of the machine reading a filled sheet and displaying the score is available in the repository's [video demonstration](https://www.youtube.com/watch?v=VxnxKPR5TMw).
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/VxnxKPR5TMw"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>The machine reading a filled answer sheet and displaying the tallied score — pure discrete-logic data path.</em>
+    </p>
+  </div>
+</div>
 
 ### Tech Stack
 

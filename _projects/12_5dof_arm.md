@@ -24,7 +24,20 @@ A 5-degree-of-freedom serial robotic arm built end-to-end as an undergraduate ro
 
 **Kinematics.** Forward kinematics use a Denavit–Hartenberg parameterisation of the arm. Inverse kinematics is implemented as **analytical IK using closed-form algebraic solutions** — derived by decomposing the arm's geometry into a positional sub-chain (turret + shoulder + elbow) and a wrist-orientation sub-chain (wrist pan + wrist roll), then solving each in closed form rather than relying on numerical iteration. Elbow-up / elbow-down branch selection is exposed as a parameter to the caller. The gripper is commanded independently of the IK chain.
 
-A demonstration of the assembled arm performing pick-and-place is available in the repository's [demo video](https://www.youtube.com/watch?v=wLU_OnsAH6g).
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/wLU_OnsAH6g"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Assembled 5-DOF arm running a pick-and-place sequence under closed-form inverse kinematics.</em>
+    </p>
+  </div>
+</div>
 
 ### Tech Stack
 

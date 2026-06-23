@@ -23,7 +23,20 @@ A quadcopter built end-to-end for autonomous waypoint-based parcel delivery — 
 
 **Payload delivery.** A **servo-actuated release mechanism** sits in the payload bay. When the drone reaches the delivery waypoint and confirms it is within a configured radius, the controller commands the servo to release, allowing the parcel to fall.
 
-A demonstration of an autonomous waypoint flight with payload release is available in the repository's [demo video](https://www.youtube.com/watch?v=G2CUlhSLEss).
+### Demo Video
+
+<div class="row justify-content-center mt-3">
+  <div class="col-sm-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/G2CUlhSLEss"
+        allowfullscreen></iframe>
+    </div>
+    <p class="text-center mt-2">
+      <em>Autonomous GPS-waypoint flight with servo-actuated payload release.</em>
+    </p>
+  </div>
+</div>
 
 ### Tech Stack
 
