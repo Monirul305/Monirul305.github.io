@@ -4,47 +4,44 @@ title: research statement
 permalink: /research-statement/
 nav: false
 description: >
-  PhD research direction, the open problems I want to attack, the methodological
-  tools I would bring, and how the work I have already shipped positions me to do
-  them.
+  My PhD thesis direction, a concrete first-year plan, the methodological tools
+  I would bring, and how the systems I have already shipped position me to do the
+  work.
 ---
 
 ### The question
 
-What is the right way to deploy small, coordinated teams of mobile robots — some of them carrying manipulators — into dense, human-occupied environments, with safety and coordination properties that hold up under realistic sensor, network, and mechanical fault, and with formal characterisation rather than empirical hope?
+Small teams of mobile robots are starting to share dense, human-occupied spaces — factory floors, warehouses, disposal sites — with no physical barriers between robot and person. The coordination layer that keeps such a team safe is, in almost every deployed system I know of (my own included), **empirically robust but methodologically thin**: it works because every anticipated failure mode was engineered around, not because anyone can state the conditions under which it is guaranteed to hold.
 
-This is the question I want to spend a PhD on. It sits at the intersection of three areas I have already worked in at production depth: decentralised multi-robot coordination, mobile manipulation, and the embedded substrate that lets both run reliably in the field.
+**The thesis I want to write:** how do you scale decentralised coordination of a mobile-robot team in a shared human space past demonstrative fleet sizes, with a safety claim that is *characterised* — a stated guarantee with stated assumptions — rather than a hand-engineered failure-mode survey, and characterised all the way **down to the embedded substrate** the coordination silently depends on?
 
-### Why this question, and why now
+That last clause is the part that is distinctly mine. Most multi-robot-coordination work assumes a well-behaved drive and comms layer; I have spent three years building that layer and watching exactly where it breaks in the field.
 
-Most of the deployed multi-robot systems I have shipped — the [3-robot AGV fleet]({{ '/projects/01_agv_fleet/' | relative_url }}) at The Urmi Group, the [Jontro Soinik EOD ROVs]({{ '/projects/03_soinik_rov/' | relative_url }}) handed to the Bangladesh Army and forwarded to UN peacekeeping in Mali and the Republic of Congo — share a common pattern: a coordination layer that is empirically robust but methodologically thin.
+### Why this question falls out of the work I've shipped
 
-The AGV fleet runs **decentralised prioritised MAPF** with peer-published reservation tables and three conflict checks (vertex / swap / target); it has accumulated months of zero-collision operation alongside hundreds of workers, with no physical barriers. But I cannot give a reviewer a completeness argument, a deadlock-recovery bound, or a published benchmark — the system works because we engineered around every failure mode we anticipated, not because the literature tells us when it will fail.
+My [3-robot AGV fleet]({{ '/projects/01_agv_fleet/' | relative_url }}) runs **decentralised prioritised MAPF** — each robot publishes its plan as timestamped reservations, and peers treat them as spatiotemporal constraints under vertex / swap / target conflict checks. It has months of zero-collision operation alongside hundreds of workers with no barriers. But I cannot hand a committee a completeness argument, a deadlock-recovery bound, or a benchmark against the literature: priorities are inherited from dispatch order and never searched, and "safe" currently means "no failure mode we anticipated has occurred yet." The gap between a fleet that demonstrably works and a coordination scheme whose guarantees are *stated* is the thesis.
 
-The older, heavier EOD ROVs run a 5-DOF arm under direct teleoperation; the lightweight, man-transportable [Jontro Soinik 2.0]({{ '/projects/02_manipulator/' | relative_url }}) adds a sixth (telescopic) joint plus a custom closed-form IK, motion planning, and obstacle avoidance on a moving base. Its singularity handling — smooth scaling as the planar radius shrinks toward zero — is a heuristic that has worked on the bench, but it is not a damping argument I can defend formally near a real singular configuration with a moving base underneath it.
+The coordination layer rests on assumptions about the layer beneath it — bounded inter-node latency, fault detection that actually fires, drives that hold a commanded speed. My first-author [dual-MCU BLDC synchronisation]({{ '/projects/04_ga_pid/' | relative_url }}) work and co-authored [fault-tolerant dual-network feedback]({{ '/projects/23_dual_network/' | relative_url }}) paper live exactly here, and they are where I have most directly confronted the difference between "works on the bench" and "holds in the field." A coordination-layer safety claim that ignores these assumptions is not actually characterised. Closing that loop — coordination guarantees that account for the substrate they ride on — is what I can do that a simulation-only applicant cannot.
 
-Across both, the embedded layer — [dual-MCU BLDC synchronisation]({{ '/projects/04_ga_pid/' | relative_url }}), [fault-tolerant dual-network feedback]({{ '/projects/23_dual_network/' | relative_url }}) — is where my first-author research contribution and one co-author paper sit, and where I have spent the most time confronting the gap between what works on the bench and what holds up in the field.
+The robots in such a team increasingly carry manipulators: my [Jontro Soinik 2.0]({{ '/projects/02_manipulator/' | relative_url }}) is a mobile platform with a 6-DOF arm, custom closed-form IK, and on-board motion planning. Whole-body, singularity-aware control of an arm on a moving base in human envelopes is a real open problem and a natural extension of this direction — but it is control theory I would take up with a co-advisor, not the spine of the thesis.
 
-The opening these systems leave is the research question above: how do you design, characterise, and field a small team of mobile manipulators in shared human spaces such that the safety and coordination properties are *provable*, not just empirically observed?
+### A concrete first-year plan
 
-### Concrete open problems I would attack
+To keep the thesis falsifiable rather than aspirational, the first year has a specific, runnable shape:
 
-**Scaling decentralised prioritised MAPF beyond demonstrative fleet sizes, with characterised safety under realistic fault.**
-The MAPF literature has rich theoretical treatment (CBS, ECBS, PBS, PIBT, cooperative A\*) and large simulation benchmarks, but very few hardware studies past 5–10 robots in dense human environments. The open questions are what the practical degradation curve looks like, what additions (priority resolution, anytime replanning, lifelong formulations) are necessary to keep the scheme safe and complete as fleet size grows from 3 → 10 → 50, and what counts as a *characterised* safety claim in that setting rather than a hand-engineered failure-mode survey.
+1. **Reproduce and benchmark.** Port the deployed reservation scheme into simulation and measure its degradation curve — success rate, makespan, replans per agent, deadlock-recovery time — at **3 → 10 → 25 → 50 agents** on the standard MAPF benchmark maps (the MovingAI / MAPF-benchmark suite), against named baselines: prioritised planning, cooperative A\*, and **PIBT**. This turns "it works on 3 robots" into a measured statement of where it breaks and why.
+2. **State a safety object.** Replace the hand-engineered failure-mode survey with one named formal claim — a **runtime safety monitor / shield** that provably refuses unsafe actions, or a **probabilistic collision bound** under bounded localisation error — and prove or empirically validate it on the benchmark.
+3. **Reach down to the substrate.** Make explicit the substrate assumptions the safety claim depends on (an inter-node latency bound, a fault-detection-latency bound, a synchronised-drive error bound), using my BLDC-sync and dual-network testbeds, and characterise how the coordination-layer guarantee degrades as each is violated.
 
-**Whole-body singularity-aware control for a mobile manipulator in human-shared workspaces.**
-Adding manipulator motion to a moving base introduces coupling that pure base or pure arm controllers do not see; doing it near kinematic singularities while respecting human-safe motion envelopes is an open whole-body control problem. The literature is heavy on quadruped whole-body MPC; mobile-base plus serial-arm receives less treatment, and the field-robotics constraint — degraded sensing, intermittent comms, unstructured floor surfaces — sharpens it further.
+The year-one output I would aim for is a single paper: the deployed scheme, its measured scaling behaviour against MAPF baselines, and a first characterised safety claim with its substrate assumptions made explicit.
 
-**Embedded substrate guarantees the coordination layer can actually rely on.**
-Multi-robot coordination implicitly assumes properties of the drive and comms layer — latency bounds, fault detection, synchronised drive speeds — that are routinely hand-engineered and rarely characterised. My GA-tuned dual-MCU bilateral cross-coupled BLDC synchronisation work and the co-authored dual-network feedback paper are first steps. The broader question is what set of substrate guarantees are necessary and sufficient for the safety properties at the coordination layer to actually hold.
+### What I bring, and what I am here to add
 
-### What I bring, and what I am explicitly here to add
+What I bring is three years of full-stack field deployment — production systems, real customers including a uniformed end-user, and a track record of being the person called when something has to work in the field rather than on a slide.
 
-What I am bringing is three years of full-stack field deployment under one roof — production systems, real customers including a uniformed end-user, and a track record of being the person called when something has to work in the field rather than on a slide.
+What I am here to add is **bounded and specific to the thesis above**, not a whole field I am starting from zero: formal-methods tooling for the safety claim (runtime verification, control-barrier functions, probabilistic model checking), MAPF theory at thesis depth (completeness and the priority-ordering literature I currently use only by name), and the publishable-result discipline that turns a shipped system into a benchmarked, characterised contribution. I would close these in first-year coursework — convex optimisation, a formal-methods / verification course, and a multi-agent-systems or motion-planning seminar — and in qualifying-exam preparation.
 
-What I am *not* bringing, and what a PhD is the right environment to add, is the formal control-theoretic background (Lyapunov, MPC theory, ISS, sum-of-squares), the MAPF-literature engagement at thesis depth, and the publishable-result discipline that converts shipped engineering into research contributions. These are gaps I will close in first-year coursework and qualifying-exam preparation, and I am applying to programs whose structure supports that closing.
-
-The fit I am looking for is a group whose work values both — labs where graduate students ship hardware *and* prove things about it, not one or the other.
+The fit I am looking for is a group whose students **ship hardware and prove things about it** — multi-robot coordination, field robotics, or safe autonomy in human-shared spaces.
 
 ### Provenance
 
