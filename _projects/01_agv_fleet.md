@@ -36,7 +36,7 @@ Large garment factories rely on manual labour for internal carton transport — 
 
 ### System Architecture
 
-The system has two layers: a **centralised fleet coordinator (FleetCore)** managing logistics and job dispatch, and an **independent full navigation stack** running on each robot.
+The system spans **3 AGVs plus a central fleet-management laptop**, in two layers: a **centralised fleet coordinator (FleetCore)** — running on the laptop — manages logistics and job dispatch, while an **independent full navigation stack** runs onboard each robot. The split is deliberately hybrid: path planning is **decentralised** (each robot plans for itself and publishes its plan as reservations the others honour), while job dispatch, mutual exclusion, and deadlock recovery are **centralised** on the laptop.
 
 #### FleetCore — Fleet Coordinator
 
@@ -104,7 +104,8 @@ Layered above all three: the FleetCore heartbeat / directory / failsafe substrat
 
 | Component | Details |
 |---|---|
-| Onboard compute | Raspberry Pi (per robot) |
+| Fleet coordinator | Central fleet-management laptop running FleetCore (ROS 2) |
+| Onboard compute | Raspberry Pi — one per robot (×3) |
 | Drive | 2× DC motors, gearbox, high-resolution encoders |
 | Motor interface | RS-485 Modbus RTU |
 | Cameras | 2× USB cameras (AprilTag localization) |
