@@ -66,7 +66,7 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 - **v2** replaces the star with a **custom multi-drop bus** developed in-house: all peripherals share a single communication medium, dramatically reducing harness count, simplifying the chassis wiring, and making it cheap to add new nodes without re-routing back to the centre.
 
 **Motion control**
-- For v1, I developed an **S-curve-based arm motion profile** that produces jerk-limited, fluent motion across all six degrees of freedom — no perceptible jolt at start / stop, and smooth blending through intermediate via-points. This is what made teleoperated tasks like screw removal and door opening feasible from the operator console.
+- For v1, I developed an **S-curve-based arm motion profile** that produces jerk-limited, fluent motion across all five arm joints — no perceptible jolt at start / stop, and smooth blending through intermediate via-points. This is what made teleoperated tasks like screw removal and door opening feasible from the operator console.
 - In v2, that motion engine was **folded into the bus stack itself** — every peripheral receives time-aligned S-curve setpoints over the shared bus rather than each running its own profile against a position target.
 
 **Differential-drive speed synchronization (v2)**
