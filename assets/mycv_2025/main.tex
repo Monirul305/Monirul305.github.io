@@ -106,7 +106,7 @@
 
     \item \textbf{Bilateral cross-coupled BLDC speed synchronization on a dual-MCU architecture.} Two BLDC motors each regulated by their own MCU (PID + velocity / acceleration feedforward); a bilateral cross-coupled term, evaluated identically on both nodes from a dedicated inter-MCU speed exchange, drives the inter-motor speed difference toward zero. Gains GA-tuned offline against an identified motor model; outperforms an independent-PID baseline on transient and steady-state synchronization. \vspace{-5pt}
 
-    \item \textbf{Closed-form analytical IK with FK-anchored goal accumulation for a tracked mobile manipulator.} Tele-op platform combining a 7-DOF arm, a 2-DOF anti-flipper arm (also a collision-avoidance element), and a differential-drive base. From-scratch analytical solver replaces MoveIt's KDL with deterministic, branch-stable solutions; smooth turret-scaling preserves continuity through the home-pose singularity and an FK-anchored accumulator substantially reduces un-commanded cross-axis motion. MoveIt 2 handles motion-planned special commands (return-to-rest, named configurations) and per-tick collision validity across arm, anti-flipper, and carrier. Hardware assembly underway; once field-tested, set for UN peacekeeping deployment. \vspace{-5pt}
+    \item \textbf{Closed-form analytical IK with FK-anchored goal accumulation for a tracked mobile manipulator.} Tele-op platform combining a 6-DOF arm, a 2-DOF anti-flipper arm (also a collision-avoidance element), and a differential-drive base. From-scratch analytical solver replaces MoveIt's KDL with deterministic, branch-stable solutions; smooth turret-scaling preserves continuity through the home-pose singularity and an FK-anchored accumulator substantially reduces un-commanded cross-axis motion. MoveIt 2 handles motion-planned special commands (return-to-rest, named configurations) and per-tick collision validity across arm, anti-flipper, and carrier. Hardware assembly underway; once field-tested, set for UN peacekeeping deployment. \vspace{-5pt}
 
     \item \textbf{Latency-compensated 5-state EKF for visual-fiducial AGV localization.} Fuses wheel-encoder odometry with AprilTag camera fixes; velocity-bias states absorb systematic encoder error over long corridors; rewind-and-replay on a bounded encoder buffer applies each camera fix at its true measurement timestamp. Two operating modes (Kalman while moving, complementary while parked) hand off seamlessly across arrival / departure. \vspace{-5pt}
 
@@ -124,7 +124,7 @@
 \item \textbf{Md Monirul Islam}, Mainul Islam, Emon Hasan Saumik, ``Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory'', \underline{In Preparation}, 2026 (first / corresponding author).
 \vspace{-1pt}
 
-\item \textbf{Md Monirul Islam}, Md Shakil Tanvir, Mainul Islam, Fiaz Ahmed Tonmoy, ``Experimental Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller on a Dual-MCU Architecture'', \underline{Under Review}, 2026 (first / corresponding author).
+\item \textbf{Md Monirul Islam}, Md Shakil Tanvir, Mainul Islam, Fiaz Ahmed Tonmoy, ``Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller'', \underline{Under Review}, 2026 (first / corresponding author).
 \vspace{-1pt}
 
 \item Md Shakil Tanvir, \textbf{Md Monirul Islam}, Fiaz Ahmed Tonmoy, Mainul Islam, ``A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control'', \underline{Under Review}, 2026 (co-author).
@@ -148,7 +148,7 @@
 
         \item \textbf{Jontro Soinik v1 / v2 EOD ROVs.} Owned the electrical / firmware side across both generations. v1 was gifted to the Peruvian Armed Forces by the Bangladesh Army and is deployed under the UN Peacekeeping Mission in Mali (2024); v2 was Army-validated (disrupter and IP55 tests) and is set for Congo (2025). Ran on-site operator-training sessions and field hand-over to receiving units.
 
-        \item \textbf{Jontro Soinik 2.0 (7-DOF mobile manipulator).} Owned the control / software stack for the tracked tele-op platform.
+        \item \textbf{Jontro Soinik 2.0 (6-DOF mobile manipulator).} Owned the control / software stack for the tracked tele-op platform.
 
         \item \textbf{Heavy-lift multirotor (50 kg payload).} Owned BMS, propulsion sizing, frame, and power-distribution PCBs; shipped the sizing study as an interactive in-browser tool on the portfolio site.
 
@@ -184,7 +184,7 @@
 
 \resumeSubItem{Real-time traffic speed estimation with YOLOv2}{Trained YOLOv2 in MATLAB to detect vehicles and estimate per-vehicle speed from monocular highway video.}
 \vspace{2pt}
-\resumeSubItem{6-DOF robotic arm (analytical IK)}{Designed in SOLIDWORKS, 3D-printed entirely on a self-built hobby printer using custom 3D-printed planetary gearboxes; closed-form analytical inverse-kinematics control on stepper motors.}
+\resumeSubItem{5-DOF robotic arm (analytical IK)}{Designed in SOLIDWORKS, 3D-printed entirely on a self-built hobby printer using custom 3D-printed planetary gearboxes; closed-form analytical inverse-kinematics control on stepper motors.}
 \vspace{2pt}
 \resumeSubItem{Autonomous GPS-waypoint delivery drone}{Mechanical design in SOLIDWORKS, Arduino flight controller with PID stabilisation, GPS-waypoint navigation, and a custom payload-deployment mechanism.}
 \vspace{2pt}
