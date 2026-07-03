@@ -16,9 +16,8 @@ related_publications: true
 <div class="row">
   <div class="col-sm-12">
     <div class="alert alert-warning" role="alert">
-      <strong>UN Deployment</strong> — Jontro Soinik v1 is deployed under the
-      <strong>UN Peacekeeping Mission in the Republic of Mali</strong>
-      (gifted to Peruvian Armed Forces by Bangladesh Army, May 5, 2024).
+      <strong>UN Deployment</strong> — Jontro Soinik v1 is fielded under the
+      <strong>UN Peacekeeping Mission in the Republic of Mali</strong> (2024);
       Jontro Soinik v2 is set for the <strong>Republic of Congo</strong> in 2025.
     </div>
   </div>
@@ -26,7 +25,7 @@ related_publications: true
 
 ### Platform Overview
 
-The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-developed Explosive Ordnance Disposal ROVs. Both platforms carry a 5-DOF manipulator (plus gripper) on a tracked chassis with a multi-camera sensor head; v2 adds IP55 weather protection, a disrupter, and a fully bus-based control architecture.
+The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-developed Explosive Ordnance Disposal ROVs. Both platforms carry a 5-DOF manipulator (plus gripper) on a tracked chassis with a multi-camera sensor head; v2 adds IP55 weather protection and a fully bus-based control architecture.
 
 | | Jontro Soinik v1 | Jontro Soinik v2 |
 |---|---|---|
@@ -41,7 +40,6 @@ The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-de
 | Endurance | 3–5 hours | 3–5 hours |
 | Cameras | IR, thermal, 4× PTZ | IR, thermal, 4× PTZ + claw IR |
 | Range (LOS) | 1000 ft | 1000 ft |
-| Disrupter | — | ✓ 24 V actuation circuit |
 
 {% include figure.liquid path="assets/img/projects/jontro-soinik-v2-pair.jpg" class="project-hero-img rounded z-depth-1" alt="Two Jontro Soinik v2 ROVs lined up side by side after the build is complete." %}
 
@@ -49,12 +47,9 @@ The Jontro Soinik family is Bangladesh's 2nd- and 3rd-generation indigenously-de
 
 ---
 
-### Army Validation — v2
+### Field Validation — v2
 
-**Disrupter Test — Mirpur Range**
-The Bangladesh Army validated the v2 disrupter mechanism — the first locally-built ROV with this capability — using a **350 m/s water projectile**. The disrupter is a standard tool of Explosive Ordnance Disposal teams worldwide, used to safely render unexploded ordnance inert in humanitarian and UN peacekeeping operations.
-
-**IP55 Water Protection Test — Bangladesh Army IE&I**
+**IP55 Water-Ingress Test**
 High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 3 minutes. v2 passed, confirming resilience in harsh field conditions.
 
 ---

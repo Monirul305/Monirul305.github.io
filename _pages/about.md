@@ -61,5 +61,5 @@ I earned my **B.Sc. in Electrical and Electronic Engineering** from [BUET](https
 ### Selected Field Deployments
 
 - **3-robot AGV fleet** — live production at The Urmi Group RMG facility, 2025–present
-- **Jontro Soinik v1 EOD ROV** — UN Peacekeeping Mission, Mali, 2024 (Bangladesh Army → Peruvian Armed Forces handover)
-- **Jontro Soinik v2 EOD ROV** — tested by Bangladesh Army, set for UN Peacekeeping deployment in the Republic of Congo, 2025
+- **Jontro Soinik v1 EOD ROV** — UN Peacekeeping Mission, Mali (2024)
+- **Jontro Soinik v2 EOD ROV** — set for UN Peacekeeping deployment, Republic of Congo (2025)

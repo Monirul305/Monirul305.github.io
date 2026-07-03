@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<strong>Jontro Soinik v1</strong> gifted to the Peruvian Armed Forces by the Bangladesh Army — now deployed under the <strong>UN Peacekeeping Mission in the Republic of Mali</strong>. First Made-in-Bangladesh military robot in active UN service.
+<strong>Jontro Soinik v1</strong> is now deployed under the <strong>UN Peacekeeping Mission in the Republic of Mali</strong> — among the first Made-in-Bangladesh robotic platforms in active UN service.

@@ -76,7 +76,7 @@
 \begin{document}
 \begin{center}
     {\Huge \scshape \textbf{Md Monirul Islam}} \\ \vspace{2pt}
-    \small \raisebox{-0.1\height}\
+    \small
     \href{tel:8801710096305}{\underline{+8801710096305}}
     ~ \href{mailto:monirulislam.acad@gmail.com}{\underline{monirulislam.acad@gmail.com}}
     ~ \href{https://Monirul305.github.io}{\underline{Portfolio}}
@@ -90,39 +90,49 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Bangladesh University of Engineering and Technology (BUET)}{Dhaka, Bangladesh}
-      {B.Sc. in Electrical and Electronic Engineering}{March 2018 -- May 2023}{{}}\\ \vspace{4pt} {CGPA: 3.85/4.00 \textbf{(3.98/4.00 in the final year)}, ranked \textbf{25 of 189}, awarded with Honours}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Relevant Courses:}  Electrical \& Electronic Circuits, Calculus I \& II, Ordinary \& Partial Differential Equations, Linear Algebra, Communication System, Digital Signal Processing, Digital Electronics, Power Electronics, Control Systems, Microprocessors and Embedded Systems, Analog Integrated Circuits and Design, VLSI Circuits and Design}}}
+      {B.Sc. in Electrical and Electronic Engineering}{March 2018 -- May 2023}{{}}\\ \vspace{4pt} {CGPA: 3.85/4.00 \textbf{(3.98/4.00 in the final year)}, ranked \textbf{25 of 189}, awarded with Honours \\ \vspace{3pt} \textbf{B.Sc. Thesis:} \(\alpha\)-Graphyne ballistic nanoribbon FET --- quantum-transport modeling (advisor: Dr. Mahbub Alam)}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Relevant Courses:}  Linear Algebra, Ordinary \& Partial Differential Equations, Control Systems, Digital Signal Processing, Power Electronics, Digital Electronics, Microprocessors and Embedded Systems, Analog Integrated Circuits and Design, VLSI Circuits and Design}}}
     \resumeSubHeadingListEnd
 
+\section{\textbf{Deployed Systems}}
+• \textbf{3-robot AGV fleet} --- live production at The Urmi Group RMG facility, Dhaka (2025 -- present).~~ • \textbf{EOD tracked ROVs (Jontro Soinik v1 / v2)} --- fielded in UN peacekeeping / humanitarian-demining support (Mali 2024, Congo 2025).
+
+\vspace{4pt}
 \section{\textbf{Research Interests}}
-• Robotics~ • Autonomous Systems~ • Multi-Robot Coordination~ • Motion Planning~ • Path Planning~ • Real-Time Control~ • Sensor Fusion~ • Embedded Systems~ • Robot Perception~ • Human-Robot Interaction~ • Field Deployment of Robotic Platforms
+• Multi-Robot Coordination \& Motion Planning~ • Path Planning under Uncertainty~ • State Estimation \& Sensor Fusion~ • Real-Time Embedded Control~ • Field Deployment of Autonomous Systems in Human-Shared Spaces
 
 \vspace{2pt}
 \section{\textbf{Research Experience}}
 
 \begin{itemize}[leftmargin=*]
 
-    \item \textbf{Production multi-AGV fleet --- centralized job management + decentralized path coordination.} Designed \textit{FleetCore} (fail-closed ROS 2 coordinator: FIFO job dispatch, per-robot sequence-counter FSMs, mutual exclusion on shared resources, layered timeouts, single-button operator failsafe) paired with a fully decentralized A* planner --- each robot publishes timestamped grid waypoints and peers treat them as spatiotemporal reservations (three conflict checks, continuous timestamp maintenance, plan-preserving obstacle handling). Months of zero-collision production operation on a 3-robot fleet in a live human-occupied factory. \vspace{-5pt}
+    \item \textbf{Decentralized multi-AGV path coordination --- deployed in production.} Coordination scheme for a 3-robot fleet with \textbf{months of zero-collision operation} in a live human-occupied factory: each robot plans its own A* path and publishes timestamped grid waypoints that peers treat as spatiotemporal reservations (vertex / swap / target conflict checks, continuous timestamp maintenance), while a fail-closed coordinator (\textit{FleetCore}) handles job dispatch, mutual exclusion, and deadlock recovery. \textit{First-author manuscript in preparation.} \vspace{-5pt}
 
-    \item \textbf{Bilateral cross-coupled BLDC speed synchronization on a dual-MCU architecture.} Two BLDC motors each regulated by their own MCU (PID + velocity / acceleration feedforward); a bilateral cross-coupled term, evaluated identically on both nodes from a dedicated inter-MCU speed exchange, drives the inter-motor speed difference toward zero. Gains GA-tuned offline against an identified motor model; outperforms an independent-PID baseline on transient and steady-state synchronization. \vspace{-5pt}
+    \item \textbf{GA-tuned bilateral cross-coupled BLDC speed synchronization.} Two mismatched BLDC motors, each on its own MCU; a bilateral cross-coupled term evaluated identically on both nodes from a dedicated inter-MCU speed exchange drives the inter-motor speed difference toward zero, with gains tuned offline against an identified motor model. Outperforms an independent-PID baseline on transient and steady-state synchronization. \textit{First-author manuscript under review.} \vspace{-5pt}
 
-    \item \textbf{Closed-form analytical IK with FK-anchored goal accumulation for a tracked mobile manipulator.} Tele-op platform combining a 6-DOF arm, a 2-DOF anti-flipper arm (also a collision-avoidance element), and a differential-drive base. From-scratch analytical solver replaces MoveIt's KDL with deterministic, branch-stable solutions; smooth turret-scaling preserves continuity through the home-pose singularity and an FK-anchored accumulator substantially reduces un-commanded cross-axis motion. MoveIt 2 handles motion-planned special commands (return-to-rest, named configurations) and per-tick collision validity across arm, anti-flipper, and carrier. Hardware assembly underway; once field-tested, set for UN peacekeeping deployment. \vspace{-5pt}
+    \item \textbf{Latency-compensated 5-state EKF for visual-fiducial localization.} Fuses wheel-encoder odometry with AprilTag fixes; velocity-bias states absorb systematic encoder drift over long corridors, and a rewind-and-replay step applies each camera fix at its true measurement timestamp. Drift-free hand-off between moving (Kalman) and parked (complementary) modes. \vspace{-5pt}
 
-    \item \textbf{Latency-compensated 5-state EKF for visual-fiducial AGV localization.} Fuses wheel-encoder odometry with AprilTag camera fixes; velocity-bias states absorb systematic encoder error over long corridors; rewind-and-replay on a bounded encoder buffer applies each camera fix at its true measurement timestamp. Two operating modes (Kalman while moving, complementary while parked) hand off seamlessly across arrival / departure. \vspace{-5pt}
+    \item \textbf{Closed-form analytical IK for a tracked mobile manipulator.} From-scratch analytical solver replacing MoveIt's KDL with deterministic, branch-stable solutions; smooth turret-scaling preserves continuity through the home-pose singularity and an FK-anchored accumulator suppresses un-commanded cross-axis motion. Platform combines a 6-DOF arm, a 2-DOF anti-flipper arm (also a collision-avoidance element), and a differential-drive base. \vspace{-5pt}
 
-    \item \textbf{Fault-tolerant dual-network feedback architecture for unmanned multi-node robotic platforms.} Two redundant feedback networks carry coordination data between control nodes in parallel; the receiver detects channel degradation and falls back to the healthy network without losing a control cycle. Targets single-point-of-failure risks that surface only in field deployment, where any single wired or RF link can drop intermittently. \vspace{-5pt}
+    \item \textbf{Fault-tolerant dual-network feedback for multi-node robotic platforms.} Two redundant feedback networks carry coordination data in parallel; the receiver detects channel degradation and fails over to the healthy network without losing a control cycle --- targeting single-point-of-failure risks that surface in field deployment. \textit{Co-author manuscript under review.} \vspace{-5pt}
 
-    \item \textbf{High-payload multirotor drone development.} Paper-stage design and aerodynamic simulation of a heavy-lift multirotor; built an in-house sizing optimizer that, given payload, flight time, motor performance data, motor count, and airframe parameters, computes feasible battery-pack configurations (hover-throttle reachability, per-motor current limits, voltage compatibility, cruise margin). Optimizer published as an interactive client-side companion artifact on the portfolio site. \vspace{-5pt}
-
-    \item \textbf{\(\alpha\)-Graphyne ballistic nanoribbon FET.} Undergraduate research with Dr. Mahbub Alam modelling quantum transport in 2D-material field-effect transistors.
+    \item \textbf{Battery-sizing optimizer for a high-payload multirotor.} Paper-stage design and aerodynamic simulation of a heavy-lift multirotor, plus an in-house optimizer that computes feasible battery-pack configurations (hover-throttle reachability, per-motor current limits, voltage compatibility, cruise margin) from payload, flight-time, and motor parameters. Published as an interactive client-side tool. \vspace{-5pt}
 
 \end{itemize}
 
 \section{\textbf{Publications}}
+{\small \textit{Peer-reviewed}}
 \begin{itemize}[leftmargin=*]
 
-\item \textbf{Md Monirul Islam}, Mainul Islam, Emon Hasan Saumik, ``Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory'', \underline{In Preparation}, 2026 (first / corresponding author).
+\item Md Shakil Tanvir, Fiaz Ahmed Tonmoy, \textbf{Md Monirul Islam}, Mainul Islam, Mahamudul Hasan, Raihan Ur Rashid Razeen, ``Optimizing Master-Slave Broadcast Communication in Multi-Node Networks Using RS485 Standard'', 27\textsuperscript{th} International Conference on Computer and Information Technology (ICCIT), IEEE, 2024. doi: \href{https://doi.org/10.1109/ICCIT64611.2024.11022430}{\underline{10.1109/ICCIT64611.2024.11022430}}
 \vspace{-1pt}
+
+\item H. Khan, \textbf{Md Monirul Islam}, R.I. Roya, S.N. Azad, ``Performance Analysis of an \(\alpha\)-Graphyne Nano-Field Effect Transistor'', \textit{Micromachines}, MDPI, 2023. doi: \href{https://doi.org/10.3390/mi14071385}{\underline{10.3390/mi14071385}}
+
+\end{itemize}
+\vspace{-2pt}
+{\small \textit{Manuscripts under review / in preparation}}
+\begin{itemize}[leftmargin=*]
 
 \item \textbf{Md Monirul Islam}, Md Shakil Tanvir, Mainul Islam, Fiaz Ahmed Tonmoy, ``Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller'', \underline{Under Review}, 2026 (first / corresponding author).
 \vspace{-1pt}
@@ -130,10 +140,7 @@
 \item Md Shakil Tanvir, \textbf{Md Monirul Islam}, Fiaz Ahmed Tonmoy, Mainul Islam, ``A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control'', \underline{Under Review}, 2026 (co-author).
 \vspace{-1pt}
 
-\item Md Shakil Tanvir, Fiaz Ahmed Tonmoy, \textbf{Md Monirul Islam}, Mainul Islam, Mahamudul Hasan, Raihan Ur Rashid Razeen, ``Optimizing Master-Slave Broadcast Communication in Multi-Node Networks Using RS485 Standard'', 2024, 27\textsuperscript{th} International Conference on Computer and Information Technology (ICCIT), IEEE. doi: \href{https://doi.org/10.1109/ICCIT64611.2024.11022430}{\underline{10.1109/ICCIT64611.2024.11022430}}
-\vspace{-1pt}
-
-\item H. Khan, \textbf{Md Monirul Islam}, R.I. Roya, S.N. Azad, ``Performance Analysis of an \(\alpha\)-Graphyne Nano-Field Effect Transistor'', \textit{Micromachines}, MDPI, 2023. doi: \href{https://doi.org/10.3390/mi14071385}{\underline{10.3390/mi14071385}}
+\item \textbf{Md Monirul Islam}, Mainul Islam, Emon Hasan Saumik, ``Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory'', \underline{In Preparation}, 2026 (first / corresponding author).
 
 \end{itemize}
 
@@ -142,23 +149,17 @@
     \resumeSubheading{Research and Development Unit, Cybernetics Hi-Tech Solutions (Pvt) Ltd}{Dhaka, Bangladesh}
     {\textbf{R\&D Engineer and Team Lead} (June 2023 -- present)}{{}}
     \begin{itemize}
-        \item Lead the R\&D engineering team taking robotic platforms from concept through field deployment; own architecture, coding, hardware integration, commissioning, and post-deployment support.
-
         \item \textbf{CyberFleet (production AGV fleet).} Lead engineer end-to-end. The platform productised the work and is now operating continuously at The Urmi Group RMG facility, Dhaka.
 
-        \item \textbf{Jontro Soinik v1 / v2 EOD ROVs.} Owned the electrical / firmware side across both generations. v1 was gifted to the Peruvian Armed Forces by the Bangladesh Army and is deployed under the UN Peacekeeping Mission in Mali (2024); v2 was Army-validated (disrupter and IP55 tests) and is set for Congo (2025). Ran on-site operator-training sessions and field hand-over to receiving units.
+        \item \textbf{Jontro Soinik v1 / v2 EOD ROVs.} Owned the electrical / firmware side across both generations --- schematic design, in-house PCB, power distribution, and on-vehicle firmware; ran operator training and field hand-over to receiving units. (Deployment context under \textit{Deployed Systems}.)
 
         \item \textbf{Jontro Soinik 2.0 (6-DOF mobile manipulator).} Owned the control / software stack for the tracked tele-op platform.
-
-        \item \textbf{Heavy-lift multirotor (50 kg payload).} Owned BMS, propulsion sizing, frame, and power-distribution PCBs; shipped the sizing study as an interactive in-browser tool on the portfolio site.
 
         \item \textbf{SD15-N target-tracking surveillance drone.} Designed the autonomous-tracking pipeline (vision $\rightarrow$ MAVLink $\rightarrow$ Pixhawk).
 
         \item \textbf{Titan 550 industrial CoreXY 3D printer.} Two-iteration product build; the in-house fab loop that produces fixtures, brackets, and prototypes for every other platform on this list.
 
-        \item \textbf{In-house PCB \& CNC.} Designed all controller / communication boards across the ROV \& AGV platforms in Altium / KiCad and milled them in-house on a 3-axis CNC --- no external fab.
-
-        \item \textbf{Other:} hybrid VTOL quad-plane prototype; real-time pet-food sorting line for an industrial-automation client.
+        \item \textbf{In-house PCB \& CNC.} Designed all controller / communication boards across the ROV \& AGV platforms in Altium / KiCad and milled them in-house on a 3-axis CNC --- no external fab. Also: hybrid VTOL quad-plane prototype; real-time pet-food sorting line for an industrial-automation client.
 
     \end{itemize}
 
@@ -166,15 +167,9 @@
     {Intern (Dec 2022 -- Mar 2023)}{{}}
     \begin{itemize}
         \item Worked on IC design using TSMC 180~nm and GPDK 90~nm technologies. \vspace{-2pt}
-        \item Developed a Wishbone interface and validated a high-speed BiFET Op-Amp in Verilog.
+        \item Developed a Wishbone bus interface in Verilog; validated a high-speed BiFET op-amp in Cadence Virtuoso.
     \end{itemize}
 
-    \resumeSubheading{Walton Hi-Tech Industries Limited}{Dhaka, Bangladesh}
-    {Industrial Trainee (Nov 2022)}{{}}
-    \begin{itemize}
-        \item Observed and analyzed PCB manufacturing and EV assembly workflows. \vspace{-2pt}
-        \item Gained exposure to industrial electronics production workflows.
-    \end{itemize}
 \resumeSubHeadingListEnd
 
 \vspace{2pt}
@@ -182,29 +177,13 @@
 \section{\textbf{Selected Undergraduate Projects}}
 \resumeSubHeadingListStart
 
-\resumeSubItem{Real-time traffic speed estimation with YOLOv2}{Trained YOLOv2 in MATLAB to detect vehicles and estimate per-vehicle speed from monocular highway video.}
+\resumeSubItem{5-DOF robotic arm (analytical IK)}{Designed in SOLIDWORKS, 3D-printed on a self-built hobby printer using custom 3D-printed planetary gearboxes; closed-form analytical inverse-kinematics control on stepper motors.}
 \vspace{2pt}
-\resumeSubItem{5-DOF robotic arm (analytical IK)}{Designed in SOLIDWORKS, 3D-printed entirely on a self-built hobby printer using custom 3D-printed planetary gearboxes; closed-form analytical inverse-kinematics control on stepper motors.}
-\vspace{2pt}
-\resumeSubItem{Autonomous GPS-waypoint delivery drone}{Mechanical design in SOLIDWORKS, Arduino flight controller with PID stabilisation, GPS-waypoint navigation, and a custom payload-deployment mechanism.}
-\vspace{2pt}
-\resumeSubItem{Self-built hobby 3D printer}{Designed every component in SOLIDWORKS, fabricated the frame on a laser cutter, Arduino Mega controller running custom Marlin firmware. The workhorse that produced every other undergraduate project's parts.}
+\resumeSubItem{Autonomous GPS-waypoint delivery drone}{Mechanical design in SOLIDWORKS, Arduino flight controller with PID stabilization, GPS-waypoint navigation, and a custom payload-deployment mechanism.}
 \vspace{2pt}
 \resumeSubItem{RV32I multicycle RISC-V processor + Wishbone memory controller}{Custom Verilog implementation with full testbench verification; physical-layout exploration in Cadence at TSMC 180~nm.}
 \vspace{2pt}
-\resumeSubItem{OMR machine from discrete digital logic}{Optical-mark recognition built entirely from discrete NAND / RAM / MUX / Comparator / LDR components --- no microcontroller in the loop.}
-\vspace{2pt}
 \resumeSubItem{Regulated boost converter (TSMC 180~nm, Cadence)}{Schematic capture and physical layout of a voltage-regulated DC-DC boost converter.}
-\vspace{2pt}
-\resumeSubItem{Closed-loop induction-motor speed control}{V/f scalar control with SVPWM inverter modulation in MATLAB / Simulink.}
-\vspace{2pt}
-\resumeSubItem{Particle-concentration light-scattering sensor}{Laser + photodetector light-scattering setup with MATLAB-side calibration curves and signal-conditioning circuit.}
-\vspace{2pt}
-\resumeSubItem{Real-time environmental monitoring}{Solar-powered IoT node logging temperature, humidity, and CO\textsubscript{2} over GSM; Arduino + Autodesk Eagle PCB.}
-\vspace{2pt}
-\resumeSubItem{Laboratory variable DC power supply}{Linear-regulator design with current limiting and short-circuit protection; MATLAB efficiency study.}
-\vspace{2pt}
-\resumeSubItem{Electrical-services design (seven-storey building)}{End-to-end electrical design: load estimation, panel scheduling, cable sizing, lighting / power layouts, riser diagram, earthing scheme.}
 \vspace{2pt}
 
 \resumeSubHeadingListEnd
@@ -216,25 +195,15 @@
 
     \resumeSubItem{Robotics \& Middleware}{ROS 2 (Jazzy), MoveIt 2, ros2\_control, JointTrajectoryController, URDF / Xacro / SRDF, AprilTag, MAVLink, dronekit, pymavlink}
 
-    \resumeSubItem{Embedded \& MCU}{STM32 (HAL \& LL), ESP32, AVR, Arduino, ARM Cortex-M, μVision Keil, BigTreeTech 32-bit boards}
+    \resumeSubItem{Embedded \& MCU}{STM32 (HAL \& LL), ESP32, AVR, Arduino, ARM Cortex-M, Keil µVision, BigTreeTech 32-bit boards}
 
     \resumeSubItem{Control \& Algorithms}{Closed-form analytical IK, Extended Kalman Filter, PID (cascaded, GA-tuned), S-curve motion profiling, distributed A* path planning, peer-aware spatiotemporal reservations}
 
-    \resumeSubItem{Flight Control \& Vision}{ArduPilot, iNav, Betaflight, Pixhawk, YOLOv11n, OpenCV}
+    \resumeSubItem{Flight, Vision \& Simulation}{ArduPilot, iNav, Betaflight, Pixhawk, YOLOv11n, OpenCV; MATLAB / Simulink, Cadence Virtuoso, PSPICE, Icarus Verilog, GTKWave}
 
-    \resumeSubItem{Simulation \& Design Software}{MATLAB / Simulink, Cadence Virtuoso, PSPICE, PSAF, Icarus Verilog, GTKWave}
+    \resumeSubItem{PCB, CAD \& Fabrication}{Altium Designer, KiCad, Autodesk Eagle, Proteus; SolidWorks; in-house 3-axis CNC milling; Marlin, Ultimaker Cura, FlatCAM, GRBL}
 
-    \resumeSubItem{PCB \& Circuit Design}{Altium Designer, KiCad, Autodesk Eagle, Proteus; in-house 3-axis CNC milling for prototype boards}
-
-    \resumeSubItem{CAD \& Mechanical Design}{SolidWorks}
-
-    \resumeSubItem{3D Printing \& CNC}{Marlin (customised), Ultimaker Cura, Creality CR-6 SE; FlatCAM, Universal G-code Sender, GRBL}
-
-    \resumeSubItem{Programming Languages}{Python, C, Embedded C, Verilog}
-
-    \resumeSubItem{Documentation}{Microsoft Office Suite, \LaTeX, Jekyll (al-folio)}
-
-    \resumeSubItem{Soft Skills}{Leadership, Project Management, Field Commissioning, Operator Training, Technical Writing}
+    \resumeSubItem{Programming \& Docs}{Python, C, Embedded C, Verilog; \LaTeX, Jekyll (al-folio), Microsoft Office}
 
 \resumeSubHeadingListEnd
 
@@ -242,44 +211,18 @@
 %-----------AWARDS-----------------
 \section{\textbf{Honors and Awards}}
 \begin{description}[font=$\bullet$]
-\item {University Merit Scholarship, BUET (three times --- January 2019, January 2020, January 2022)
-\newline -- Awarded to students with outstanding academic record (GPA 3.90+) in a semester}
+\item {University Merit Scholarship, BUET --- three times (Jan 2019, Jan 2020, Jan 2022), for outstanding semester GPA (3.90+)}
 \vspace{-6pt}
-\item {Dean's List Award, BUET (four times --- all academic years)
-\newline -- Awarded to students obtaining an average GPA of 3.75+ in two consecutive semesters of an academic year}
+\item {Dean's List Award, BUET --- all four academic years (GPA 3.75+)}
 \vspace{-6pt}
-\item {University Stipend (three times --- January 2018, July 2018, July 2021)}
+\item {University Stipend, BUET --- three times (Jan 2018, Jul 2018, Jul 2021)}
 \vspace{-6pt}
-\item {Higher Secondary Certificate (HSC-2017) Board Scholarship}
-\vspace{-6pt}
-\item {Runners-up, Bangabandhu Creative Talent Hunt 2014, Pabna Division}
 \end{description}
 \vspace{-6pt}
-
-\section{\textbf{Extra-curricular Activities}}
-\begin{description}[font=$\bullet$]
-\vspace{-2pt}
-\item {Affiliate Member, BUET Robotics Society (BRS). (Jan 2022 -- Mar 2023)}
-\vspace{-5pt}
-\item {Affiliate Member, Team Interplanetar -- BUET Mars Rover Team. (Jun 2022 -- Mar 2023)}
-\vspace{-5pt}
-\end{description}
-
-\vspace{2pt}
-\section{\textbf{Field Deployments}}
-\begin{description}[font=$\bullet$]
-\item {3-robot AGV fleet -- live production at The Urmi Group RMG facility, Dhaka, 2025 -- present}
-\vspace{-6pt}
-\item {Jontro Soinik v1 EOD ROV -- UN Peacekeeping Mission, Mali, 2024 (Bangladesh Army \(\rightarrow\) Peruvian Armed Forces handover)}
-\vspace{-6pt}
-\item {Jontro Soinik v2 EOD ROV -- tested by Bangladesh Army, set for UN Peacekeeping deployment in the Republic of Congo, 2025}
-\end{description}
 
 \vspace{2pt}
 \section{\textbf{References}}
 {Dr. Mahbub Alam, Associate Professor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Dr. Md. Ziaur Rahman Khan, Professor
-\newline Department of Electrical and Electronic Engineering~~~~~~~~~~~~~~~~~~Department of Electrical and Electronic Engineering
-\newline Bangladesh University of Engineering and Technology~~~~~~~~~~~~~~~~~~Bangladesh University of Engineering and Technology
-\newline BUET, Dhaka-1000, Bangladesh.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BUET, Dhaka-1000, Bangladesh.
+\newline Dept. of EEE, BUET, Dhaka-1000, Bangladesh~~~~~~~~~~~~~~~~~~~~~~~~Dept. of EEE, BUET, Dhaka-1000, Bangladesh
 \newline Email: mahbubalam@eee.buet.ac.bd~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Email: zrkhan@eee.buet.ac.bd}
 \end{document}
