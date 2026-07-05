@@ -5,7 +5,7 @@ description: >
   Distributed dual-MCU speed-synchronization scheme for a tracked
   differential-drive vehicle driven by two deliberately mismatched
   BLDC motors. Bilateral cross-coupled controller with GA-tuned gains.
-  First-author manuscript under review.
+  First-author manuscript submitted.
 importance: 1
 category: research
 related_publications: true
@@ -38,7 +38,7 @@ Relative to the independent-PID baseline, the bilateral cross-coupled controller
 
 ### Status
 
-**First-author manuscript under review** {% cite islam2025gapid %}. This work is my highest-degree independent research contribution within the Cybernetics R&D programme and is the basis of the differential-drive synchronization layer shipped on the [Jontro Soinik v2 EOD ROV]({{ '/projects/03_soinik_rov/' | relative_url }}).
+**First-author manuscript submitted** {% cite islam2025gapid %}. This work is my highest-degree independent research contribution within the Cybernetics R&D programme and is the basis of the differential-drive synchronization layer shipped on the [Jontro Soinik v2 EOD ROV]({{ '/projects/03_soinik_rov/' | relative_url }}).
 
 ---
 

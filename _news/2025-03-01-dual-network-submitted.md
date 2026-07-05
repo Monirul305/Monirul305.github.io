@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Co-authored manuscript submitted: <em>A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control</em> — currently under review.
+Co-authored manuscript submitted: <em>A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control</em>.

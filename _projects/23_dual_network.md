@@ -6,7 +6,7 @@ description: >
   in parallel between every control node, with receiver-side fallback
   on channel degradation. Targets single-point-of-failure risks in
   field-deployed unmanned robotic platforms. Co-author manuscript
-  under review.
+  submitted.
 importance: 2
 category: research
 related_publications: true
@@ -28,7 +28,7 @@ The design is targeted at unmanned multi-node robotic platforms operating in env
 
 ### Status
 
-**Manuscript under review** {% cite tanvir2025dual %}. The architecture has informed the on-vehicle communication layer of the [Jontro Soinik v2 EOD ROV]({{ '/projects/03_soinik_rov/' | relative_url }}), where a similar redundancy principle applies to the custom multi-drop bus.
+**Manuscript submitted** {% cite tanvir2025dual %}. The architecture has informed the on-vehicle communication layer of the [Jontro Soinik v2 EOD ROV]({{ '/projects/03_soinik_rov/' | relative_url }}), where a similar redundancy principle applies to the custom multi-drop bus.
 
 ---
 
