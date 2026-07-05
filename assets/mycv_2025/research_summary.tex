@@ -1,0 +1,99 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.85in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage{microtype}
+
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\urlstyle{rm}
+
+\begin{document}
+
+%============================ HEADER ============================
+\begin{center}
+  {\LARGE \scshape \textbf{Md Monirul Islam}}\\[3pt]
+  {\large Research Summary}\\[4pt]
+  {\small
+    \href{mailto:monirulislam.acad@gmail.com}{monirulislam.acad@gmail.com}
+    ~$\vert$~ \href{https://Monirul305.github.io}{Portfolio}
+    ~$\vert$~ \href{https://scholar.google.com/citations?user=m-6T5FgAAAAJ&hl=en}{Google Scholar}
+    ~$\vert$~ \href{https://github.com/Monirul305}{GitHub}
+  }
+\end{center}
+\vspace{2pt}
+\hrule
+\vspace{8pt}
+
+%============================ INTRO ============================
+I work on the reliability of multi-robot systems that operate in dense,
+human-occupied environments. Over three years of R\&D at Cybernetics Hi-Tech
+Solutions I have designed, built, and field-deployed several such systems --- a
+production three-robot AGV fleet, indigenous EOD ground robots, and a mobile
+manipulator --- and one theme recurs across all of them: a coordination layer
+that is empirically robust but methodologically thin. It works because every
+anticipated failure mode was engineered around, not because its safety can be
+stated as a guarantee. Closing that gap is what I want to spend a PhD on.
+% TAILORING: insert one sentence here naming this professor's work, e.g.
+% "Your group's work on <topic> connects directly to the coordination and
+% safety questions below."
+
+%======================= CONTRIBUTION 1 ========================
+\textbf{Decentralized multi-robot coordination, deployed in production.} My
+primary contribution is the coordination scheme behind a three-robot AGV fleet
+that has run for months without a collision in a live garment factory, sharing
+the floor with hundreds of workers under no physical barriers. It is a
+decentralized, prioritized multi-agent path-finding (MAPF) design: each robot
+plans its own path with A\textsuperscript{*} and publishes it as timestamped
+grid-cell reservations that peers treat as spatiotemporal constraints under
+vertex-, swap-, and target-conflict checks, while a fail-closed coordinator
+handles dispatch, mutual exclusion, and deadlock recovery. The scheme sits in
+the cooperative-A\textsuperscript{*}\,/\,prioritized-planning family, and its
+limitations are exactly the questions I find interesting: priorities are
+inherited from dispatch order rather than searched, completeness is not
+guaranteed, and ``safe'' currently means ``no anticipated failure has
+occurred,'' not a characterized bound. (First-author manuscript in preparation.)
+
+%======================= CONTRIBUTION 2 ========================
+\textbf{Estimation and the embedded substrate that coordination depends on.}
+Reliable coordination rests on layers beneath it that are usually assumed rather
+than characterized, and I have built those layers directly. For localization I
+designed a five-state extended Kalman filter that fuses wheel odometry with
+fiducial camera fixes; velocity-bias states absorb systematic encoder drift over
+long, feature-poor corridors, and a rewind-and-replay step applies each delayed
+camera measurement at its true timestamp. At the drive-and-comms layer, my
+first-author work on GA-tuned bilateral cross-coupled BLDC synchronization drives
+the speed difference between two mismatched motors toward zero from a dedicated
+inter-MCU exchange, cutting peak inter-motor speed error by 79\,\% and
+accumulated heading drift by 80\,\% against an independent-PID baseline (submitted); a co-authored fault-tolerant dual-network feedback scheme keeps a
+control loop alive through single-channel failure. These are precisely the
+substrate properties a coordination-layer safety claim has to be able to assume.
+
+%======================= CONTRIBUTION 3 ========================
+\textbf{Manipulation and further systems.} I also wrote a from-scratch
+closed-form inverse-kinematics solver for a six-DOF mobile manipulator ---
+replacing a numerical solver with deterministic, branch-stable solutions and
+handling the home-pose singularity with a smooth-scaling scheme --- and have
+contributed across localization, motion planning, and embedded control on
+drones and other unmanned platforms. Two further works are peer-reviewed
+(an IEEE ICCIT 2024 paper on multi-node RS-485 coordination and an MDPI
+\textit{Micromachines} 2023 paper from my undergraduate device-physics thesis);
+the robotics results above are first- or co-author manuscripts currently in
+preparation or submitted.
+
+%======================= DIRECTION ========================
+\textbf{Research direction.} I want to turn coordination layers that empirically
+work into ones with \emph{characterized} safety --- scaled past demonstrative
+fleet sizes and characterized down to the embedded substrate they rely on ---
+using the formal tools that field-deployed engineering rarely produces on its
+own: runtime safety monitors, control-barrier or probabilistic-collision
+arguments, and the MAPF completeness and priority-ordering literature. My
+strength is building and fielding these systems; the formal apparatus is the
+capability I am deliberately seeking a PhD to add. A fuller statement of the
+direction and a concrete first-year plan are on my
+\href{https://Monirul305.github.io/research-statement/}{research statement} page.
+I would welcome the chance to discuss how this fits your group's work.
+
+\end{document}

@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Peer-reviewed publications, manuscripts under review, and work in preparation. My name is shown in bold in author lists.",
+          description: "Peer-reviewed publications, manuscripts submitted, and work in preparation. My name is shown in bold in author lists.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript under review on GA-tuned bilateral cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
+          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript submitted on GA-tuned bilateral cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -127,13 +127,13 @@ ninja.data = [{
           section: "News",},{id: "news-paper-published-at-ieee-iccit-2024-optimizing-master-slave-broadcast-communication-in-multi-node-networks-using-rs485-standard-doi",
           title: 'Paper published at IEEE ICCIT 2024: Optimizing Master-Slave Broadcast Communication in Multi-Node Networks...',
           description: "",
-          section: "News",},{id: "news-co-authored-manuscript-submitted-a-dual-network-feedback-communication-system-for-multi-node-unmanned-robotic-control-currently-under-review",
-          title: 'Co-authored manuscript submitted: A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control...',
+          section: "News",},{id: "news-co-authored-manuscript-submitted-a-dual-network-feedback-communication-system-for-multi-node-unmanned-robotic-control",
+          title: 'Co-authored manuscript submitted: A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control....',
           description: "",
           section: "News",},{id: "news-jontro-soinik-v2-handover-ceremony-at-bangladesh-army-hq-auditorium-bangladesh-s-3rd-generation-eod-rov-set-for-deployment-in-the-un-peacekeeping-mission-in-the-republic-of-congo-in-2025",
           title: 'Jontro Soinik v2 handover ceremony at Bangladesh Army HQ Auditorium — Bangladesh’s 3rd-generation...',
           description: "",
-          section: "News",},{id: "news-first-author-manuscript-submitted-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-bilateral-cross-coupled-controller-currently-under-review",
+          section: "News",},{id: "news-first-author-manuscript-submitted-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-bilateral-cross-coupled-controller",
           title: 'First-author manuscript submitted: Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a...',
           description: "",
           section: "News",},{id: "news-agv-fleet-system-featured-on-youtube-zero-collisions-how-3-autonomous-robots-share-a-busy-garment-factory-floor-full-walkthrough-of-the-ros-2-navigation-stack-fleetcore-coordinator-apriltag-ekf-and-3-layer-safety-architecture-deployed-at-the-urmi-group-watch-3-45",
@@ -156,7 +156,7 @@ ninja.data = [{
               window.location.href = "/projects/03_soinik_rov/";
             },},{id: "projects-ga-tuned-bilateral-cross-coupled-bldc-synchronization-on-a-dual-mcu-architecture-first-author-paper",
           title: 'GA-Tuned Bilateral Cross-Coupled BLDC Synchronization on a Dual-MCU Architecture (First-Author Paper)',
-          description: "Distributed dual-MCU speed-synchronization scheme for a tracked differential-drive vehicle driven by two deliberately mismatched BLDC motors. Bilateral cross-coupled controller with GA-tuned gains. First-author manuscript under review.",
+          description: "Distributed dual-MCU speed-synchronization scheme for a tracked differential-drive vehicle driven by two deliberately mismatched BLDC motors. Bilateral cross-coupled controller with GA-tuned gains. First-author manuscript submitted.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/04_ga_pid/";
             },},{id: "projects-vision-guided-target-tracking-surveillance-drone-yolov11n-on-raspberry-pi-5-pixhawk",
@@ -246,7 +246,7 @@ ninja.data = [{
               window.location.href = "/projects/21_omr_machine/";
             },},{id: "projects-fault-tolerant-dual-network-feedback-communication-for-multi-node-unmanned-robotic-platforms-co-author-paper",
           title: 'Fault-Tolerant Dual-Network Feedback Communication for Multi-Node Unmanned Robotic Platforms (Co-Author Paper)',
-          description: "Two physically and electrically independent feedback networks running in parallel between every control node, with receiver-side fallback on channel degradation. Targets single-point-of-failure risks in field-deployed unmanned robotic platforms. Co-author manuscript under review.",
+          description: "Two physically and electrically independent feedback networks running in parallel between every control node, with receiver-side fallback on channel degradation. Targets single-point-of-failure risks in field-deployed unmanned robotic platforms. Co-author manuscript submitted.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_dual_network/";
             },},{
