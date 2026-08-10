@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript submitted on GA-tuned bilateral cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
+          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript submitted on GA-tuned multi-rate cross-coupled BLDC synchronisation · seeking PhD positions for Fall 2027. Click the PDF icon (top right) for the printable version.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -133,7 +133,7 @@ ninja.data = [{
           section: "News",},{id: "news-jontro-soinik-v2-handover-ceremony-at-bangladesh-army-hq-auditorium-bangladesh-s-3rd-generation-eod-rov-set-for-deployment-in-the-un-peacekeeping-mission-in-the-republic-of-congo-in-2025",
           title: 'Jontro Soinik v2 handover ceremony at Bangladesh Army HQ Auditorium — Bangladesh’s 3rd-generation...',
           description: "",
-          section: "News",},{id: "news-first-author-manuscript-submitted-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-bilateral-cross-coupled-controller",
+          section: "News",},{id: "news-first-author-manuscript-submitted-speed-synchronization-of-a-dual-bldc-tracked-differential-drive-vehicle-using-a-ga-tuned-multi-rate-cross-coupled-controller",
           title: 'First-author manuscript submitted: Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a...',
           description: "",
           section: "News",},{id: "news-agv-fleet-system-featured-on-youtube-zero-collisions-how-3-autonomous-robots-share-a-busy-garment-factory-floor-full-walkthrough-of-the-ros-2-navigation-stack-fleetcore-coordinator-apriltag-ekf-and-3-layer-safety-architecture-deployed-at-the-urmi-group-watch-3-45",
@@ -154,9 +154,9 @@ ninja.data = [{
           description: "Jontro Soinik v1 and v2 — Bangladesh&#39;s 2nd and 3rd generation EOD ROVs. Army-tested, UN-deployed. Star → custom-bus communication evolution, S-curve arm motion, differential-drive synchronization, custom PCBs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_soinik_rov/";
-            },},{id: "projects-ga-tuned-bilateral-cross-coupled-bldc-synchronization-on-a-dual-mcu-architecture-first-author-paper",
-          title: 'GA-Tuned Bilateral Cross-Coupled BLDC Synchronization on a Dual-MCU Architecture (First-Author Paper)',
-          description: "Distributed dual-MCU speed-synchronization scheme for a tracked differential-drive vehicle driven by two deliberately mismatched BLDC motors. Bilateral cross-coupled controller with GA-tuned gains. First-author manuscript submitted.",
+            },},{id: "projects-ga-tuned-multi-rate-cross-coupled-bldc-synchronization-on-a-dual-mcu-architecture-first-author-paper",
+          title: 'GA-Tuned Multi-Rate Cross-Coupled BLDC Synchronization on a Dual-MCU Architecture (First-Author Paper)',
+          description: "Speed-synchronization controller for a 120 kg tracked skid-steer vehicle driven by two mismatched BLDC motors. One microcontroller per motor, a 1 kHz cross-coupled difference loop, and every gain tuned by a genetic algorithm on the assembled vehicle. First-author manuscript submitted.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/04_ga_pid/";
             },},{id: "projects-vision-guided-target-tracking-surveillance-drone-yolov11n-on-raspberry-pi-5-pixhawk",
