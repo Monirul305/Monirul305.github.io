@@ -66,7 +66,7 @@ High-pressure test: water sprayed from all directions at 30 m/s, 12.5 L/min for 
 
 **Differential-drive speed synchronization (v2)**
 - Designed v2's **differential-drive synchronization layer**: the bus carries a shared timing reference that keeps the left and right drive motors locked to a common velocity command at every instant of the acceleration / cruise / deceleration profile. The pair never drift relative to each other during transients — the vehicle tracks a straight line under hard accel and stops square under hard brake.
-- The underlying BLDC speed-control law (high-bandwidth current loop nested inside a velocity loop) is the subject of a submitted first-author paper {% cite islam2025gapid %}.
+- The controller-level treatment of that problem — a per-motor speed PID plus a bilateral cross-coupled term on the inter-motor difference, distributed one microcontroller per motor — is the subject of a submitted first-author paper {% cite islam2025gapid %}.
 
 **Other contributions across both platforms**
 - **Inter-node RS485 communication** for motion commands and sensor feedback (v1 link layer; carried through into the v2 bus PHY) {% cite tanvir2024rs485 %}

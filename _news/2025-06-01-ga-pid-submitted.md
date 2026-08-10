@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-First-author manuscript submitted: <em>Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Bilateral Cross-Coupled Controller</em>.
+First-author manuscript submitted: <em>Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Multi-Rate Cross-Coupled Controller</em>.
