@@ -33,6 +33,10 @@ category: professional
 | **Drive** | left_drive, right_drive | Velocity (open-loop from SBus) |
 | **Gripper** | gripper | Torque (open-loop from SBus) |
 
+{% include figure.liquid path="assets/img/projects/manipulator-carrier-stair-climb.jpg" class="project-hero-img rounded z-depth-1" alt="The assembled Jontro Soinik 2.0 carrier taking a stair flight with front and rear flipper arms deployed." %}
+
+<p class="text-center"><em>The assembled 2.0 carrier on a stair flight during mobility testing — front and rear flipper arms deployed to bridge the step edges. The 6-DOF arm mounts on the flat upper deck and detaches from this carrier, which drives on its own.</em></p>
+
 ---
 
 ### ROS 2 Node Graph
@@ -116,6 +120,17 @@ Alongside the software stack, I led the **electrical side** of this platform —
   <div class="col-sm-6">
     {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Working on the internal wiring of the 6-DOF mobile manipulator." %}
     <p class="text-center mt-1"><small class="text-muted">Inside the chassis — dressing the internal harness, motor-drive lines, and sensor feedback paths.</small></p>
+  </div>
+</div>
+
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-arm-harness-solder.jpg" class="img-fluid rounded z-depth-1" alt="Soldering the arm harness at the bench, with the carbon-fibre wrist and gripper assembly alongside." %}
+    <p class="text-center mt-1"><small class="text-muted">Terminating the arm harness at the bench — the carbon-fibre wrist tube and gripper it feeds sit alongside, waiting on the loom.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-wrist-bench-test.jpg" class="img-fluid rounded z-depth-1" alt="Bench bring-up of the wrist and gripper assembly over a USB-CAN analyser and lab supply." %}
+    <p class="text-center mt-1"><small class="text-muted">Bench bring-up of the wrist / gripper assembly — driven from the laptop through a USB-CAN analyser on a current-limited lab supply, before anything moves on the vehicle.</small></p>
   </div>
 </div>
 
