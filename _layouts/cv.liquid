@@ -108,6 +108,25 @@ layout: default
                   </td>
                 </tr>
               {% endif %}
+              {% if page.transcript_pdf %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Transcript</b></td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    <a
+                      {% if page.transcript_pdf contains '://' %}
+                        href="{{ page.transcript_pdf }}"
+                      {% else %}
+                        href="{{ page.transcript_pdf | relative_url }}"
+                      {% endif %}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-file-pdf"></i>
+                      {{ page.transcript_label | default: 'Official transcript (PDF)' }}
+                    </a>
+                  </td>
+                </tr>
+              {% endif %}
             </table>
           </div>
         {% endif %}
@@ -245,6 +264,25 @@ layout: default
                   <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
                   <td class="p-1 pl-2 font-weight-light">
                     <a href="{{ basics.url }}" target="_blank">{{ basics.url }}</a>
+                  </td>
+                </tr>
+              {% endif %}
+              {% if page.transcript_pdf %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Transcript</b></td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    <a
+                      {% if page.transcript_pdf contains '://' %}
+                        href="{{ page.transcript_pdf }}"
+                      {% else %}
+                        href="{{ page.transcript_pdf | relative_url }}"
+                      {% endif %}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-file-pdf"></i>
+                      {{ page.transcript_label | default: 'Official transcript (PDF)' }}
+                    </a>
                   </td>
                 </tr>
               {% endif %}

@@ -5,6 +5,8 @@ permalink: /cv/
 nav: true
 nav_order: 4
 cv_pdf: assets/pdf/CV_Monirul_Islam.pdf   # PDF source is assets/mycv_2025/main.tex
+transcript_pdf: assets/pdf/Transcript_Monirul_Islam.pdf
+transcript_label: Official BUET transcript (PDF, 4 pages)
 description: >
   R&D Engineer & Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET
   (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed
