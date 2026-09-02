@@ -71,7 +71,7 @@ sbus_publisher  ──(SbusControl @200Hz)──▶  coordinator_node
 
 **Custom analytical solver:** A from-scratch closed-form solver that decomposes the chain into turret (yaw), planar 2R + prismatic (shoulder / elbow / telescope), and wrist (pitch-roll) stages. Constant-time arithmetic, no convergence loops, deterministic, and biased toward the current arm configuration so it stays on the operator's expected branch. Backed by a unit-test suite covering workspace sweeps, joint-limit clipping, branch consistency at boundaries, and FK round-tripping.
 
-<div class="row project-photo-row mt-3 mb-2 justify-content-center">
+<div class="row mt-3 mb-2 justify-content-center">
   <div class="col-sm-9">
     {% include figure.liquid path="assets/img/projects/manipulator-joint-offset-calibration.jpeg" class="img-fluid rounded z-depth-1" alt="Correcting the arm's joint-position offsets from a laptop, with the arm mounted on a bench frame." %}
     <p class="text-center mt-1"><small class="text-muted">Correcting joint-position offsets on a frame-mounted arm. A closed-form solver takes the joint zeros and link geometry as exact — every offset error lands straight on the gripper as Cartesian error, so this calibration is what the whole analytical chain rests on.</small></p>

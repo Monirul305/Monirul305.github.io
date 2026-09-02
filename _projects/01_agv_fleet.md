@@ -51,7 +51,7 @@ A ROS 2 dispatcher that turns operator button-presses at calling stations into A
 - **Deadlock recovery**: when several robots stall on simultaneous obstacle flags, FleetCore issues staggered re-dispatches with fresh job IDs so each robot's nav stack treats the next leg as a new goal.
 - **Heartbeat / directory / failsafe substrate**: every robot must continuously broadcast a liveness heartbeat to stay in the active-robot directory; top-level `home` / `reset` / `failsafe` switches give the operator a single-button override of the whole fleet.
 
-<div class="row project-photo-row mt-3 mb-2 justify-content-center">
+<div class="row mt-3 mb-2 justify-content-center">
   <div class="col-sm-8">
     {% include figure.liquid path="assets/img/projects/agv_fleet.jpg" class="img-fluid rounded z-depth-1" alt="AGVs holding station at the designated robot-parking area beside an AprilTag column." %}
     <p class="text-center mt-1"><small class="text-muted">Robots holding station at the designated parking area — where a robot blocked on a busy unload station waits out its turn, and where a timed-out job sends it back to retry.</small></p>
