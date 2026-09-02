@@ -124,52 +124,47 @@ Standard tele-op runs directly through the closed-form IK described above — th
 
 ---
 
-### Electrical Build & Integration
+### Build & Integration
 
 Alongside the software stack, I led the **electrical side** of this platform — the on-vehicle harness routed through the carbon-fibre carrier, power distribution to the arm motors and drive groups, sensor / encoder wiring, and the radio / SBus chain that feeds the coordinator node. From schematic-level decisions through harness build and system bring-up, this side was mine.
 
 <div class="row project-photo-row mt-3">
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Wiring the on-carrier harness during integration." %}
-    <p class="text-center mt-1"><small class="text-muted">Routing the on-carrier harness — power and signal lines through the carrier into the avionics bay.</small></p>
+  <div class="col-sm-3">
+    {% include figure.liquid path="assets/img/projects/manipulator-arm-harness-solder.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Soldering the arm harness at the bench, with the carbon-fibre wrist and gripper assembly alongside." %}
+    <p class="text-center mt-1"><small class="text-muted">Terminating the arm harness at the bench.</small></p>
   </div>
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" alt="Working on the internal wiring of the 6-DOF mobile manipulator." %}
-    <p class="text-center mt-1"><small class="text-muted">Inside the chassis — dressing the internal harness, motor-drive lines, and sensor feedback paths.</small></p>
+  <div class="col-sm-3">
+    {% include figure.liquid path="assets/img/projects/manipulator-carrier-wiring.jpeg" class="img-fluid rounded z-depth-1" zoomable=true alt="Wiring the on-carrier harness during integration." %}
+    <p class="text-center mt-1"><small class="text-muted">Routing power and signal lines through the carrier.</small></p>
+  </div>
+  <div class="col-sm-3">
+    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" zoomable=true alt="Working on the internal wiring of the 6-DOF mobile manipulator." %}
+    <p class="text-center mt-1"><small class="text-muted">Dressing the internal harness and motor-drive lines.</small></p>
+  </div>
+  <div class="col-sm-3">
+    {% include figure.liquid path="assets/img/projects/manipulator-wrist-bench-test.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Bench bring-up of the wrist and gripper assembly over a USB-CAN analyser and lab supply." %}
+    <p class="text-center mt-1"><small class="text-muted">Wrist / gripper bring-up over USB-CAN, on a current-limited supply.</small></p>
   </div>
 </div>
+
+The **mechanical side** — the carbon-fibre carrier the 6-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions.
 
 <div class="row project-photo-row mt-3">
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-arm-harness-solder.jpg" class="img-fluid rounded z-depth-1" alt="Soldering the arm harness at the bench, with the carbon-fibre wrist and gripper assembly alongside." %}
-    <p class="text-center mt-1"><small class="text-muted">Terminating the arm harness at the bench — the carbon-fibre wrist tube and gripper it feeds sit alongside, waiting on the loom.</small></p>
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Assisting with the carbon-fibre carrier lay-up on the manipulator." %}
+    <p class="text-center mt-1"><small class="text-muted">Assisting the carrier lay-up — orienting plies before cure.</small></p>
   </div>
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-wrist-bench-test.jpg" class="img-fluid rounded z-depth-1" alt="Bench bring-up of the wrist and gripper assembly over a USB-CAN analyser and lab supply." %}
-    <p class="text-center mt-1"><small class="text-muted">Bench bring-up of the wrist / gripper assembly — driven from the laptop through a USB-CAN analyser on a current-limited lab supply, before anything moves on the vehicle.</small></p>
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Pre-resin-infusion trimming of the dry carbon-fibre lay-up in the mould." %}
+    <p class="text-center mt-1"><small class="text-muted">Trimming the dry lay-up before vacuum infusion.</small></p>
   </div>
-</div>
-
----
-
-### Mechanical Build (Supporting Role)
-
-The mechanical side — the carbon-fibre carrier the 6-DOF chain mounts on, the tracked-base drive groups, the chassis hard-points — was led by Cybernetics' mechanical team. I helped on the bench with lay-up, fit-up, and assembly while the mechanical lead drove the design decisions.
-
-<div class="row project-photo-row mt-3">
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-1.jpg" class="img-fluid rounded z-depth-1" alt="Assisting with the carbon-fibre carrier lay-up on the manipulator." %}
-    <p class="text-center mt-1"><small class="text-muted">Assisting with the carbon-fibre carrier lay-up — orienting plies before cure.</small></p>
-  </div>
-  <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carbonfiber-2.jpg" class="img-fluid rounded z-depth-1" alt="Pre-resin-infusion trimming of the dry carbon-fibre lay-up in the mould." %}
-    <p class="text-center mt-1"><small class="text-muted">Pre-resin-infusion trimming — dressing the dry lay-up in the mould before vacuum infusion.</small></p>
+  <div class="col-sm-4">
+    {% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="img-fluid rounded z-depth-1" zoomable=true alt="Helping build up the drive-wheel assembly for the 6-DOF mobile manipulator's tracked base." %}
+    <p class="text-center mt-1"><small class="text-muted">Helping build up the drive-wheel assembly.</small></p>
   </div>
 </div>
 
-{% include figure.liquid path="assets/img/projects/manipulator-drive-wheels.jpeg" class="project-hero-img rounded z-depth-1" alt="Helping build up the drive-wheel assembly for the 6-DOF mobile manipulator's tracked base." %}
-
-<p class="text-center"><em>Helping build up the drive-wheel assembly — bearing seats, pulleys, and brace plates laid out before lacing.</em></p>
+<p class="text-center mt-2"><small class="text-muted"><em>Click any photo to enlarge.</em></small></p>
 
 ---
 
