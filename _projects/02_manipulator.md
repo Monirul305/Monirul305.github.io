@@ -5,12 +5,14 @@ description: >
   Full real-time control stack for a 6-DOF arm + 2-DOF anti-flipper arm
   on a tracked base. Custom closed-form analytical IK replacing MoveIt's
   KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.
-img: assets/img/projects/manipulator.jpg
+img: assets/img/projects/manipulator-two-assembled-units.jpeg
 importance: 1
 category: professional
 ---
 
-{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" %}
+{% include figure.liquid path=page.img class="project-hero-img rounded z-depth-1" alt="Two fully assembled Jontro Soinik 2.0 units side by side on the shop floor." %}
+
+<p class="text-center"><em>Two complete Jontro Soinik 2.0 units — 6-DOF arms mounted on the carbon-fibre carriers, grippers and camera masts fitted, ready for bench and integration testing.</em></p>
 
 <div class="row">
   <div class="col-sm-12">
@@ -24,7 +26,7 @@ category: professional
 
 **Jontro Soinik 2.0** is the lightweight, carbon-fibre, man-transportable generation of the Jontro Soinik EOD ROV family — a ~25 kg carrier carrying a detachable ~25 kg arm with a 5 kg payload, where the carrier can drive independently of the arm. Unlike the heavier (~130 kg) v1 / v2 platforms, which are direct-teleop only, 2.0 is the generation that adds on-board autonomy: the custom closed-form IK, motion planning, and obstacle avoidance described below. It is tele-operated over an RC link and carries three coordinated subsystems on the same chassis: a **6-DOF arm** for primary manipulation, a **2-DOF anti-flipper arm** mounted on the carrier (which both stabilises the vehicle in transit and contributes to the on-board collision-avoidance envelope — the manipulator cannot plan into the anti-flipper's swept volume), and a **differential-drive tracked base**. The arm chain — `turret, shoulder, elbow, telescope, wrist_pan, wrist_roll` (6 DOF) plus a `gripper` end-effector — spans both the position-controlled Arm group and the torque-controlled Gripper row in the table below.
 
-> **Deployment status.** Hardware assembly is in progress; once field-tested, the platform is set for deployment in UN peacekeeping missions, joining the [Jontro Soinik v1 / v2 EOD ROV family]({{ '/projects/03_soinik_rov/' | relative_url }}) already in UN service.
+> **Deployment status.** Two complete units are assembled and in bench / integration testing — joint-offset calibration, subsystem bring-up, and system-level validation. Once field-tested, the platform is set for deployment in UN peacekeeping missions, joining the [Jontro Soinik v1 / v2 EOD ROV family]({{ '/projects/03_soinik_rov/' | relative_url }}) already in UN service.
 
 | Group | Joints | Control Mode |
 |---|---|---|
@@ -33,9 +35,16 @@ category: professional
 | **Drive** | left_drive, right_drive | Velocity (open-loop from SBus) |
 | **Gripper** | gripper | Torque (open-loop from SBus) |
 
-{% include figure.liquid path="assets/img/projects/manipulator-carrier-stair-climb.jpg" class="project-hero-img rounded z-depth-1" alt="The assembled Jontro Soinik 2.0 carrier taking a stair flight with front and rear flipper arms deployed." %}
-
-<p class="text-center"><em>The assembled 2.0 carrier on a stair flight during mobility testing — front and rear flipper arms deployed to bridge the step edges. The 6-DOF arm mounts on the flat upper deck and detaches from this carrier, which drives on its own.</em></p>
+<div class="row project-photo-row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator.jpg" class="img-fluid rounded z-depth-1" alt="CAD model of the Jontro Soinik 2.0 platform with the 6-DOF arm extended and both flipper arms raised." %}
+    <p class="text-center mt-1"><small class="text-muted">The design model — 6-DOF arm extended off the turret, front and rear flipper arms raised, on the differential-drive tracked base.</small></p>
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/projects/manipulator-carrier-stair-climb.jpg" class="img-fluid rounded z-depth-1" alt="The assembled Jontro Soinik 2.0 carrier taking a stair flight with front and rear flipper arms deployed." %}
+    <p class="text-center mt-1"><small class="text-muted">The built carrier on a stair flight — flipper arms deployed to bridge the step edges. The arm detaches; the carrier drives on its own.</small></p>
+  </div>
+</div>
 
 ---
 
@@ -61,6 +70,13 @@ sbus_publisher  ──(SbusControl @200Hz)──▶  coordinator_node
 **Why not numerical (KDL)?** MoveIt's default KDL solver had three problems on this arm: solve-time jitter that broke the dispatch rhythm, silent failures at singularities, and free choice of solution branch that produced surprise arm flips.
 
 **Custom analytical solver:** A from-scratch closed-form solver that decomposes the chain into turret (yaw), planar 2R + prismatic (shoulder / elbow / telescope), and wrist (pitch-roll) stages. Constant-time arithmetic, no convergence loops, deterministic, and biased toward the current arm configuration so it stays on the operator's expected branch. Backed by a unit-test suite covering workspace sweeps, joint-limit clipping, branch consistency at boundaries, and FK round-tripping.
+
+<div class="row project-photo-row mt-3 mb-2 justify-content-center">
+  <div class="col-sm-9">
+    {% include figure.liquid path="assets/img/projects/manipulator-joint-offset-calibration.jpeg" class="img-fluid rounded z-depth-1" alt="Correcting the arm's joint-position offsets from a laptop, with the arm mounted on a bench frame." %}
+    <p class="text-center mt-1"><small class="text-muted">Correcting joint-position offsets on a frame-mounted arm. A closed-form solver takes the joint zeros and link geometry as exact — every offset error lands straight on the gripper as Cartesian error, so this calibration is what the whole analytical chain rests on.</small></p>
+  </div>
+</div>
 
 ---
 
