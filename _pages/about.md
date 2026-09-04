@@ -38,7 +38,7 @@ I earned my **B.Sc. in Electrical and Electronic Engineering** from [BUET](https
 
 **Dr. Mahbub Alam** (Associate Professor, EEE, BUET) supervised my work on [α-graphyne nanoribbon FET ballistic-transport modelling]({{ '/projects/10_graphyne/' | relative_url }}) — modelling I–V behaviour and subthreshold slope of a 2D-material channel as a beyond-silicon device candidate. The work was published in *[Micromachines (MDPI), 2023](https://doi.org/10.3390/mi14071385)*.
 
-**Dr. A. B. M. Harun-Ur-Rashid** (Professor, EEE, BUET) supervised the [design and verification of a custom RISC-V multicycle processor]({{ '/projects/13_riscv/' | relative_url }}) paired with a Wishbone-interfaced memory controller, including the full testbench-based verification flow — my closest exposure to hardware design and verification methodology.
+**Dr. Md. Ziaur Rahman Khan** (Professor, EEE, BUET) taught and mentored me during my undergraduate studies in the Department of Electrical and Electronic Engineering.
 
 **Rashed Mujib Noman** — Country Director, Augmedix Bangladesh; previously Senior Engineering Manager at Boeing and Performance Engineer at General Motors — has been my long-running industry mentor at [Cybernetics Hi-Tech Solutions](https://cyberneticsbd.com), covering ROV, robotic-arm, 3D-printer, drone, and factory-automation programmes.
 
