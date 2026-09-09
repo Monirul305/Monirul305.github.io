@@ -66,8 +66,8 @@ long, feature-poor corridors, and a rewind-and-replay step applies each delayed
 camera measurement at its true timestamp. At the drive-and-comms layer, my
 first-author work on GA-tuned bilateral cross-coupled BLDC synchronization drives
 the speed difference between two mismatched motors toward zero from a dedicated
-inter-MCU exchange, cutting peak inter-motor speed error by 79\,\% and
-accumulated heading drift by 80\,\% against an independent-PID baseline (submitted); a co-authored fault-tolerant dual-network feedback scheme keeps a
+inter-MCU exchange, cutting inter-motor speed error by 41\,\% in clean-tracking
+RMSE and by 65\,\% under a one-sided load against an independent-drive baseline (submitted); a co-authored fault-tolerant dual-network feedback scheme keeps a
 control loop alive through single-channel failure. These are precisely the
 substrate properties a coordination-layer safety claim has to be able to assume.
 
