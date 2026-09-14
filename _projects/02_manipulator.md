@@ -124,6 +124,24 @@ Standard tele-op runs directly through the closed-form IK described above — th
 
 ---
 
+### Firmware Test Bed — SO-101 Replica
+
+Before any of this ran on the real arm, it ran on a desktop stand-in. I built a replica of the open-source **SO-101** arm as the initial test bed for JS2 firmware and motion development — a light, cheap surrogate is the right place to discover that a joint command is wrong, not 25 kg of carbon fibre with a gripper on the end.
+
+Joint-level firmware (servo command and feedback), the operator control GUI, and the IK / motion-command path were all brought up here first. The controller drives the arm the way the real platform does — the operator commands an end-effector pose and the solver works out the joints — so the interaction model was settled on the bench before it was ever pointed at the real hardware.
+
+<div class="row justify-content-center mt-3">
+  <div class="col-10 col-sm-7 col-md-5">
+    <video controls preload="metadata" poster="{{ '/assets/img/projects/js2-firmware-testbed-poster.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/js2-firmware-testbed.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2"><small class="text-muted">The desktop SO-101 replica — not the JS2 arm — driven from the custom controller. Replica above, <code>SO-101 Robot Arm Controller</code> below: the mouse moves the end-effector in X–Y, <code>S</code> + mouse moves it in Z, and the panel reads back live X / Y / Z in metres with wrist flex and roll while the solver handles the joints.</small></p>
+  </div>
+</div>
+
+---
+
 ### Build & Integration
 
 Alongside the software stack, I led the **electrical side** of this platform — the on-vehicle harness routed through the carbon-fibre carrier, power distribution to the arm motors and drive groups, sensor / encoder wiring, and the radio / SBus chain that feeds the coordinator node. From schematic-level decisions through harness build and system bring-up, this side was mine.
