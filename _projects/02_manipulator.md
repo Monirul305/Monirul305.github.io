@@ -186,10 +186,10 @@ The **mechanical side** — the carbon-fibre carrier the 6-DOF chain mounts on, 
 
 ---
 
-### Demo Video
+### Demo Videos
 
-<div class="row justify-content-center mt-3">
-  <div class="col-sm-8">
+<div class="row mt-3">
+  <div class="col-sm-6">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item"
         src="https://www.youtube.com/embed/fVKDyWmPwtU?start=25"
@@ -198,6 +198,16 @@ The **mechanical side** — the carbon-fibre carrier the 6-DOF chain mounts on, 
     <p class="text-center mt-2">
       <em>Jontro Soinik 2.0 — Tracked Robot with 6-DOF Arm in Action</em>
       — full-system RViz / MoveIt walkthrough and live tele-op
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <video controls preload="metadata" poster="{{ '/assets/img/projects/js2-live-demo-poster.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%;">
+      <source src="{{ '/assets/video/js2-live-demo.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-center mt-2">
+      <em>Live demo — the assembled platform on the floor</em>
+      — driving and articulating the arm under tele-op, flippers and tracked base carrying the arm as one vehicle
     </p>
   </div>
 </div>
