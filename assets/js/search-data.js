@@ -146,7 +146,7 @@ ninja.data = [{
               window.location.href = "/projects/01_agv_fleet/";
             },},{id: "projects-6-dof-mobile-manipulator-with-custom-closed-form-ik-ros-2-moveit-2",
           title: '6-DOF Mobile Manipulator with Custom Closed-Form IK (ROS 2 / MoveIt 2)',
-          description: "Full real-time control stack for a 6-DOF arm + 2-DOF anti-flipper arm on a tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver. Singularity-aware smooth scaling, FK-anchored accumulator.",
+          description: "Full real-time control stack for a 6-DOF arm + 2-DOF anti-flipper arm on a tracked base. Custom closed-form analytical IK replacing MoveIt&#39;s KDL solver, singularity-aware turret scaling, and a 50 Hz cubic command stream driving seven CiA-402 drives over CANopen. 215 passing tests.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/02_manipulator/";
             },},{id: "projects-indigenous-eod-rov-family-un-peacekeeping-deployment-mali-congo",
