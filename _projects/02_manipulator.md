@@ -55,28 +55,20 @@ Six commanded joints ride **seven drives**: the shoulder and elbow are not indep
 
 <div class="card mt-3 mb-4 p-3">
   <div class="row">
-    <div class="col-12">
+    <div class="col-md-6">
       <video controls preload="metadata" poster="{{ '/assets/img/projects/js2-live-demo-poster.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%;">
         <source src="{{ '/assets/video/js2-live-demo.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p class="text-center mt-2">
-        <strong>Live demo — the assembled platform on the floor.</strong>
-        Driving and articulating the arm under tele-op, flippers and tracked base carrying the arm as one vehicle.
-      </p>
+      <p class="text-center mt-2"><small class="text-muted"><strong>Live demo — the assembled platform on the floor.</strong> Driving and articulating the arm under tele-op, flippers and tracked base carrying the arm as one vehicle.</small></p>
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col-12">
+    <div class="col-md-6 mt-3 mt-md-0">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item"
           src="https://www.youtube.com/embed/fVKDyWmPwtU?start=25"
           allowfullscreen></iframe>
       </div>
-      <p class="text-center mt-2">
-        <strong>Jontro Soinik 2.0 — Tracked Robot with 6-DOF Arm in Action.</strong>
-        Full-system RViz / MoveIt walkthrough and live tele-op.
-      </p>
+      <p class="text-center mt-2"><small class="text-muted"><strong>Jontro Soinik 2.0 — Tracked Robot with 6-DOF Arm in Action.</strong> Full-system RViz / MoveIt walkthrough and live tele-op.</small></p>
     </div>
   </div>
 </div>
@@ -201,12 +193,12 @@ Before any of this ran on the real arm, it ran on a desktop stand-in. I built a 
 Joint-level firmware (servo command and feedback), the operator control GUI, and the IK / motion-command path were all brought up here first. The controller drives the arm the way the real platform does — the operator commands an end-effector pose and the solver works out the joints — so the interaction model was settled on the bench before it was ever pointed at the real hardware.
 
 <div class="row justify-content-center mt-3">
-  <div class="col-10 col-sm-7 col-md-5">
+  <div class="col-md-8">
     <video controls preload="metadata" poster="{{ '/assets/img/projects/js2-firmware-testbed-poster.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%;">
       <source src="{{ '/assets/video/js2-firmware-testbed.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="text-center mt-2"><small class="text-muted">The desktop SO-101 replica — not the JS2 arm — driven from the custom controller. Replica above, <code>SO-101 Robot Arm Controller</code> below: the mouse moves the end-effector in X–Y, <code>S</code> + mouse moves it in Z, and the panel reads back live X / Y / Z in metres with wrist flex and roll while the solver handles the joints.</small></p>
+    <p class="text-center mt-2"><small class="text-muted">The desktop SO-101 replica — not the JS2 arm — jogged from the custom controller. The operator commands the end-effector in Cartesian space with the mouse and the solver works out the joints, the same interaction model the real platform uses.</small></p>
   </div>
 </div>
 

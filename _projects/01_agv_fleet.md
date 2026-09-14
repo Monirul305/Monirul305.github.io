@@ -36,6 +36,31 @@ Large garment factories rely on manual labour for internal carton transport — 
 
 ---
 
+### See It Move
+
+<div class="card mt-3 mb-4 p-3">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/ooK1592gYgM?start=4"
+        allowfullscreen></iframe>
+    </div>
+      <p class="text-center mt-2"><small class="text-muted"><strong>Zero Collisions: How 3 Autonomous Robots Share a Busy Garment Factory Floor.</strong> Cybernetics Hi-Tech (May 2026).</small></p>
+    </div>
+    <div class="col-md-6 mt-3 mt-md-0">
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.youtube.com/embed/L_Uprap0PQ4"
+        allowfullscreen></iframe>
+    </div>
+      <p class="text-center mt-2"><small class="text-muted"><strong>Precise Robot Path Following Using ArUco Marker Localization and PID Waypoint Control.</strong> Early single-robot validation: camera + wheel-encoder sensor fusion driving a PID waypoint tracker through pivot, straight-line and goal-stop segments. The marker scheme later evolved from ArUco to AprilTag for the production fleet, but the sensor-fusion-plus-PID skeleton is the one running today.</small></p>
+    </div>
+  </div>
+</div>
+
+---
+
 ### System Architecture
 
 The system spans **3 AGVs plus a central fleet-management laptop**, in two layers: a **centralised fleet coordinator (FleetCore)** — running on the laptop — manages logistics and job dispatch, while an **independent full navigation stack** runs onboard each robot. The split is deliberately hybrid: path planning is **decentralised** (each robot plans for itself and publishes its plan as reservations the others honour), while job dispatch, mutual exclusion, and deadlock recovery are **centralised** on the laptop.
@@ -160,35 +185,6 @@ Distributed path planning requires all robots to share a consistent view of time
 The AGV fleet is live and operational across active production shifts. Three robots autonomously handle carton transport between production lines and unload stations, reducing physical burden on workers and improving logistics throughput — without human supervision.
 
 Productised by Cybernetics as **CyberFleet** — marketed as the first-ever AGV solution in Bangladesh, with payload variants from 50 kg to 1,000 kg for garments, warehousing, pharma, and smart factory deployments.
-
----
-
-### Demo Videos
-
-<div class="row mt-3">
-  <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/ooK1592gYgM?start=4"
-        allowfullscreen></iframe>
-    </div>
-    <p class="text-center mt-2">
-      <em>Zero Collisions: How 3 Autonomous Robots Share a Busy Garment Factory Floor</em>
-      — Cybernetics Hi-Tech (May 2026)
-    </p>
-  </div>
-  <div class="col-sm-6">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/L_Uprap0PQ4"
-        allowfullscreen></iframe>
-    </div>
-    <p class="text-center mt-2">
-      <em>Precise Robot Path Following Using ArUco Marker Localization and PID Waypoint Control</em>
-      — early single-robot validation: camera + wheel-encoder sensor fusion driving a PID waypoint tracker through pivot, straight-line, and goal-stop segments. The marker scheme later evolved from ArUco to AprilTag for the production fleet, but the sensor-fusion-plus-PID skeleton is the same one running today.
-    </p>
-  </div>
-</div>
 
 ---
 
