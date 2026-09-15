@@ -11,12 +11,12 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Md Monirul Islam — R&D Engineer & Team Lead at Cybernetics Hi-Tech Solutions, Dhaka.
   Robotics · Motion control · Autonomous systems · Embedded hardware.
-  B.Sc. EEE, BUET (CGPA 3.85, ranked 25/189). Seeking PhD positions for Fall 2027.
+  B.Sc. EEE, BUET (CGPA 3.85, ranked 25/189). Seeking PhD positions for Spring or Fall 2027.
 footer_text: >
   © Md Monirul Islam. Powered by
   <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-keywords: robotics, motion control, autonomous systems, embedded hardware, mechatronics, ROS 2, MoveIt, AGV, EOD ROV, STM32, BUET, Bangladesh, PhD applicant, Fall 2027
+keywords: robotics, motion control, autonomous systems, embedded hardware, mechatronics, ROS 2, MoveIt, AGV, EOD ROV, STM32, BUET, Bangladesh, PhD applicant, Spring 2027, Fall 2027
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

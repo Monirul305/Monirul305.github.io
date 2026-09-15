@@ -20,7 +20,7 @@ transport to characterize device behavior at nanoscale dimensions.
 - Extracted subthreshold slope — a key figure of merit for switching efficiency
 - Results inform device design guidelines for low-power nanoelectronic applications {% cite khan2023graphyne %}
 
-**Supervisor:** Dr. Mahbub Alam, Associate Professor, EEE, BUET
+**Supervisor:** Dr. Mahbub Alam, Professor, EEE, BUET
 
 ### Tech Stack
 

@@ -14,7 +14,7 @@ profile:
   more_info: >
     <p>📧 <a href="mailto:monirulislam.acad@gmail.com">monirulislam.acad@gmail.com</a></p>
     <p>📍 Dhaka, Bangladesh</p>
-    <p>🎓 Seeking PhD — Fall 2027</p>
+    <p>🎓 Seeking PhD — Spring or Fall 2027</p>
 
 announcements:
   enabled: true
@@ -30,13 +30,13 @@ The research direction I want to take into a PhD is **safe, decentralised coordi
 
 I earned my **B.Sc. in Electrical and Electronic Engineering** from [BUET](https://www.buet.ac.bd) (CGPA 3.85 / 4.00, final year 3.98 / 4.00, ranked 25 of 189, awarded with Honours). I hold two peer-reviewed papers as a co-author ([MDPI Micromachines 2023](https://doi.org/10.3390/mi14071385), [IEEE ICCIT 2024](https://doi.org/10.1109/ICCIT64611.2024.11022430)) and three further manuscripts in flight — one first-author submitted on the BLDC synchronisation work above, one first-author in preparation on the AGV fleet, and one co-author submitted on a fault-tolerant dual-network feedback architecture. See the [publications]({{ '/publications/' | relative_url }}) page for author position and status on each.
 
-**I am seeking a PhD position starting Fall 2027** in robotics, with strongest fit at groups whose work spans multi-robot coordination, mobile manipulation, or field robotics — and whose graduate students both ship hardware and prove things about it. If your lab works on any of these, I would welcome the chance to discuss fit.
+**I am seeking a PhD position starting Spring or Fall 2027** in robotics, with strongest fit at groups whose work spans multi-robot coordination, mobile manipulation, or field robotics — and whose graduate students both ship hardware and prove things about it. If your lab works on any of these, I would welcome the chance to discuss fit.
 
 ---
 
 ### Mentors
 
-**Dr. Mahbub Alam** (Associate Professor, EEE, BUET) supervised my work on [α-graphyne nanoribbon FET ballistic-transport modelling]({{ '/projects/10_graphyne/' | relative_url }}) — modelling I–V behaviour and subthreshold slope of a 2D-material channel as a beyond-silicon device candidate. The work was published in *[Micromachines (MDPI), 2023](https://doi.org/10.3390/mi14071385)*.
+**Dr. Mahbub Alam** (Professor, EEE, BUET) supervised my work on [α-graphyne nanoribbon FET ballistic-transport modelling]({{ '/projects/10_graphyne/' | relative_url }}) — modelling I–V behaviour and subthreshold slope of a 2D-material channel as a beyond-silicon device candidate. The work was published in *[Micromachines (MDPI), 2023](https://doi.org/10.3390/mi14071385)*.
 
 **Dr. Md. Ziaur Rahman Khan** (Professor, EEE, BUET) taught and mentored me during my undergraduate studies in the Department of Electrical and Electronic Engineering.
 

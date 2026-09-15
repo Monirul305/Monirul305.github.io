@@ -13,6 +13,6 @@ description: >
   3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping
   service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus
   first-author manuscript submitted on GA-tuned multi-rate cross-coupled BLDC
-  synchronisation · seeking PhD positions for Fall 2027.
+  synchronisation · seeking PhD positions for Spring or Fall 2027.
   Click the PDF icon (top right) for the printable version.
 ---
