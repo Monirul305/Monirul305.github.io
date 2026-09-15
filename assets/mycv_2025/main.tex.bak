@@ -108,13 +108,13 @@
 
     \item \textbf{Distributed multi-AGV path coordination --- deployed in production.} Coordination scheme for a 3-robot fleet with \textbf{months of zero-collision operation} in a live human-occupied factory: each robot plans its own A* path and publishes timestamped grid waypoints that peers treat as spatiotemporal reservations (vertex / swap / target conflict checks, continuous timestamp maintenance), while a fail-closed coordinator (\textit{FleetCore}) handles job dispatch, mutual exclusion, and deadlock recovery. \vspace{-5pt}
 
-    \item \textbf{GA-tuned multi-rate cross-coupled BLDC speed synchronization.} Two mismatched BLDC motors, each on its own MCU; a bilateral cross-coupled term evaluated identically on both nodes drives the inter-motor difference toward zero, with a 1\,kHz difference loop over 200\,Hz per-motor loops. Twelve gains tuned by GA \emph{on the assembled 120\,kg vehicle}, after a model-based first pass failed on the mechanical asymmetry. Cuts clean-tracking RMSE 41\% (3.9$\sigma$) against an independently tuned baseline. \vspace{-5pt}
+    \item \textbf{GA-tuned bilateral cross-coupled BLDC speed synchronization.} Two mismatched BLDC motors, each on its own MCU; a bilateral cross-coupled term evaluated identically on both nodes from a dedicated inter-MCU speed exchange drives the inter-motor speed difference toward zero, with gains tuned offline against an identified motor model. Outperforms an independent-PID baseline on transient and steady-state synchronization. \vspace{-5pt}
 
     \item \textbf{Latency-compensated 5-state EKF for visual-fiducial localization.} Fuses wheel-encoder odometry with AprilTag fixes; velocity-bias states absorb systematic encoder drift over long corridors, and a rewind-and-replay step applies each camera fix at its true measurement timestamp. Drift-free hand-off between moving (Kalman) and parked (complementary) modes. \vspace{-5pt}
 
     \item \textbf{Closed-form analytical IK for a tracked mobile manipulator.} From-scratch analytical solver replacing MoveIt's KDL with deterministic, branch-stable solutions; smooth turret-scaling preserves continuity through the home-pose singularity and an FK-anchored accumulator suppresses un-commanded cross-axis motion. Platform combines a 6-DOF arm, a 2-DOF anti-flipper arm (also a collision-avoidance element), and a differential-drive base. \vspace{-5pt}
 
-    \item \textbf{Dual-network feedback for a tele-operated multi-node vehicle.} One bare-metal STM32 masters an RS-485 bus over eleven nodes while terminating a W5500 TCP/IP uplink. A discrete-event model of the firmware's scheduling identifies the uplink \emph{reply format}, not the bus, as dominating telemetry age; a full-state reply cuts 99th-percentile age from 2.1\,s to 273\,ms. Model predictions; on-vehicle protocol specified. \vspace{-5pt}
+    \item \textbf{Fault-tolerant dual-network feedback for multi-node robotic platforms.} Two redundant feedback networks carry coordination data in parallel; the receiver detects channel degradation and fails over to the healthy network without losing a control cycle --- targeting single-point-of-failure risks that surface in field deployment. \vspace{-5pt}
 
     \item \textbf{Battery-sizing optimizer for a high-payload multirotor.} Paper-stage design and aerodynamic simulation of a heavy-lift multirotor, plus an in-house optimizer that computes feasible battery-pack configurations (hover-throttle reachability, per-motor current limits, voltage compatibility, cruise margin) from payload, flight-time, and motor parameters. Published as an interactive client-side tool. \vspace{-5pt}
 
@@ -137,7 +137,7 @@
 \item \textbf{Md Monirul Islam}, Mainul Islam, Md Shakil Tanvir, ``Speed Synchronization of a Dual-BLDC Tracked Differential-Drive Vehicle Using a GA-Tuned Multi-Rate Cross-Coupled Controller'', \underline{Submitted}, 2026 (first / corresponding author).
 \vspace{-1pt}
 
-\item Md Shakil Tanvir, \textbf{Md Monirul Islam}, Mainul Islam, ``A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control'', \underline{Submitted}, 2026 (co-author).
+\item Md Shakil Tanvir, \textbf{Md Monirul Islam}, Fiaz Ahmed Tonmoy, Mainul Islam, ``A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control'', \underline{Submitted}, 2026 (co-author).
 \vspace{-1pt}
 
 \item \textbf{Md Monirul Islam}, Mainul Islam, Emon Hasan Saumik, ``Peer-Aware Distributed Path Planning for a Production-Deployed Multi-AGV Fleet in a Human-Occupied Garment Factory'', \underline{In Preparation}, 2026 (first / corresponding author).
@@ -191,9 +191,7 @@
 \vspace{2pt}
 %-----------SKILLS-----------------
 \section{\textbf{Skills Summary}}
-\begingroup
-\renewcommand{\resumeSubItem}[2]{\item\small{\textbf{#1}: #2}}
-\begin{itemize}[leftmargin=*, itemsep=3.5pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+\resumeSubHeadingListStart
 
     \resumeSubItem{Robotics \& Middleware}{ROS 2 (Jazzy), MoveIt 2, ros2\_control, JointTrajectoryController, URDF / Xacro / SRDF, AprilTag, MAVLink, dronekit, pymavlink}
 
@@ -207,14 +205,13 @@
 
     \resumeSubItem{Programming \& Docs}{Python, C, Embedded C, Verilog; \LaTeX, Jekyll (al-folio), Microsoft Office}
 
-\end{itemize}
-\endgroup
+\resumeSubHeadingListEnd
 
 \vspace{2pt}
 %-----------AWARDS-----------------
 \section{\textbf{Honors and Awards}}
 \begin{description}[font=$\bullet$]
-\item {University Merit Scholarship, BUET --- three times (Jan 2019, Jan 2020, Jan 2022)}
+\item {University Merit Scholarship, BUET --- three times (Jan 2019, Jan 2020, Jan 2022), for outstanding academic performance}
 \vspace{-6pt}
 \item {Dean's List Award, BUET --- every academic year (GPA 3.75+)}
 \vspace{-6pt}
@@ -226,7 +223,7 @@
 \vspace{2pt}
 \section{\textbf{References}}
 \begin{minipage}[t]{0.49\textwidth}
-Dr. Mahbub Alam, Professor \\
+Dr. Mahbub Alam, Associate Professor \\
 Dept. of EEE, BUET, Dhaka-1000, Bangladesh \\
 Email: mahbubalam@eee.buet.ac.bd
 \end{minipage}\hfill
