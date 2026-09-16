@@ -113,7 +113,7 @@
 
 @article{tanvir2025dual,
   title        = {A Dual-Network Feedback Communication System for Multi-Node Unmanned Robotic Control},
-  author       = {Tanvir, Md Shakil and Islam, Md Monirul and Tonmoy, Fiaz Ahmed and Islam, Mainul},
+  author       = {Tanvir, Md Shakil and Islam, Md Monirul and Islam, Mainul},
   journal      = {Under Review},
   year         = {2026},
   abbr         = {Submitted},
@@ -121,20 +121,28 @@
   selected     = {false},
   additional_info = { (co-author)},
   abstract     = {
-    Field-deployed multi-node unmanned robotic platforms rely on continuous
-    feedback exchange between control nodes — sensor readings, drive-state
-    telemetry, watchdog liveness. When that exchange traverses a single
-    network, any link failure (wiring damage, connector fatigue, RF
-    interference) silently degrades coordination and becomes a single point of
-    failure for the whole platform. This paper proposes a fault-tolerant
-    dual-network feedback communication architecture in which two physically
-    and electrically independent feedback networks carry the same coordination
-    stream in parallel between every node. The receiver continuously monitors
-    per-channel health and falls back to the surviving network on degradation
-    without losing a control cycle, while the master node logs the event for
-    post-mission diagnostics. The architecture is targeted at unmanned
-    multi-node robotic platforms operating in environments where any single
-    wired or RF link can drop intermittently, and is validated on a
-    multi-DOF unmanned ROV with deliberately injected single-channel faults.
+    Teleoperated multi-node robots must satisfy two communication requirements
+    that are difficult to reconcile on one network: bounded-latency exchange
+    with actuator nodes inside the chassis, and high-bandwidth, routable
+    transport of telemetry and video outward to a remote operator. This paper
+    presents a dual-network communication system for a tracked unmanned ground
+    vehicle, in which a single bare-metal STM32 microcontroller concurrently
+    masters an RS485 feedback bus serving eleven addressed nodes and terminates
+    a hardwired W5500 TCP/IP uplink, and analyses the feedback path the second
+    network creates. A discrete-event model built from the scheduling logic of
+    the master firmware and the request-response loop of the operator client
+    predicts per-node telemetry age at the console, forward command latency,
+    and heartbeat-based fault detection across three uplink delay classes. The
+    model shows that the uplink reply format, not the bus schedule, dominates
+    telemetry age: a reply carrying one node's feedback per client-paced
+    exchange delivers 38 % of node replies on a wireless-class uplink and
+    yields a 99th-percentile age of 2.1 s against a 217 ms bus bound, while
+    making any heartbeat staleness threshold unusable. A reply carrying the
+    full node state, a change confined to the master's reply assembly, restores
+    a 99th-percentile age of 273 ms and a false-alarm-free threshold of 1.5
+    poll periods with detection inside 435 ms. All reported values are model
+    predictions; the measurement protocol by which they are to be verified on
+    the vehicle is specified.
   }
 }
+

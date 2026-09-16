@@ -121,7 +121,7 @@
       "publisher": "Manuscript submitted (2026) — Co-author",
       "releaseDate": "2026",
       "url": "",
-      "summary": "Designed a fault-tolerant dual-network feedback communication architecture providing redundant pathways for coordinating unmanned multi-node robotic systems. *Co-author.*"
+      "summary": "Dual-network communication for a tele-operated tracked vehicle: one bare-metal STM32 concurrently masters an RS-485 bus over eleven nodes and terminates a W5500 TCP/IP uplink. A discrete-event model of the firmware's scheduling identifies the uplink reply format, not the bus, as dominating telemetry age; a full-state reply cuts 99th-percentile age from 2.1 s to 273 ms. Model predictions; on-vehicle measurement protocol specified. *Co-author.*"
     },
     {
       "name": "Optimizing Master-Slave Broadcast Communication in Multi-Node Networks Using RS485 Standard",
