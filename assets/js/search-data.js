@@ -244,9 +244,9 @@ ninja.data = [{
           description: "Built an OMR (Optical Mark Recognition) machine for multiple-choice answer sheets using only discrete digital logic ICs — no microcontroller. Optical sensing, counters, and decoders implement the full mark-detection and tally pipeline. BUET EEE coursework.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/21_omr_machine/";
-            },},{id: "projects-fault-tolerant-dual-network-feedback-communication-for-multi-node-unmanned-robotic-platforms-co-author-paper",
-          title: 'Fault-Tolerant Dual-Network Feedback Communication for Multi-Node Unmanned Robotic Platforms (Co-Author Paper)',
-          description: "Two physically and electrically independent feedback networks running in parallel between every control node, with receiver-side fallback on channel degradation. Targets single-point-of-failure risks in field-deployed unmanned robotic platforms. Co-author manuscript submitted.",
+            },},{id: "projects-dual-network-feedback-communication-for-a-tele-operated-multi-node-vehicle-co-author-paper",
+          title: 'Dual-Network Feedback Communication for a Tele-Operated Multi-Node Vehicle (Co-Author Paper)',
+          description: "One bare-metal STM32 masters an RS-485 bus over eleven nodes while terminating a W5500 TCP/IP uplink. A discrete-event model built from the firmware&#39;s own scheduling logic identifies the uplink reply format, not the bus, as what dominates telemetry age. Co-author manuscript submitted.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_dual_network/";
             },},{
