@@ -60,7 +60,7 @@ Six commanded joints ride **seven drives**: the shoulder and elbow are not indep
         <source src="{{ '/assets/video/js2-live-demo.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p class="text-center mt-2"><small class="text-muted"><strong>Live demo — the assembled platform on the floor.</strong> Driving and articulating the arm under tele-op, flippers and tracked base carrying the arm as one vehicle.</small></p>
+      <p class="text-center mt-2"><small class="text-muted"><strong>Live demo — handling a payload.</strong> The arm carries a cable reel by its carry handle, lowers it to the floor and releases it, then stows as the vehicle drives away.</small></p>
     </div>
     <div class="col-md-6 mt-3 mt-md-0">
       <div class="embed-responsive embed-responsive-16by9">
