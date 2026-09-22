@@ -40,12 +40,12 @@ Six commanded joints ride **seven drives**: the shoulder and elbow are not indep
 
 <div class="row project-photo-row mt-3">
   <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator.jpg" class="img-fluid rounded z-depth-1" alt="CAD model of the Jontro Soinik 2.0 platform with the 6-DOF arm extended and both flipper arms raised." %}
-    <p class="text-center mt-1"><small class="text-muted">The design model — 6-DOF arm extended off the turret, front and rear flipper arms raised, on the differential-drive tracked base.</small></p>
+    {% include figure.liquid path="assets/img/projects/manipulator-cad-v2.jpg" class="img-fluid rounded z-depth-1" alt="CAD model of the Jontro Soinik 2.0 platform with the 6-DOF arm reaching forward, the camera mast, and both flipper arms." %}
+    <p class="text-center mt-1"><small class="text-muted">The design model — the 6-DOF arm with its telescoping forearm reaching forward off the turret, the camera mast, and front and rear flipper arms on the differential-drive tracked base.</small></p>
   </div>
   <div class="col-sm-6">
-    {% include figure.liquid path="assets/img/projects/manipulator-carrier-stair-climb.jpg" class="img-fluid rounded z-depth-1" alt="The assembled Jontro Soinik 2.0 carrier taking a stair flight with front and rear flipper arms deployed." %}
-    <p class="text-center mt-1"><small class="text-muted">The built carrier on a stair flight — flipper arms deployed to bridge the step edges. The arm detaches; the carrier drives on its own.</small></p>
+    {% include figure.liquid path="assets/img/projects/manipulator-test-operation.jpg" class="img-fluid rounded z-depth-1" alt="The built Jontro Soinik 2.0 in test operation, the arm holding a cable reel by its carry handle." %}
+    <p class="text-center mt-1"><small class="text-muted">The built platform in test operation — the arm holding a cable reel by its carry handle.</small></p>
   </div>
 </div>
 
@@ -216,8 +216,8 @@ Alongside the software stack, I led the **electrical side** of this platform —
     <p class="text-center mt-1"><small class="text-muted">Routing power and signal lines through the carrier.</small></p>
   </div>
   <div class="col-sm-3">
-    {% include figure.liquid path="assets/img/projects/manipulator-internal-wiring.jpeg" class="img-fluid rounded z-depth-1" zoomable=true alt="Working on the internal wiring of the 6-DOF mobile manipulator." %}
-    <p class="text-center mt-1"><small class="text-muted">Dressing the internal harness and motor-drive lines.</small></p>
+    {% include figure.liquid path="assets/img/projects/manipulator-wrist-telescope-wiring.jpeg" class="img-fluid rounded z-depth-1" zoomable=true alt="Soldering the final wiring at the wrist-to-telescope joint, with the arm on the bench frame." %}
+    <p class="text-center mt-1"><small class="text-muted">Final wiring at the wrist-to-telescope joint.</small></p>
   </div>
   <div class="col-sm-3">
     {% include figure.liquid path="assets/img/projects/manipulator-wrist-bench-test.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Bench bring-up of the wrist and gripper assembly over a USB-CAN analyser and lab supply." %}
