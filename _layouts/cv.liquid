@@ -314,6 +314,19 @@ layout: default
           </div>
         {% endif %}
 
+        <!-- Mentoring & Leadership (site-specific key, not in the JSON Resume schema) -->
+        {% if site.data.resume.leadership.size > 0 %}
+          <a class="anchor" id="leadership"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Mentoring &amp; Leadership</h3>
+            <ul class="card-text font-weight-light list-group list-group-flush">
+              {% for item in site.data.resume.leadership %}
+                <li class="list-group-item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
         <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
@@ -345,6 +358,18 @@ layout: default
             <h3 class="card-title font-weight-medium">Publications</h3>
             <div>
               {% assign entries = site.data.resume.publications %}
+              {% include cv/publications.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Patents (site-specific key, not in the JSON Resume schema) -->
+        {% if site.data.resume.patents.size > 0 %}
+          <a class="anchor" id="patents"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Patents</h3>
+            <div>
+              {% assign entries = site.data.resume.patents %}
               {% include cv/publications.liquid %}
             </div>
           </div>
