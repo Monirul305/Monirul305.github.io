@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript submitted on GA-tuned multi-rate cross-coupled BLDC synchronisation · seeking PhD positions for Spring or Fall 2027. Click the PDF icon (top right) for the printable version.",
+          description: "R&amp;D Engineer &amp; Team Lead at Cybernetics Hi-Tech Solutions · B.Sc. EEE, BUET (CGPA 3.85 / 4.00, ranked 25 / 189, awarded with Honours) · production-deployed 3-robot AGV fleet, 6-DOF mobile manipulator, and EOD ROVs in UN peacekeeping service · two co-authored peer-reviewed papers (MDPI 2023, IEEE ICCIT 2024) plus first-author manuscript submitted on GA-tuned multi-rate cross-coupled BLDC synchronisation · co-inventor on a U.S. provisional patent application · seeking PhD positions for Spring or Fall 2027. Click the PDF icon (top right) for the printable version.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -138,6 +138,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-agv-fleet-system-featured-on-youtube-zero-collisions-how-3-autonomous-robots-share-a-busy-garment-factory-floor-full-walkthrough-of-the-ros-2-navigation-stack-fleetcore-coordinator-apriltag-ekf-and-3-layer-safety-architecture-deployed-at-the-urmi-group-watch-3-45",
           title: 'AGV fleet system featured on YouTube: Zero Collisions: How 3 Autonomous Robots Share...',
+          description: "",
+          section: "News",},{id: "news-filed-a-u-s-provisional-patent-application-as-co-inventor-system-and-method-for-monitoring-waste-container-location-and-status-no-64-151-180",
+          title: 'Filed a U.S. provisional patent application as co-inventor: System and Method for Monitoring...',
           description: "",
           section: "News",},{id: "projects-production-deployed-3-robot-agv-fleet-ros-2-apriltag-ekf-distributed-path-planning",
           title: 'Production-Deployed 3-Robot AGV Fleet (ROS 2, AprilTag EKF, Distributed Path Planning)',
